@@ -15,15 +15,6 @@
   "esmodules": [
     "register.js"
   ],
-  "relationships": {
-    "requires": [
-      {
-        "id": "babele",
-        "type": "module",
-        "compatibility": {}
-      }
-    ]
-  },
   "url": "#{URL}#",
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
