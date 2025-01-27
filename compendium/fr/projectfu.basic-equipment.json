@@ -1,9 +1,14 @@
 {
-  "label": "Basic Equipment",
+  "label": "Équipements de base",
   "mapping": {
     "qualité": "system.quality.value",
     "description": "system.description",
     "resume": "system.summary.value "
+  },
+  "folders":{
+    "Armor":"Armures",
+    "Shields":"Boucliers",
+    "Armes":"Armes"
   },
   "entries": {
     "Brigandine": {
