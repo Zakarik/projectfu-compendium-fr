@@ -82,7 +82,7 @@ jobs:
             `# Options`                          \
             --recurse-paths                      \
             `# The name of the output file`      \
-             ./module.zip                        \
+             ./projectfu-compendium-fr.zip                        \
             `# The files that will be included.` \
             module.json                          \
             register.js                          \
