@@ -1,0 +1,165 @@
+{
+  "label": "Basic Equipment",
+  "mapping": {
+    "qualité": "system.quality.value",
+    "description": "system.description",
+    "resume": "system.summary.value "
+  },
+  "entries": {
+    "Brigandine": {
+      "name": "Brigandine",
+      "qualité": "",
+      "description": ""
+    },
+    "Broadaxe": {
+      "name": "Hache large",
+      "qualité": "",
+      "description": ""
+    },
+    "Bronze Plate": {
+      "name": "Plates de bronze",
+      "qualité": "",
+      "description": ""
+    },
+    "Bronze Shield": {
+      "name": "Bouclier de bronze",
+      "qualité": "",
+      "description": ""
+    },
+    "Bronze Sword": {
+      "name": "Épée de bronze",
+      "qualité": "",
+      "description": ""
+    },
+    "Chain Whip": {
+      "name": "Chaîne-fouet",
+      "qualité": "",
+      "description": ""
+    },
+    "Combat Tunic": {
+      "name": "Tunique de combat",
+      "qualité": "",
+      "description": ""
+    },
+    "Crossbow": {
+      "name": "Arbalète",
+      "qualité": "",
+      "description": ""
+    },
+    "Greatsword": {
+      "name": "Épée à deux mains",
+      "qualité": "",
+      "description": ""
+    },
+    "Heavy Spear": {
+      "name": "Lance lourde",
+      "qualité": "",
+      "description": ""
+    },
+    "Improvised (Melee)": {
+      "name": "Arme improvisée (Mêlée)",
+      "qualité": "",
+      "description": "<p>Se brise après l’attaque.</p>"
+    },
+    "Improvised (Ranged)": {
+      "name": "Arme improvisée (Distance)",
+      "qualité": "",
+      "description": "<p>Se brise après l’attaque.</p>"
+    },
+    "Iron Hammer": {
+      "name": "Marteau de fer",
+      "qualité": "",
+      "description": ""
+    },
+    "Iron Knuckle": {
+      "name": "Coup-de-poing en fer",
+      "qualité": "",
+      "description": ""
+    },
+    "Katana": {
+      "name": "Katana",
+      "qualité": "",
+      "description": ""
+    },
+    "Light Spear": {
+      "name": "Lance légère",
+      "qualité": "",
+      "description": ""
+    },
+    "Pistol": {
+      "name": "Pistolet",
+      "qualité": "",
+      "description": ""
+    },
+    "Rapier": {
+      "name": "Rapière",
+      "qualité": "",
+      "description": ""
+    },
+    "Runic Plate": {
+      "name": "Plates runiques",
+      "qualité": "",
+      "description": ""
+    },
+    "Runic Shield": {
+      "name": "Bouclier runique",
+      "qualité": "",
+      "description": ""
+    },
+    "Sage Robe": {
+      "name": "Robe de sage",
+      "qualité": "",
+      "description": ""
+    },
+    "Shortbow": {
+      "name": "Arc court",
+      "qualité": "",
+      "description": ""
+    },
+    "Shuriken": {
+      "name": "Shuriken",
+      "qualité": "",
+      "description": ""
+    },
+    "Silk Shirt": {
+      "name": "Chemise de soie",
+      "qualité": "",
+      "description": ""
+    },
+    "Staff": {
+      "name": "Bâton",
+      "qualité": "",
+      "description": ""
+    },
+    "Steel Dagger": {
+      "name": "Dague en acier",
+      "qualité": "",
+      "description": ""
+    },
+    "Steel Plate": {
+      "name": "Plates d'acier",
+      "qualité": "",
+      "description": ""
+    },
+    "Tome": {
+      "name": "Grimoire",
+      "qualité": "",
+      "description": ""
+    },
+    "Travel Garb": {
+      "name": "Tenue de voyage",
+      "qualité": "",
+      "description": ""
+    },
+    "Unarmed Strike": {
+      "name": "Main nue",
+      "qualité": "",
+      "description": "<p>Automatiquement équipée à chaque emplacement de main.</p>"
+    },
+    "Waraxe": {
+      "name": "Hache de guerre",
+      "qualité": "",
+      "description": ""
+    }
+  }
+}
