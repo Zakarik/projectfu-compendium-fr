@@ -1,0 +1,383 @@
+{
+  "label": "Sorts",
+  "mapping": {
+    "Description": "system.description"
+  },
+  "folders": {
+    "Enhance": "Amélioration",
+    "Curses": "Malédictions",
+    "Status": "États",
+    "Elemental": "Élémentaire",
+    "Field": "Terrain",
+    "Villain": "Méchant",
+    "Martial": "Martial",
+    "Control": "Contrôle",
+    "Unique": "Unique",
+    "Trap": "Piège",
+    "Recovery": "Récupération",
+    "Complex": "Complexe",
+    "Channeled": "Canalisé"
+  },
+  "entries": {
+    "Anchor Howl": {
+      "name": "Hurlement d'Ancrage",
+      "Description": "<p>Vous poussez un rugissement de défi, augmentant vos défenses et provoquant tous les ennemis proches à vous attaquer. S'ils attaquent quelqu'un d'autre, ils déclencheront une puissante contre-attaque magique.</p><ul><li><p><strong>Vous : </strong>@EFFECT[guard]</p></li><li><p><strong>Cibles : @UUID[Compendium.fu-azure-compendia.effects.jrftu34Y8P6ATh5F]{Provoqué} </strong>pendant <strong>deux tours </strong>et subissent <strong>une attaque gratuite de votre part </strong>lorsqu'ils attaquent quelqu'un d'autre.</p></li></ul><p><span style=\"text-decoration:underline\"><em><span style=\"text-decoration:underline\">Ce sort ne peut être utilisé qu'une fois par conflit.</span></em></span></p>"
+    },
+    "Astral Hypno": {
+      "name": "Hypnose Astrale",
+      "Description": "<p>Vous plongez la cible dans un @UUID[Compendium.fu-azure-compendia.effects.j3oBtOJaTjk6dzgN]{Sommeil} soudain pendant <strong>deux tours</strong>. Cependant, elle ne peut pas faire de test pour s'en remettre.</p><ul><li><p><strong>Vous</strong>: @LOSS[20 mp]</p></li><li><p><strong>Cible</strong>: @UUID[Compendium.fu-azure-compendia.effects.j3oBtOJaTjk6dzgN]{Sommeil}</p></li></ul>"
+    },
+    "Auto Repair Unit": {
+      "name": "Unité d'Auto-Réparation",
+      "Description": "<p>Vous activez votre unité d'auto-réparation, qui va <strong>automatiquement réparer les dégâts que vous avez subis</strong>. Au <strong>début de chaque round</strong>, vous <strong>récupérez une faible quantité de points de vie</strong>.</p><ul><li><p><strong>Vous :</strong> @UUID[Compendium.fu-azure-compendia.effects.wmld4YK2TtfzQbzj]{Régénération}</p></li></ul>"
+    },
+    "Beacon of Light": {
+      "name": "Phare de Lumière",
+      "Description": "<p>Pendant les 3 prochains rounds, chaque fois qu'un autre allié est soigné par un sort, la cible récupère une faible quantité de points de vie.</p><ul><li><p><strong>Cible</strong>: @HEAL[$minor hp]</p></li></ul>"
+    },
+    "Black Rain": {
+      "name": "Pluie Noire",
+      "Description": "<p>La pluie tombe sur la scène, drainant les points de magie de vos ennemis et restaurant vos points de vie.</p><ul><li><p><strong>Ennemis</strong>: @LOSS[$minor mp]</p></li><li><p><strong>Vous</strong>: @LOSS[20 mp] @GAIN[$heavy hp]</p></li><li><p><strong>Nécessite</strong>: @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}</p></li></ul>"
+    },
+    "Bombard": {
+      "name": "Bombardement",
+      "Description": "<p>Vous déchaînez une pluie de feu sur les cibles.</p><ul><li><p><strong>Vous</strong>: @LOSS[15 mp]</p></li></ul>"
+    },
+    "Bubble Spray": {
+      "name": "Jet de Bulles",
+      "Description": "<p>Vous invoquez un jet de bulles géantes vers vos ennemis, les affectant avec @EFFECT[slow].</p>"
+    },
+    "Buster": {
+      "name": "Briseur",
+      "Description": "<p>Vous portez une attaque dévastatrice à la cible qui vous menace le plus parmi vos ennemis. @UUID[Compendium.fu-azure-compendia.macros.Macro.CusNxAjlikrRsJIB]{Marqueur de Briseur}</p><table><tbody><tr><td data-colwidth=\"70\"><p><strong>Niveau</strong></p></td><td data-colwidth=\"189\"><p><strong>Dégâts</strong></p></td></tr><tr><td data-colwidth=\"70\"><p>5+</p></td><td data-colwidth=\"189\"><p>@DMG[100 untyped]</p></td></tr><tr><td data-colwidth=\"70\"><p>20+</p></td><td data-colwidth=\"189\"><p>@DMG[115 untyped]</p></td></tr><tr><td data-colwidth=\"70\"><p>40+</p></td><td data-colwidth=\"189\"><p>@DMG[130 untyped]</p></td></tr></tbody></table><p><em>Notez que cette action n'est valable que dans une <strong>bataille de terrain active.</strong></em></p>"
+    },
+    "Calamity": {
+      "name": "Calamité",
+      "Description": "<p>Après avoir terminé votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous libérez une grande explosion d'énergie brute sur le champ de bataille. Toutes les cibles subissent des <strong>dégâts inévitables</strong>.</p><ul><li><p><strong>Vous :</strong> @LOSS[40 mp]</p></li><li><p><strong>Cibles : </strong>@DMG[&amp;step(15,25,35 untyped]</p></li></ul>"
+    },
+    "Castle of Stone": {
+      "name": "Château de Pierre",
+      "Description": "<p>Vous êtes entouré d'une lumière jaune alors que vous enfermez votre corps dans la pierre et <strong>devenez immunisé à toutes les formes de dégâts jusqu'à la fin de votre prochain tour</strong>. Cependant, vous êtes également <strong>complètement immobilisé</strong> pendant la durée de la compétence et ne pouvez pas agir.</p><p><em>Ce sort ne peut être utilisé qu'une fois par conflit.</em></p>"
+    },
+    "Chain Lightning": {
+      "name": "Chaîne d'Éclairs",
+      "Description": "<p>Vous tissez de l'électricité en une vague d'éclairs crépitants. Chaque cible touchée par ce sort subit des dégâts de <strong>foudre</strong>.</p><p><strong>Opportunité :</strong> Chaque cible touchée par ce sort subit @EFFECT[dazed].</p><hr /><ul><li><p>@LOSS[10 mp] pour <strong>une</strong> cible.</p></li><li><p>@LOSS[20 mp] pour <strong>deux</strong> cibles.</p></li><li><p>@LOSS[30 mp] pour <strong>trois</strong> cibles.</p></li></ul>"
+    },
+    "Cold Snap": {
+      "name": "Vague de Froid",
+      "Description": "<p>Après avoir terminé votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous libérez une vague de froid dévastatrice pour geler vos ennemis. Toutes les cibles subissent des <strong>dégâts de glace inévitables</strong> et sont gelées.</p><ul><li><p><strong>Vous :</strong> @LOSS[40 mp]</p></li><li><p><strong>Cibles : </strong>@DMG[&amp;step(15,25,35 ice] + <strong>@UUID[Compendium.fu-azure-compendia.effects.rVUnQaybL0TnwwHi]{Gelé}</strong></p></li></ul>"
+    },
+    "Comet Rain": {
+      "name": "Pluie de Comètes",
+      "Description": "<p>Vous invoquez une pluie de petites comètes sur le champ de bataille, qui s'écraseront à la <strong>fin du prochain round</strong> et infligeront une <strong>grande quantité de dégâts de feu</strong> à tous vos ennemis dans la scène.</p><p>À la <strong>fin du prochain round</strong>, chaque cible doit réussir un <strong>test de difficulté normale</strong> ou subir les dégâts.</p><ul><li><p><strong>Vous</strong>: @LOSS[20 mp]</p></li><li><p><strong>Cibles</strong>: @DMG[$heavy fire]</p></li></ul>"
+    },
+    "Confusion": {
+      "name": "Confusion",
+      "Description": "<p><span id=\"ctl00_RadDrawer1_Content_MainContent_DetailedOutput\">Vous embrouillez une cible qui est @EFFECT[dazed] avec d'étranges impulsions, la laissant </span>@UUID[Compendium.fu-azure-compendia.effects.vT114TqxBDfdzCqS]{Confuse}.</p>"
+    },
+    "Contingency": {
+      "name": "Contingence",
+      "Description": "<p>Vous préparez un sort à utiliser <strong>sur vous ou l'un de vos alliés</strong>. Vous <strong>choisissez secrètement</strong> <strong>un</strong> des <strong>déclencheurs</strong> suivants, qui activera le sort :</p><ul><li><p>La cible est <strong>attaquée au corps à corps</strong>.</p></li><li><p>La cible est <strong>attaquée à distance</strong>.</p></li><li><p>Un <strong>sort est lancé</strong> sur la cible.</p></li><li><p>La cible a <strong>déclenché une réaction</strong>.</p></li><li><p>La cible est <strong>entrée en crise</strong>.</p></li><li><p>La cible a été <strong>réduite à 0 point de vie</strong>.</p></li></ul><p><em>Vous dépensez le coût de ce sort (@LOSS[20 mp]) et celui du sort associé au moment du lancement.</em></p>"
+    },
+    "Curse": {
+      "name": "Malédiction",
+      "Description": "<p>La cible est affectée par un état de votre choix.</p><ul><li><p><strong>Vous :</strong> @LOSS[5 mp]</p></li><li><p><strong>Cible :</strong> Un des états suivants @EFFECT[dazed] @EFFECT[shaken] @EFFECT[slow] @EFFECT[weak].</p></li></ul>"
+    },
+    "Curse of Agony": {
+      "name": "Malédiction d'Agonie",
+      "Description": "<p>Vous affectez la cible avec une puissante malédiction.</p><ul><li><p><strong>Vous</strong>: @LOSS[10 mp]</p></li><li><p><strong>Cible</strong>: @UUID[Compendium.fu-azure-compendia.effects.SDFcCuQPNCFEVeN0]{Malédiction d'Agonie}</p></li></ul>"
+    },
+    "Curse of Gluttony": {
+      "name": "Malédiction de Gloutonnerie",
+      "Description": "<p>Avec une sombre incantation, vous appliquez une malédiction sur la cible pendant 1 tour.</p><ul><li><p><strong>Vous</strong>: @LOSS[10 mp]</p></li><li><p><strong>Cible</strong>: @UUID[Compendium.fu-azure-compendia.effects.vDqaGeyYApfgis97]{Malédiction de Gloutonnerie}</p></li></ul>"
+    },
+    "Curse of Mortality": {
+      "name": "Malédiction de Mortalité",
+      "Description": "<p>Avec une sombre incantation, vous appliquez une malédiction sur la cible pendant 1 tour.</p><ul><li><p><strong>Vous</strong>: @LOSS[10 mp]</p></li><li><p><strong>Cible</strong>: @UUID[Compendium.fu-azure-compendia.effects.uTYKEOQSIGtStvlU]{Malédiction de Mortalité}</p></li></ul>"
+    },
+    "Curse of Weakness": {
+      "name": "Malédiction de Faiblesse",
+      "Description": "<p>Avec une sombre incantation, vous appliquez une malédiction sur la cible.</p><ul><li><p><strong>Vous</strong>: @LOSS[10 mp]</p></li><li><p><strong>Cible</strong>: @UUID[Compendium.fu-azure-compendia.effects.Y3marN7OOXMzNmCC]{Affaibli} pendant 2 tours.</p></li></ul>"
+    },
+    "Disintegrate": {
+      "name": "Désintégration",
+      "Description": "<p>Vous tirez un rayon traceur d'énergie sombre sur votre cible, qui, au contact, s'intensifie en un rayon destructeur. Si la cible est <strong>réduite à 0 Point de Vie</strong> par ce sort, elle est <strong>réduite en cendres</strong>.</p><p>Si la cible souffre de @EFFECT[weak] et qu'elle est touchée par ce sort, elle souffre de @UUID[Compendium.projectfu.actor-effects.7Vp8dQTW2uTxURrt]{Vulnérabilité aux Ténèbres} jusqu'à la <strong>fin du prochain round</strong>.</p>"
+    },
+    "Dominate": {
+      "name": "Domination",
+      "Description": "<p><span id=\"ctl00_RadDrawer1_Content_MainContent_DetailedOutput\">Vous prenez le contrôle d'une cible qui est @EFFECT[dazed] et @EFFECT[shaken], la rendant @UUID[Compendium.fu-azure-compendia.effects.uo8mrEAHiyhiNGHc]{Dominée} par vous.</span></p>"
+    },
+    "Drain Life": {
+      "name": "Drain de Vie",
+      "Description": "<p>Vous volez la force vitale d'une autre créature. La cible subit des dégâts de <strong>ténèbres</strong>. Ensuite, vous récupérez un montant de Points de Vie égal à la moitié des Points de Vie qu'elle a perdus (si la perte a été réduite à 0 d'une manière ou d'une autre, vous ne récupérez rien).</p><p>@LOSS[10 mp]</p>"
+    },
+    "Duel": {
+      "name": "Duel",
+      "Description": "<p>Vous défiez l'une de vos cibles à un duel de puissance, physique ou autre. Vous commencez un <strong>test opposé</strong> contre la cible avec les attributs de votre choix. Si <strong>vous êtes victorieux</strong>, vous pouvez <strong>choisir deux</strong> des effets suivants à appliquer sur la cible. Si vous <strong>êtes vaincu</strong>, la cible en <strong>choisit un</strong>.</p><ul><li><p>Un des états suivants : @EFFECT[slow] , @EFFECT[dazed] , @EFFECT[weak] , @EFFECT[shaken]</p></li><li><p>@LOSS[20 hp]</p></li><li><p>@LOSS[10 mp]</p></li></ul><p></p>"
+    },
+    "Earthquake": {
+      "name": "Tremblement de Terre",
+      "Description": "<p>Après avoir terminé votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous déclenchez un tremblement de terre localisé qui secoue le sol, faisant tomber vos ennemis avant de les bombarder de terre et de pierres. Toutes les cibles subissent des <strong>dégâts de terre inévitables</strong> et sont mises à terre.</p><ul><li><p><strong>Vous :</strong> @LOSS[40 mp]</p></li><li><p><strong>Cibles : </strong>@DMG[&amp;step(15,25,35 earth] + <strong>@UUID[Compendium.fu-azure-compendia.effects.Fm8mJMBKwf0CylMc]{À Terre}</strong></p></li></ul>"
+    },
+    "Electromagnetic Field": {
+      "name": "Champ Électromagnétique",
+      "Description": "<p>Pendant votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous libérez un puissant champ électrique qui électrocute vos ennemis, infligeant des dégâts de foudre et causant potentiellement un effet néfaste s'ils échouent à un test @CHECK[mig wlp normal].</p><ul><li><p><strong>Ennemis</strong>: @DMG[&amp;scale(&amp;15,20,25) bolt] + <strong>dissipe</strong> <strong>un effet bénéfique</strong>.</p></li></ul>"
+    },
+    "Elemental Charge": {
+      "name": "Charge Élémentaire",
+      "Description": "<p>Vous effectuez immédiatement une <strong>attaque gratuite</strong> contre une cible. Si l'attaque touche, vous laissez derrière vous une charge élémentaire instable sur la cible. La <strong>prochaine fois que la cible subit des dégâts</strong>, la charge se déclenche et inflige des dégâts élémentaires mineurs.</p><p></p><p></p>"
+    },
+    "Elemental Stakes": {
+      "name": "Pieux Élémentaires",
+      "Description": "<p>Vous invoquez un <strong>ensemble de 3</strong> @UUID[Compendium.fu-azure-compendia.adversaries.Actor.2wDMA96EuFGRY08S]{Pieu Élémentaire} sur la scène et les utilisez pour canaliser une dangereuse quantité d'énergie élémentaire pour une attaque à venir. Ces pieux élémentaires <strong>doivent être la cible de tout effet qui les cible.</strong></p><p>À la fin du prochain round, vous déchaînez une puissante attaque magique sur tous vos ennemis dans la scène. Pour chaque pieu élémentaire présent, la <strong>puissance est augmentée</strong>.</p><table><tbody><tr><td><p>0</p></td><td><p>Dégâts Mineurs</p></td></tr><tr><td><p>1</p></td><td><p>Dégâts Importants</p></td></tr><tr><td><p>2</p></td><td><p>Dégâts Massifs</p></td></tr></tbody></table><p>@UUID[Compendium.fu-azure-compendia.macros.W4p4Bd1FdTyBMzdt]{Dégâts Improvisés}</p>"
+    },
+    "Enchantment": {
+      "name": "Enchantement",
+      "Description": "<p>Vous lancez un sort de soutien sur l'un de vos alliés. Choisissez <strong>un</strong> des effets suivants.</p><ul><li><p><strong>Vous</strong>: @LOSS[10 mp]</p></li><li><p><strong>Cible</strong>: @UUID[Compendium.fu-azure-compendia.effects.14zB1oTJL42HmJ6g]{Karma Drive} @UUID[Compendium.fu-azure-compendia.effects.oOA6Cimb9xHwkaG8]{Lame Aiguisée}</p></li></ul>"
+    },
+    "Entangling Roots": {
+      "name": "Racines Enchevêtrées",
+      "Description": "<p>Des vignes et des racines poussent rapidement autour de la cible, tentant de l'agripper. Si elles entrent en contact, la cible subit des dégâts de terre et est agrippée.</p><ul><li><p><strong>Vous : </strong>@LOSS[10 mp] pour chaque cible<br /><strong>Cible</strong>: @UUID[Compendium.fu-azure-compendia.effects.1Pxb0pniA44cr60T]{Agrippé}</p></li></ul>"
+    },
+    "Exploding Earth": {
+      "name": "Terre Explosive",
+      "Description": "<p>Des pics de roche dentelée jaillissent du sol sous vos ennemis, se refermant sur eux. Chaque cible touchée par ce sort subit des dégâts de <strong>terre</strong>. Ce sort ne peut pas cibler les créatures qui volent, flottent, tombent ou sont autrement en l'air.</p><p><strong>Opportunité :</strong> Chaque cible touchée par ce sort effectue une action de moins lors de son prochain tour (jusqu'à un minimum de 0 action).</p><hr /><ul><li><p>@LOSS[10 mp] pour <strong>une</strong> cible.</p></li><li><p>@LOSS[20 mp] pour <strong>deux</strong> cibles.</p></li><li><p>@LOSS[30 mp] pour <strong>trois</strong> cibles.</p></li></ul>"
+    },
+    "Fetters": {
+      "name": "Entraves",
+      "Description": "<p>Vous enchaînez avec des chaînes magiques une cible souffrant de @EFFECT[slow]. Elle <strong>ne peut pas effectuer d'actions</strong> tant qu'elle n'a pas été libérée. Libérer une cible enchaînée est un <strong>cadran facile à 2 sections</strong>.</p>"
+    },
+    "Fire Blast": {
+      "name": "Explosion de Feu",
+      "Description": "<p>Vous canalisez un unique rayon de feu vers votre ennemi, sa température est si élevée qu'il traversera la plupart des défenses. Les dégâts infligés par ce sort <strong>ignorent les Résistances</strong>.</p><hr /><p>@LOSS[15 mp]</p>"
+    },
+    "Flamestrike": {
+      "name": "Frappe de Flammes",
+      "Description": "<p>Vous déchaînez un barrage brûlant contre vos ennemis, faisant apparaître des flammes de nulle part. Chaque cible touchée par ce sort subit des dégâts de <strong>feu</strong>.</p><p><strong>Opportunité :</strong> Chaque cible touchée par ce sort subit <strong>@EFFECT[shaken]</strong>.</p><hr /><ul><li><p>@LOSS[10 mp] pour <strong>une</strong> cible.</p></li><li><p>@LOSS[20 mp] pour <strong>deux</strong> cibles.</p></li><li><p>@LOSS[30 mp] pour <strong>trois</strong> cibles.</p></li></ul>"
+    },
+    "Flood of Darkness": {
+      "name": "Flot de Ténèbres",
+      "Description": "<p>Après avoir terminé votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous libérez une puissante vague d'énergie sombre qui enveloppe la scène. Toutes les cibles subissent des <strong>dégâts de ténèbres inévitables</strong> et souffrent du <strong>miasme</strong>.</p><ul><li><p><strong>Vous :</strong> @LOSS[40 mp]</p></li><li><p><strong>Cibles :</strong> @DMG[&amp;step(15,25,35 dark] + @UUID[Compendium.fu-azure-compendia.effects.KMvq0kYOZnyHiSEr]{Miasme}</p></li></ul>"
+    },
+    "Frightening Display": {
+      "name": "Démonstration Effrayante",
+      "Description": "<p>Choisissez n'importe quel nombre de créatures que vous pouvez voir : chacune d'entre elles subit @EFFECT[shaken].</p>"
+    },
+    "Frost Nova": {
+      "name": "Nova de Givre",
+      "Description": "<p>Vous déchaînez une vague de givre sur vos ennemis. S'ils sont <strong>touchés</strong>, ils sont gelés sur place et <strong>incapables de faire des attaques de corps à corps</strong> pendant 1 round.</p>"
+    },
+    "Gale": {
+      "name": "Bourrasque",
+      "Description": "<p>Vous invoquez la puissance des vents contre votre ennemi. Chaque cible touchée par ce sort subit des dégâts d'<strong>air</strong>.</p><p><strong>Opportunité :</strong> Chaque cible <strong>volante</strong> touchée par ce sort est forcée d'atterrir immédiatement.</p><hr /><ul><li><p>@LOSS[10 mp] pour <strong>une</strong> cible.</p></li><li><p>@LOSS[20 mp] pour <strong>deux</strong> cibles.</p></li><li><p>@LOSS[30 mp] pour <strong>trois</strong> cibles.</p></li></ul>"
+    },
+    "Gaze": {
+      "name": "Regard",
+      "Description": "<p>Vous commencez à canaliser une malédiction à travers vos yeux. Une fois que vos yeux sont prêts à déchaîner la malédiction, toutes les cibles <strong>qui vous font face</strong> subissent deux des états suivants : @EFFECT[slow] , @EFFECT[dazed] , @EFFECT[weak] , @EFFECT[shaken].</p><p><em>Notez que cette action n'est valable que dans une <strong>bataille de terrain active.</strong></em></p>"
+    },
+    "Golden Armory": {
+      "name": "Arsenal Doré",
+      "Description": "<p>Vous faites pleuvoir une quantité écrasante d'armes sur vos adversaires, chacune d'entre elles étant tirée avec une vitesse incroyable et une puissance mortelle.</p>"
+    },
+    "Gravity Smash": {
+      "name": "Écrasement Gravitationnel",
+      "Description": "<p>Avec la puissance rassemblée de votre @UUID[Compendium.fu-azure-compendia.skills.l2TOqEUyVp4kmMDy]{Brisure Ultime}, vous sautez haut dans les airs après toutes les cibles qui ont été @UUID[Compendium.fu-azure-compendia.effects.Firc8bjg6bcDR1e1]{Projetées} et effectuez une série d'<strong>attaques gratuites</strong> contre chacune d'entre elles, avant d'augmenter la gravité pour elles et de les faire s'écraser au sol où elles subiront des <strong>dégâts physiques mineurs</strong>.</p><ul><li><p><strong>Vous</strong> dépensez @LOSS[30 mp]</p></li><li><p><strong>Cibles</strong> subissent @DMG[$minor physical]</p></li></ul>"
+    },
+    "Hellfire": {
+      "name": "Feu Infernal",
+      "Description": "<p>Après avoir terminé votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous enveloppez tous vos ennemis dans les flammes, infligeant des <strong>dégâts de feu inévitables</strong> et les laissant brûler pendant 3 rounds.</p><ul><li><p><strong>Vous :</strong> @LOSS[40 mp]</p></li><li><p><strong>Cibles : </strong>@DMG[&amp;step(15,25,35 fire] + <strong>@UUID[Compendium.fu-azure-compendia.effects.OYh5Swp0087I3f0k]{Brûlant}</strong></p></li></ul>"
+    },
+    "Holy Shock": {
+      "name": "Choc Sacré",
+      "Description": "<p>Vous rassemblez une explosion d'énergie lumineuse de votre âme, <strong>vous soignant d'une faible quantité</strong> avant de la transformer en arme en la lançant sur la cible et en <strong>infligeant des dégâts de lumière</strong>.</p><ul><li><p><strong>Vous</strong>: @HEAL[$minor hp]</p></li></ul>"
+    },
+    "Homing Orb": {
+      "name": "Orbe à Tête Chercheuse",
+      "Description": "<p>Vous invoquez un orbe élémentaire sur le champ de bataille. À la <strong>fin du prochain tour de la cible</strong>, il s'activera et se lancera sur elle, infligeant une <strong>grande quantité de dégâts élémentaires</strong>. L'orbe peut être géré avec un <strong>cadran facile à deux sections</strong>.</p><hr /><ul><li><p><strong>Cible :</strong> @UUID[Compendium.fu-azure-compendia.effects.HfUCnsTCjmAsNxeT]{Orbe Élémentaire}</p></li><li><p><strong>Dégâts :</strong> @DMG[$heavy untyped]</p></li></ul>"
+    },
+    "Ice Prison": {
+      "name": "Prison de Glace",
+      "Description": "<p>Vous gelez une cible affectée par @EFFECT[slow] dans un bloc de glace, la laissant @UUID[Compendium.fu-azure-compendia.effects.rVUnQaybL0TnwwHi]{Gelée}.</p>"
+    },
+    "Iceberg": {
+      "name": "Iceberg",
+      "Description": "<p>Un pilier de magie de glace enveloppe votre ennemi, faisant chuter soudainement sa température corporelle à un niveau critique. La cible subit des dégâts de <strong>glace</strong>.</p><p>Les dégâts infligés par ce sort <strong>ignorent les Résistances</strong>.</p><ul><li><p><strong>Vous :</strong> @LOSS[15 mp]</p></li></ul>"
+    },
+    "Icicle Barrage": {
+      "name": "Barrage de Stalactites",
+      "Description": "<p>Vous formez des stalactites de glace tranchants comme des rasoirs puis les lancez sur vos ennemis. Chaque cible touchée par ce sort subit des dégâts de <strong>glace</strong>.</p><p><strong>Opportunité :</strong> Chaque cible touchée par ce sort subit @EFFECT[slow].</p><hr /><ul><li><p>@LOSS[10 mp] pour <strong>une</strong> cible.</p></li><li><p>@LOSS[20 mp] pour <strong>deux</strong> cibles.</p></li><li><p>@LOSS[30 mp] pour <strong>trois</strong> cibles.</p></li></ul>"
+    },
+    "Icicle Impact": {
+      "name": "Impact de Stalactite",
+      "Description": "<p>Vous invoquez un énorme bloc de glace haut dans les airs au-dessus de vos ennemis avant de le lancer sur l'un d'entre eux.</p>"
+    },
+    "Impale": {
+      "name": "Empalement",
+      "Description": "<p>Vous <span lang=\"de\">invoquez des pics acérés de roche qui émergent du sol contre la cible. Si cela touche, la cible sera empalée et peut être considérée comme <strong>immobilisée</strong> par les pics et <strong>incapable de faire des attaques de corps à corps</strong>. Pour se libérer, c'est un <strong>cadran facile à 2 sections</strong>.</span></p>"
+    },
+    "Lay on Hands": {
+      "name": "Imposition des Mains",
+      "Description": "<p>Vous <strong>soignez</strong> une cible tout en retirant un <strong>unique état</strong> qui l'affecte.</p><ul><li><p><strong>Vous</strong>: @LOSS[10 mp]</p></li><li><p><strong>Cible</strong>: @HEAL[&amp;step(20,30,40) hp]</p></li></ul>"
+    },
+    "Lick Wounds": {
+      "name": "Lécher ses Plaies",
+      "Description": "<p>Vous récupérez des Points de Vie.</p><ul><li><p><strong>Vous</strong>: @GAIN[&amp;step(20,30,40) hp] + @LOSS[5 mp]</p></li></ul>"
+    },
+    "Life in Captivity": {
+      "name": "Vie en Captivité",
+      "Description": "<p>Avec la puissance rassemblée par votre @UUID[Compendium.fu-azure-compendia.skills.l2TOqEUyVp4kmMDy]{Brisure Ultime}, vous enchaînez tous vos ennemis avec des chaînes magiques. Chaque cible <strong>ne peut pas effectuer d'actions</strong> tant qu'elle n'a pas été libérée et subira @DMG[$minor dark] à la fin de son tour. Libérer une cible enchaînée est un <strong>cadran normal à 2 sections</strong>.</p><ul><li><p><strong>Vous :</strong> @LOSS[30 mp]</p></li></ul>"
+    },
+    "Mark 97 Launchers": {
+      "name": "Lanceurs Mark 97",
+      "Description": "<p>Vous lancez une salve de missiles sur vos ennemis, qui explosent et infligent des <strong>dégâts de feu</strong>.</p>"
+    },
+    "Massacre": {
+      "name": "Massacre",
+      "Description": "<p>Vous commencez à massacrer vos ennemis. Au <strong>début de chaque round</strong>, lors de votre <strong>première attaque</strong>, vous réduirez immédiatement une cible à <strong>1 Point de Vie</strong>.</p>"
+    },
+    "Mend": {
+      "name": "Guérison",
+      "Description": "<p>Chaque cible récupère une <strong>grande quantité de points de vie</strong>.</p><ul><li><p><strong>Vous</strong>: @LOSS[10 mp] pour chaque cible</p></li><li><p><strong>Cibles</strong>: @HEAL[$heavy hp]</p></li></ul>"
+    },
+    "Meteor": {
+      "name": "Météore",
+      "Description": "<p>Après avoir terminé votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous invoquez un grand météore depuis les cieux au-dessus du champ de bataille qui s'écrasera à la <strong>fin du prochain round</strong>. À moins d'être arrêté, il infligera des <strong>dégâts de feu massifs</strong> à toutes vos cibles. Endurer le météore est un <strong>cadran à 6 sections</strong> qu'ils doivent tenter d'effacer.</p><p>À la <strong>fin du prochain round</strong>, chacune de vos cibles peut tenter de faire reculer le cadran avec un <strong>test difficile approprié</strong>.</p><table><tbody><tr><td data-colwidth=\"383\"><p><strong>État du Cadran</strong></p></td><td><p><strong>Effet</strong></p></td></tr><tr><td data-colwidth=\"383\"><p>Plein</p></td><td><p>Toutes les cibles subissent @DMG[999 fire]</p></td></tr><tr><td data-colwidth=\"383\"><p>Moitié</p></td><td><p>Toutes les cibles subissent @DMG[$massive fire]</p></td></tr><tr><td data-colwidth=\"383\"><p>Vide</p></td><td><p>Toutes les cibles gagnent @UUID[Compendium.fu-azure-compendia.effects.Item.hnXVEabmOmtGQtNv]{Conviction Brillante} pendant 1 round</p></td></tr></tbody></table>"
+    },
+    "Mist": {
+      "name": "Brume",
+      "Description": "<p>Vous invoquez un nuage de brume sur le champ de bataille. Tous les personnages de la scène deviennent @UUID[Compendium.fu-azure-compendia.adversary-creation.5XTmhVf6qhQKSkKa]{Dissimulés} les uns aux autres. <strong>Dissiper</strong> cette brume est un <strong>cadran normal à 4 sections</strong>.</p>"
+    },
+    "Permafrost": {
+      "name": "Permafrost",
+      "Description": "<p>Après avoir terminé votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous recouvrez le sol d'une fine couche de glace, le rendant particulièrement <strong>dangereux pour se déplacer</strong>.</p><ul><li><p><strong>Vous</strong>: @LOSS[20 mp]</p></li><li><p><strong>Cibles</strong>: @UUID[Compendium.fu-azure-compendia.effects.d5DMA3DVnNON1QUA]{Instable}</p></li></ul>"
+    },
+    "Petrify": {
+      "name": "Pétrification",
+      "Description": "<p>Vous commencez à pétrifier le corps d'une cible qui est affectée par @EFFECT[weak]. Son corps se transformera lentement en pierre à la fin du prochain round. Retirer cette pétrification est un <strong>cadran normal à 2 sections</strong>. Si vous êtes vaincu, l'effet prend également fin.</p><p><strong>Coût :</strong> @LOSS[20 mp]</p>"
+    },
+    "Piercing Shriek": {
+      "name": "Cri Perçant",
+      "Description": "<p>Choisissez n'importe quel nombre de créatures que vous pouvez voir : chacune d'entre elles subit @EFFECT[dazed].</p><ul><li><p><strong>Vous :</strong> @LOSS[20 mp]</p></li></ul>"
+    },
+    "Polymerization": {
+      "name": "Polymérisation",
+      "Description": "<p>Vous <strong>fusionnez deux créatures de rang soldat</strong> sous votre contrôle pour faire apparaître une <strong>créature de rang élite</strong> sur le champ de bataille, qui agira immédiatement <strong>lors de ce round</strong>.</p>"
+    },
+    "Powerful Blast": {
+      "name": "Explosion Puissante",
+      "Description": "<p>Déchaîne une attaque massive sur la zone ciblée. S'il y a plusieurs cibles dans la zone, les dégâts sont partagés et réduits pour chaque individu. @UUID[Compendium.fu-azure-compendia.macros.Macro.P2BPcaXdk198oyT0]{Marqueur d'Empilement}</p><hr /><table><tbody><tr><td data-colwidth=\"70\"><p><strong>Cibles</strong></p></td><td data-colwidth=\"189\"><p><strong>Dégâts par cible</strong></p></td></tr><tr><td data-colwidth=\"70\"><p>1</p></td><td data-colwidth=\"189\"><p>@DMG[100 untyped]</p></td></tr><tr><td data-colwidth=\"70\"><p>2</p></td><td data-colwidth=\"189\"><p>@DMG[40 untyped]</p></td></tr><tr><td data-colwidth=\"70\"><p>3</p></td><td data-colwidth=\"189\"><p>@DMG[30 untyped]</p></td></tr><tr><td data-colwidth=\"70\"><p>4+</p></td><td data-colwidth=\"189\"><p>@DMG[20 untyped]</p></td></tr></tbody></table><p><em>Notez que cette action n'est valable que dans une <strong>bataille de terrain active</strong>.</em></p>"
+    },
+    "Purge": {
+      "name": "Purge",
+      "Description": "<p>Vous libérez une vague d'énergie magique pour tenter de <strong>retirer les effets magiques</strong> de la cible. Cela retirera tous les effets bénéfiques affectant la cible à moins qu'elle ne tente d'y résister.</p><p>Pour <strong>chaque effet</strong> qu'elle souhaite conserver, elle <strong>doit dépenser</strong> @LOSS[5 mp] afin de résister à sa purge.</p>"
+    },
+    "Restore": {
+      "name": "Restauration",
+      "Description": "<p>Chaque cible récupère de <strong>tous les états</strong>.</p><ul><li><p><strong>Vous</strong>: @LOSS[10 mp] pour chaque cible</p></li></ul>"
+    },
+    "Rime Wreath": {
+      "name": "Couronne de Givre",
+      "Description": "<p>Après avoir terminé votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous recouvrez tout le terrain de glace, endommageant vos ennemis et les ralentissant.</p><ul><li><p><strong>Vous :</strong> @LOSS[40 mp]</p></li><li><p><strong>Cibles : </strong>@DMG[&amp;step(15,25,35 ice] +<strong> </strong>@UUID[Compendium.fu-azure-compendia.effects.zqmBtaCGTo9DVmyR]{Engelure}</p></li></ul>"
+    },
+    "Sandstorm": {
+      "name": "Tempête de Sable",
+      "Description": "<p>Après avoir terminé votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous déchaînez une grande tempête de sable sur vos ennemis. Toutes les cibles subissent des <strong>dégâts de feu et d'air inévitables</strong>, les laissant aveuglées.</p><ul><li><p><strong>Vous :</strong> @LOSS[40 mp]</p></li><li><p><strong>Cibles :</strong>@DMG[&amp;step($minor earth] + @DMG[$minor fire] +<strong> @UUID[Compendium.fu-azure-compendia.effects.rBZmlS8sebFLLg91]{Aveuglé}</strong></p></li></ul>"
+    },
+    "Shadow Barrage": {
+      "name": "Barrage d'Ombre",
+      "Description": "<p>Une tempête d'énergie sombre transforme la matière en cendres. Chaque cible touchée par ce sort subit des dégâts de <strong>ténèbres</strong>.</p><p><strong>Opportunité :</strong> Chaque cible touchée par ce sort subit @EFFECT[weak].</p><hr /><ul><li><p>@LOSS[10 mp] pour <strong>une</strong> cible.</p></li><li><p>@LOSS[20 mp] pour <strong>deux</strong> cibles.</p></li><li><p>@LOSS[30 mp] pour <strong>trois</strong> cibles.</p></li></ul>"
+    },
+    "Shadow Wings": {
+      "name": "Ailes d'Ombre",
+      "Description": "<p>La cible subit des <strong>dégâts de ténèbres</strong> et souffre de @EFFECT[shaken]</p>"
+    },
+    "Sleep": {
+      "name": "Sommeil",
+      "Description": "<p>Vous plongez dans le sommeil une cible qui souffre de @EFFECT[dazed].</p><ul><li><p>Vous : @LOSS[20 mp]</p></li><li><p>Cible : @UUID[Compendium.fu-azure-compendia.effects.j3oBtOJaTjk6dzgN]{Sommeil}</p></li></ul>"
+    },
+    "Spellstrike": {
+      "name": "Frappe Magique",
+      "Description": "<p>Vous canalisez un sort dans votre coup pour délivrer une attaque combinée. Si elle touche, choisissez un des effets suivants sur la cible :</p><ul><li><p><strong>Élémentaire :</strong> Elle subit des <strong>dégâts élémentaires mineurs</strong> de votre choix. @UUID[Compendium.fu-azure-compendia.macros.W4p4Bd1FdTyBMzdt]{Dégâts Improvisés}</p></li><li><p><strong>Affaiblissant</strong>: Elle subit deux des états suivants : @EFFECT[slow] , @EFFECT[dazed], @EFFECT[weak], @EFFECT[shaken].</p></li><li><p><strong>Malédiction :</strong> Elle est affectée par un sort de type malédiction.</p></li></ul><p>Vous dépensez @LOSS[20 mp].</p>"
+    },
+    "Spore Cloud": {
+      "name": "Nuage de Spores",
+      "Description": "<p><span class=\"hanging-indent\">Vous libérez un nuage de spores qui affecte tous vos ennemis.</span></p><ul><li><p><span class=\"hanging-indent\"><strong>Vous : </strong>@LOSS[20 mp].</span></p></li><li><p><strong>Cibles</strong>: @DMG[&amp;step(10,15,20) poison]</p></li></ul>"
+    },
+    "Summon": {
+      "name": "Invocation",
+      "Description": "<p>Vous invoquez <strong>deux</strong> <strong>démons ou élémentaires de rang soldat</strong> sur la scène pour combattre à vos côtés (vous <strong>ne pouvez pas en avoir plus de deux sur la scène</strong> à un moment donné). Au moment de l'invocation, vous pouvez dépenser @LOSS[5 mp] sur chacun pour les renforcer davantage :</p><ul><li><p><strong>Renforcement :</strong> @EFFECT[mig-up] | @EFFECT[dex-up] | @EFFECT[ins-up] | @EFFECT[wlp-up]</p></li><li><p><strong>Empreinte :</strong> @UUID[Compendium.fu-azure-compendia.skills.4iT7No3ENLk94pbp]{Interrompre} @UUID[Compendium.fu-azure-compendia.skills.KnzS7X7Ew1AnvevI]{Punir} @UUID[Compendium.fu-azure-compendia.skills.ZgDF34ssI4PzOjZV]{Engager}</p></li></ul>"
+    },
+    "Sword of Light": {
+      "name": "Épée de Lumière",
+      "Description": "<p>Avec la puissance rassemblée par votre @UUID[Compendium.fu-azure-compendia.skills.l2TOqEUyVp4kmMDy]{Brisure Ultime}, une épée massive de lumière se superpose à votre épée alors que vous canalisez toute votre force pour la manier, avant de l'abattre sur le sol en jugement de vos ennemis. Chacun de vos ennemis qui a renoncé à la lumière est <strong>instantanément vaincu</strong> alors que le poids de leurs péchés submerge leur âme<strong>.</strong></p><p>Sinon, ils sont réduits à 1 PV et vous devenez @EFFECT[shaken].</p><ul><li><p><strong>Vous : </strong>@LOSS[30 mp]</p></li></ul>"
+    },
+    "The Dark Devours": {
+      "name": "Les Ténèbres Dévorent",
+      "Description": "<p>Vous piégez le terrain et tous ceux qui s'y trouvent dans une enveloppe de ténèbres pures qui empêche quiconque d'en sortir. Ces ténèbres rongent continuellement tous ceux qui s'y trouvent, infligeant des <strong>dégâts de ténèbres mineurs</strong> à la <strong>fin de chaque round.</strong></p><ul><li><p><strong>Ennemis</strong>: @DMG[$minor dark]</p></li></ul>"
+    },
+    "Thorn Bind Hostage": {
+      "name": "Liens d'Épines",
+      "Description": "<p>Vous faites jaillir des racines bleues brillantes de la terre qui enchevêtrent la cible. Quand un allié coupe chacune de ces racines, elles causent des dégâts supplémentaires.</p><ul><li><p><strong>Vous</strong>: @LOSS[20 mp]</p></li><li><p><strong>Cible : @UUID[Compendium.fu-azure-compendia.effects.QehUAaZeKyZEBAjx]{Liens d'Épines}</strong></p></li></ul>"
+    },
+    "Thunderstorm": {
+      "name": "Orage",
+      "Description": "<p>Après avoir terminé votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous invoquez un orage noir et grondant sur la scène qui appelle un éclair après l'autre, infligeant des <strong>dégâts de foudre inévitables</strong> et les laissant @UUID[Compendium.fu-azure-compendia.effects.ypvTV9uyc7R6LPA4]{Électrisés}.</p><ul><li><p><strong>Vous :</strong> @LOSS[40 mp]</p></li><li><p><strong>Cibles :</strong> @DMG[&amp;step(15,25,35) bolt] +<strong> @UUID[Compendium.fu-azure-compendia.effects.ypvTV9uyc7R6LPA4]{Électrisé}</strong></p></li></ul>"
+    },
+    "Thunderstrike": {
+      "name": "Frappe de Foudre",
+      "Description": "<p>Vous envoyez la foudre frapper votre ennemi. La cible subit des dégâts de <strong>foudre</strong>.</p>"
+    },
+    "Tidal Wave": {
+      "name": "Raz-de-Marée",
+      "Description": "<p>Après avoir terminé votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous déchaînez une grande vague d'eau qui s'écrase sur vos ennemis. Toutes les cibles subissent des <strong>dégâts de glace inévitables</strong> et sont mises à terre.</p><ul><li><p><strong>Vous :</strong> @LOSS[40 mp]</p></li><li><p><strong>Cibles : </strong>@DMG[&amp;step(15,25,35 ice] +<strong> </strong>@UUID[Compendium.fu-azure-compendia.effects.Fm8mJMBKwf0CylMc]{À Terre}</p></li></ul>"
+    },
+    "Time Bomb": {
+      "name": "Bombe à Retardement",
+      "Description": "<p>Vous placez un explosif sur la cible qui explosera dans un court délai.</p><ul><li><p><strong>Cible</strong>: @UUID[Compendium.fu-azure-compendia.effects.Z0ck94kzhhmbD0tq]{Bombe à Retardement}</p></li><li><p><strong>Vous</strong>: @LOSS[10 mp]</p></li></ul><p></p>"
+    },
+    "Time Stop": {
+      "name": "Arrêt du Temps",
+      "Description": "<p>Vous <strong>arrêtez le temps pour tous sauf vous</strong>, vous permettant d'utiliser immédiatement un nombre d'actions <strong>égal au nombre que vous avez normalement à chaque round</strong>. Pendant que le temps est arrêté, vous ne pouvez pas affecter <strong>directement</strong> vos cibles avec des sorts ou des attaques.</p>"
+    },
+    "Tornado": {
+      "name": "Tornade",
+      "Description": "<p>Après avoir terminé votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous invoquez une petite tornade localisée contre vos ennemis qui les soulève haut dans les airs et les coupe avec des vents tranchants. Toutes les cibles subissent des <strong>dégâts d'air inévitables</strong> et sont considérées comme projetées jusqu'à la <strong>fin du prochain round</strong>.</p><ul><li><p><strong>Vous :</strong> @LOSS[40 mp]</p></li><li><p><strong>Cibles : </strong>@DMG[&amp;step(15,25,35 air] + @UUID[Compendium.fu-azure-compendia.effects.Firc8bjg6bcDR1e1]{Projeté}</p></li></ul>"
+    },
+    "Toxic Cloud": {
+      "name": "Nuage Toxique",
+      "Description": "<p>Après avoir terminé votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous invoquez un brouillard empoisonné qui recouvre la scène. Toutes les cibles subissent des <strong>dégâts de poison inévitables</strong>, les laissant empoisonnées tant que le nuage persiste. Dissiper ce nuage est un <strong>cadran normal à 4 sections</strong>.</p><ul><li><p><strong>Vous :</strong> @LOSS[40 mp]</p></li><li><p><strong>Cibles : </strong>@DMG[&amp;step(15,20,25) poison] +<strong> </strong>@EFFECT[poisoned]</p></li></ul>"
+    },
+    "Trial by Sword": {
+      "name": "Jugement par l'Épée",
+      "Description": "<p>Vous <strong>invoquez</strong> des apparitions d'armes sur le terrain, puis prenez une posture défensive en vous mettant en @EFFECT[guard]. Chaque apparition peut être détruite de deux manières : Elle peut être attaquée directement ou vous pouvez utiliser une action <strong>Objectif</strong> appropriée pour effacer un <strong>cadran difficile à 3 sections</strong>.</p><p>À la <strong>fin du round</strong>, vous infligez des dégâts à tous vos ennemis. <strong>Pour chaque</strong> apparition encore présente quand le round se termine, vous infligez une instance de dégâts <strong>supplémentaire</strong>, jusqu'à un <strong>minimum de 1</strong> pour toutes les armes détruites.</p><ul><li><p><strong>Vous</strong>: @LOSS[20 mp]</p></li><li><p><strong>Cibles</strong>: @DMG[$minor untyped]</p></li></ul><p></p>"
+    },
+    "Upheaval": {
+      "name": "Soulèvement",
+      "Description": "<p>Avec la puissance rassemblée de votre @UUID[Compendium.fu-azure-compendia.skills.l2TOqEUyVp4kmMDy]{Brisure Ultime}, vous fracassez le sol devant vos ennemis, envoyant des fissures à travers la terre qui explosent violemment, infligeant des <strong>dégâts de terre mineurs</strong> et les projetant dans les airs.</p><ul><li><p><strong>Vous</strong> dépensez @LOSS[30 mp]</p></li><li><p><strong>Cibles</strong> subissent @DMG[$minor+5 earth] et @UUID[Compendium.fu-azure-compendia.effects.Firc8bjg6bcDR1e1]{Projeté}</p></li></ul>"
+    },
+    "Vampiric Exsanguination": {
+      "name": "Exsanguination Vampirique",
+      "Description": "<p>Vous aspirez la force vitale de vos cibles, infligeant des <strong>dégâts de ténèbres</strong>. Pour <strong>chaque</strong> cible qui a été touchée, vous <strong>récupérez une faible quantité de points de vie</strong>.</p><ul><li><p>Vous dépensez @LOSS[20 mp]</p></li><li><p>Vous récupérez @GAIN[10 mp] par cible drainée.</p></li></ul>"
+    },
+    "Verboten": {
+      "name": "Interdit",
+      "Description": "<p>Pour chacune de vos cibles, vous interdisez <strong>une action</strong>. Chacune de vos cibles doit lancer avec ce qui suit : @UUID[Compendium.fu-azure-compendia.macros.TyUHoDbHcyUMxcFI]{Jet d'Action Aléatoire}</p><p>Elles sont <strong>interdites</strong> d'<strong>utiliser</strong> cette <strong>action</strong> lors de leur <strong>prochain tour</strong>.</p>"
+    },
+    "Violent Hypnosis": {
+      "name": "Hypnose Violente",
+      "Description": "<p>Vous embrouillez une cible qui souffre de <strong>dazed, enraged ou shaken</strong>. Elle doit immédiatement effectuer une <strong>attaque gratuite</strong> contre une cible de <strong>votre choix</strong>.</p>"
+    },
+    "Wall of Stone": {
+      "name": "Mur de Pierre",
+      "Description": "<p>Vous érigez un mur fait de pierre qui divise le champ de bataille en deux, laissant la moitié de vos cibles de l'autre côté et le reste avec vous. Briser le mur est un <strong>cadran facile à 6 sections</strong>.</p>"
+    },
+    "Whirling Death": {
+      "name": "Mort Tourbillonnante",
+      "Description": "<p><span class=\"hanging-indent\">Vous invoquez des lames de vent qui tranchent toutes les créatures proches, infligeant des <strong>dégâts d'air</strong>.</span></p>"
+    },
+    "Whirlpool": {
+      "name": "Tourbillon",
+      "Description": "<p>Après avoir terminé votre @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canalisation}, vous créez un grand vortex tourbillonnant de vagues déchaînées qui attire vos ennemis dans un tourbillon violent. Ils subiront des <strong>dégâts de glace mineurs</strong> et seront pris dans les eaux déchaînées. Cela durera jusqu'à la <strong>fin du prochain round</strong>.</p><p>Au début de leur tour, ils doivent réussir un test @CHECK[dex ins easy] pour s'échapper du tourbillon et pouvoir agir. S'ils échouent, ils resteront pris dedans jusqu'à sa conclusion.</p><ul><li><p><strong>Vous :</strong> @LOSS[40 mp]</p></li><li><p><strong>Cibles :</strong>@DMG[&amp;step(15,20,25) ice]</p></li></ul>"
+    }
+  }
+}

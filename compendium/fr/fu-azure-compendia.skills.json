@@ -1,0 +1,618 @@
+{
+  "label": "Compétences",
+  "mapping": {
+    "Description": "system.description"
+  },
+  "folders": {
+    "Defense": "Défense",
+    "Limited": "Limité",
+    "Control": "Contrôle",
+    "Elemental": "Élémentaire",
+    "Technique": "Technique",
+    "Setup": "Préparation",
+    "Complex": "Complexe",
+    "Unique": "Unique",
+    "Aura": "Aura",
+    "Traps": "Pièges",
+    "Melee": "Corps à corps",
+    "Combo": "Combo",
+    "Attack": "Attaque",
+    "Ranged": "Distance",
+    "Family": "Famille",
+    "Hazards": "Dangers",
+    "Environment": "Environnement",
+    "Card": "Carte",
+    "Reactions": "Réactions",
+    "Recovery": "Récupération",
+    "Support": "Soutien",
+    "Talents": "Talents",
+    "Movement": "Mouvement",
+    "Special": "Spécial",
+    "Actions": "Actions",
+    "Attributes": "Attributs",
+    "Crisis": "Crise",
+    "Ultima": "Ultima",
+    "Villain": "Méchant",
+    "Initiative": "Initiative"
+  },
+  "entries": {
+    "zFaJV3xgrAC2SMJy": {
+      "name": "Absorption de vie",
+      "Description": "<p>À la <strong>fin du round</strong>, vous drainez la vie de chaque créature que vous avez @UUID[Compendium.fu-azure-compendia.effects.1Pxb0pniA44cr60T]{Agrippé}.</p><ul><li><p><strong>Agrippé</strong>: @LOSS[$minor hp]</p></li><li><p><strong>Vous</strong>: @GAIN[$minor hp]</p></li></ul>"
+    },
+    "Bihtv3sk80nGKAsc": {
+      "name": "Précis"
+    },
+    "I9m65KFqmSV9vOpG": {
+      "name": "Adhésif",
+      "Description": "<p>Quand vous êtes touché par une attaque de corps à corps d'un attaquant qui souffre de @EFFECT[slow], il devient @UUID[Compendium.fu-azure-compendia.effects.1Pxb0pniA44cr60T]{Agrippé}.</p>"
+    },
+    "Pz9RtRHA5zMS7uIZ": {
+      "name": "Adopter une posture",
+      "Description": "<p>À la fin de votre tour, vous pouvez adopter une <strong>posture spécifique</strong> avec un <strong>signe visible</strong> alors que vous vous préparez à déchaîner une technique puissante à votre prochain tour.</p>"
+    },
+    "wS4Y8xxByaGDbgbU": {
+      "name": "Cocktail d'adrénaline",
+      "Description": "<p>Vous ranimez un allié qui a été vaincu avec un cocktail revigorant de substances douteuses.</p><ul><li><p><strong>Allié</strong>: Restauré à la moitié de ses points de vie.</p></li><li><p><strong>Vous</strong>: -1 Charge</p></li></ul>"
+    },
+    "Ws6d4L9JBi6CBwuM": {
+      "name": "Attaquant agile",
+      "Description": "<p>Chaque fois que vous <strong>touchez une cible</strong> avec l'une de vos attaques et que le résultat du test de précision est un <strong>nombre pair</strong>, vous ne <strong>provoquez aucune réaction</strong>.</p>"
+    },
+    "l3RyQZICZghL9dV0": {
+      "name": "Allié",
+      "Description": "<p>Vous êtes un <strong>allié</strong> du groupe et <strong>agissez</strong> <strong>différemment</strong> des autres personnages dans un conflit.</p><ul><li><p>Vous <strong>ne pouvez pas</strong> prendre de tours.</p></li><li><p>Vous ne pouvez effectuer qu'une <strong>action spéciale</strong> chaque round.</p></li><li><p>Vous ne devez <strong>pas être considéré</strong> comme une cible potentielle par le groupe ou par les ennemis.</p></li></ul>"
+    },
+    "asNwlnB8obVl07T1": {
+      "name": "Frappe alpha",
+      "Description": "<p>Au début d'un Conflit, vous effectuez immédiatement une <strong>attaque gratuite VH0</strong> contre l'un de vos adversaires.</p>"
+    },
+    "D5cR3PYpj3WjfpFC": {
+      "name": "Objet animé",
+      "Description": "<p>Vous avez reçu un semblant de vie grâce à l'utilisation de rituels ou d'autres magies étranges. Ce qui vous anime peut être temporairement perturbé par un <strong>test normal [INT + VOL]</strong> approprié. En cas de réussite, vous êtes considéré comme vaincu.</p><p></p>"
+    },
+    "nLeUXuQV4cEYEa6w": {
+      "name": "Torrent arcanique",
+      "Description": "<p>Lorsque vous entrez en <strong>Crise</strong> pour la première fois dans un conflit, vous déchaînez une violente explosion d'énergie magique. Elle retire 1 effet bénéfique de votre attaquant et vous restaure @GAIN[10 mp].</p>"
+    },
+    "41l00gZWSTWpCUI6": {
+      "name": "Assassinat",
+      "Description": "<p>À la <strong>fin du round</strong>, choisissez un ennemi de <strong>rang soldat</strong> en <strong>Crise</strong>. Il est <strong>immédiatement réduit à 0 Points de Vie</strong>.</p><p><em>Ceci ne peut se déclencher qu'une fois par conflit.</em></p>"
+    },
+    "OWipG0O7sPljN6VM": {
+      "name": "Aura de désespoir",
+      "Description": "<p>Les créatures vivantes dans la scène sont @EFFECT[shaken]. Cet effet est retiré lorsque vous êtes vaincu.</p>"
+    },
+    "F9gSPyo7D1YXuRtl": {
+      "name": "Aura de malchance",
+      "Description": "<p>Les créatures vivantes dans la scène doivent <strong>lancer deux fois</strong> leurs tests de précision et <strong>prendre le résultat le plus bas.</strong></p>"
+    },
+    "CrzPBwQcEhXISzD0": {
+      "name": "Cri de guerre",
+      "Description": "<p>Au <strong>début du round</strong> le <strong>groupe</strong> gagne @UUID[Compendium.fu-azure-compendia.effects.q8VBAZTtL8SdLUCs]{Force}</p><p><em>Ceci ne peut se déclencher qu'un round sur deux.</em></p>"
+    },
+    "871vVzsbElUZSSnP": {
+      "name": "Berserk",
+      "Description": "<p>Lorsque vous entrez en <strong>Crise</strong> pour la première fois dans un conflit, vous perdez votre raison et entrez dans une rage folle. Vous devenez @UUID[Compendium.fu-azure-compendia.effects.5SBUP9DO404L0fFB]{Berserk}.</p>"
+    },
+    "uFBsYxFfQRjVVj3B": {
+      "name": "Grosse bombe",
+      "Description": "<p>Vous ciblez un ennemi incapacité souffrant de @UUID[Compendium.fu-azure-compendia.effects.Fm8mJMBKwf0CylMc]{À terre} ou @UUID[Compendium.fu-azure-compendia.effects.2CdYy1zLjc6uOIPC]{Étourdi} en lâchant une puissante bombe sur lui, infligeant des dégâts de feu.</p><ul><li><p><strong>Cible</strong>: @DMG[&amp;step(15,20,25) fire]</p></li></ul>"
+    },
+    "4n2IBhH9VJFTEmDE": {
+      "name": "Lumières vives",
+      "Description": "<p>Vous tirez un puissant rayon de lumière sur vos ennemis.</p><ul><li><p><strong>Ennemis</strong>: @DMG[&amp;step(20,25,30) light] sur un échec au test @CHECK[dex ins normal].</p></li></ul>"
+    },
+    "RMk2ygyQv75a9emt": {
+      "name": "Enfouissement",
+      "Description": "<p>Vous vous enfouissez dans le sol et ne pouvez pas être ciblé normalement jusqu'au début de votre prochain tour. Cependant, vous gagnez @EFFECT[eyJuYW1lIjoiRWFydGggVnVsbmVyYWJpbGl0eSIsImNoYW5nZXMiOlt7ImtleSI6InN5c3RlbS5hZmZpbml0aWVzLmVhcnRoIiwibW9kZSI6MCwidmFsdWUiOiJkb3duZ3JhZGUifV0sImljb24iOiJpY29ucy9tYWdpYy9lYXJ0aC9leHBsb3Npb24tbGF2YS1zdG9uZS15ZWxsb3cud2VicCJ9] et pouvez être ciblé par les sorts qui infligent des <strong>dégâts de terre.</strong></p><p>Au <strong>début de votre prochain tour</strong> vous obtenez une <strong>attaque gratuite</strong> contre une cible de votre choix.</p>"
+    },
+    "Z5QRE44m4ulQmh14": {
+      "name": "Incantation",
+      "Description": "<p>Vous commencez à @UUID[Compendium.fu-azure-compendia.effects.NhgTuHJUOKcnbY5t]{Incanter} un sort particulièrement puissant.</p>"
+    },
+    "mDn9aHU99h9GKna2": {
+      "name": "Défi",
+      "Description": "<p>Par l'esprit ou la force, vous provoquez la cible. Vous effectuez une <strong>attaque VH0 sur la cible</strong>. Si elle touche, la cible est <strong>provoquée</strong> jusqu'au début de votre prochain tour. Si elle attaque quelqu'un d'autre que vous, elle subit une <strong>pénalité à son test de précision</strong>.</p><ul><li><p><strong>Cible</strong>: @UUID[Compendium.fu-azure-compendia.effects.Item.jrftu34Y8P6ATh5F]{Provoqué}</p></li></ul>"
+    },
+    "ouwEYQDpWD9KsI9I": {
+      "name": "Canalisation",
+      "Description": "<p>Vous commencez à @UUID[Compendium.fu-azure-compendia.effects.LOyDXg3cySJFVbK4]{Canaliser} vos énergies magiques, pour les libérer dans une puissante action à la <strong>fin du prochain round</strong>.</p>"
+    },
+    "EKq8hotv2MzyZMPb": {
+      "name": "Charge",
+      "Description": "<p>Vous rassemblez vos forces, @UUID[Compendium.fu-azure-compendia.effects.NX682xL02ccgm206]{Chargeant} pour une action puissante qui sera libérée <strong>à</strong> <strong>votre prochain tour.</strong></p>"
+    },
+    "1ISTlygCBp5wselZ": {
+      "name": "Charme",
+      "Description": "<p>Après qu'un ennemi vous <strong>touche avec une attaque de corps à corps ou à distance</strong>, vous tentez de charmer ses sens et de rediriger son attaque sur l'un de ses alliés avec un test @CHECK[ins wlp hard].</p><p><em>Ceci ne peut se déclencher qu'une fois par round.</em></p>"
+    },
+    "Mn6WcmWK3s04e79f": {
+      "name": "Dégager un passage",
+      "Description": ""
+    },
+    "oxIWQWrhFjKHtv33": {
+      "name": "Mécanique",
+      "Description": "<p>Vous êtes <strong>mécanique</strong>, un membre d'un type de machines complexes et sophistiquées qui sont <strong>construites</strong> avec soin par des ingénieurs hautement qualifiés. Bien que leur création implique une certaine magie, ils sont <strong>principalement mécaniques</strong>, remplis d'engrenages et de ressorts de précision fonctionnant de concert.</p>"
+    },
+    "wWiL8wr1J6TdwOPS": {
+      "name": "Murs qui se referment",
+      "Description": "<p>Les murs commencent soudainement à se refermer autour du groupe, qui doit rapidement s'échapper. <strong>Chaque personnage</strong> doit faire un test @CHECK[dex ins normal] pour s'échapper à temps.</p><p>Si un personnage échoue, il doit <strong>dépenser</strong> @LOSS[1 fp] et narrer comment il a réussi à s'échapper au dernier moment. S'il le fait, il souffrira de @EFFECT[slow] et @EFFECT[shaken] jusqu'à la fin de la prochaine scène.</p>"
+    },
+    "v3LVXgPdJd2J6IXy": {
+      "name": "Frappe combinée",
+      "Description": "<p>Quand vous <strong>touchez une cible avec une attaque de corps à corps</strong> et que le <strong>résultat du test de précision est un nombre impair</strong>, vous pouvez <strong>traiter votre Valeur Haute (VH) comme 0</strong> pour infliger @UUID[Compendium.fu-azure-compendia.effects.mJeQJ9OtkLrJeE1X]{Combo} sur elle.</p>"
+    },
+    "2o64Z1pxjVMCeG7H": {
+      "name": "Présence imposante",
+      "Description": "<p>Vos alliés sont immunisés contre @EFFECT[shaken].</p>"
+    },
+    "uZuJA7gfvyozh8HH": {
+      "name": "Gaz de confusion",
+      "Description": "<p>Un gaz persistant dans la <strong>scène</strong> affecte le jugement du groupe.</p><ul><li><p><strong>Groupe :</strong> @UUID[Compendium.fu-azure-compendia.macros.Macro.TyUHoDbHcyUMxcFI]{Action aléatoire} à <strong>chaque tour.</strong></p></li></ul>"
+    },
+    "lMe0Nkm7wjKZXLdg": {
+      "name": "Constriction",
+      "Description": "<p>Vous écrasez la créature que vous avez <strong>@UUID[Compendium.fu-azure-compendia.effects.1Pxb0pniA44cr60T]{Agrippée}</strong> et infligez des dégâts physiques.</p><ul><li><p><strong>Cible</strong>: @DMG[&amp;step(15,20,25) physical]</p></li></ul>"
+    },
+    "hEYsleRTIdbVkQl5": {
+      "name": "Créature artificielle",
+      "Description": "<p>Les créatures artificielles sont des <strong>êtres artificiels</strong> animés par le pouvoir des âmes, souvent créés par des alchimistes, des mages ou des scientifiques.</p>"
+    },
+    "7U7NWUOW8ldii6Gn": {
+      "name": "Poison de contact",
+      "Description": "<p>Après avoir <strong>touché un ennemi avec une attaque ou un sort de poison</strong>, il souffre de @UUID[Compendium.fu-azure-compendia.effects.rYQkHKEB7M1LJqNc]{Poison de contact}.</p>"
+    },
+    "lRjo9KLPKauxuoqH": {
+      "name": "Contre",
+      "Description": "<p>Après qu'un ennemi vous <strong>rate avec une attaque de corps à corps</strong>, vous pouvez effectuer une <strong>attaque gratuite</strong> contre cet ennemi (après que son attaque a été entièrement résolue). Cette attaque doit être une attaque de <strong>corps à corps</strong> et ne doit avoir que cet ennemi pour cible ; traitez votre <strong>Valeur Haute (VH)</strong> comme 0 lors du calcul des dégâts infligés par cette attaque.</p><p><em>Après avoir utilisé cette compétence, vous ne pouvez plus l'utiliser jusqu'au début de votre prochain tour.</em></p>"
+    },
+    "kHFt3kzvxakKqtmJ": {
+      "name": "Contre-offensive",
+      "Description": "<p>Si vous avez effectué l'action <strong>Garde</strong> à votre tour précédent, votre prochaine attaque infligera des dégâts supplémentaires.</p><ul><li><p><strong>Cible</strong>: @DMG[&amp;step(5,10,15) physical]</p></li></ul>"
+    },
+    "NA4Qys9vcCbBDWgd": {
+      "name": "Contresort",
+      "Description": "<p>Quand un ennemi utilise l'action <strong>Sort</strong>, vous pouvez <strong>dépenser un montant égal de points de magie</strong> pour tenter un test opposé @CHECK[wlp wlp] pour compromettre le sort (<strong>avant</strong> que leur sort n'ait été entièrement résolu). Si le sort est compromis, le lanceur peut <strong>dépenser son coût à nouveau</strong> pour finir de le lancer.</p><p><em>Vous ne pouvez utiliser cette compétence qu'une fois par round.</em></p>"
+    },
+    "Ay0KK0g1VdCTlwmr": {
+      "name": "Écrasant",
+      "Description": "<p>Après avoir <strong>touché un ennemi avec un sort ou une attaque de terre,</strong> vous le faites chanceler sous le coup puissant. Il est affecté par @EFFECT[weak] jusqu'à la <strong>fin de son prochain tour</strong>.</p>"
+    },
+    "x0haRlOhUjIAY5JD": {
+      "name": "Lame maudite",
+      "Description": "<p>Votre arme peut être utilisée pour délivrer une malédiction puissante. Vous effectuez immédiatement une <strong>attaque gratuite</strong> avec une arme de <strong>corps à corps</strong> que vous avez équipée. Si elle touche, vous pouvez immédiatement lancer un <strong>Sort de type malédiction</strong> sur la même cible.</p><ul><li><p><strong>Combo</strong>: @UUID[Compendium.fu-azure-compendia.effects.Item.KMvq0kYOZnyHiSEr]{Miasme} pendant 1 tour</p></li></ul>"
+    },
+    "k1NNcFuYuqlYDOPZ": {
+      "name": "Assaut ténébreux",
+      "Description": "<p>À la <strong>fin du round</strong>, vous <strong>infligez un</strong> des effets suivants sur une <strong>seule cible choisie par le groupe</strong>.</p><ul><li><p>@EFFECT[slow]</p></li><li><p>@EFFECT[weak]</p></li><li><p>@EFFECT[shaken]</p></li><li><p>@EFFECT[dazed]</p></li></ul>"
+    },
+    "f9JAKA68xADe08hN": {
+      "name": "Gaz mortel",
+      "Description": "<p>Un gaz toxique remplit la <strong>scène</strong>. Tous les personnages du groupe qui ont besoin de <strong>respirer</strong> subissent ce qui suit :</p><ul><li><p><strong>Groupe :</strong> @DMG[&amp;step(5,7,10) poison] au <strong>début de chaque round.</strong></p></li></ul>"
+    },
+    "KzALz6C6LL53CiBz": {
+      "name": "Frappe handicapante",
+      "Description": "<p>Quand vous <strong>touchez une cible avec une attaque de corps à corps</strong> et que le <strong>résultat du test de précision est un nombre impair</strong>, vous pouvez <strong>traiter votre Valeur Haute (VH) comme 0</strong> pour infliger @EFFECT[weak] sur elle.</p>"
+    },
+    "nIXw27J6M5BXYcTx": {
+      "name": "Défense",
+      "Description": "<p>Au début d'un Conflit, vous gagnez @UUID[Compendium.fu-azure-compendia.effects.13ubm3WjQ8Xuc63Q]{Blocage}.</p>"
+    },
+    "ApsS2mBzUf5N6DSI": {
+      "name": "Mesures désespérées",
+      "Description": "<p>Lorsque vous entrez en <strong>Crise</strong> pour la première fois dans un conflit, vous pouvez immédiatement effectuer l'une de vos actions, même si vous ne remplissez pas les prérequis pour celle-ci.</p>"
+    },
+    "lScwb7A2maf1mewy": {
+      "name": "Détonation",
+      "Description": "<p>Quand vous êtes réduit à 0 points de vie, vous explosez infligeant des <strong>dégâts élémentaires mineurs</strong> à toutes les autres créatures de la scène <strong>sauf si elles étaient vulnérables aux dégâts</strong>.</p><ul><li><p><strong>Cibles</strong>: @DMG[$minor fire]</p></li></ul>"
+    },
+    "vZNnmLqBoHrxAymG": {
+      "name": "Corps de diamant",
+      "Description": "<p>Tant que <strong>vous ne souffrez</strong> d'aucun effet d'état, vous ne subissez <strong>aucun dégât</strong>.</p>"
+    },
+    "8qFHB2T6MbGP8P5T": {
+      "name": "Désarmer",
+      "Description": "<p>Quand vous <strong>touchez une cible</strong> avec une <strong>attaque de corps à corps</strong> et que le <strong>résultat du test de précision était un nombre impair</strong>, vous pouvez tenter de la désarmer en faisant un test opposé <strong>@CHECK[dex ins]</strong>. Si vous réussissez, elle laisse tomber son arme et devra utiliser l'action <strong>Équipement</strong> pour équiper à nouveau son arme.</p>"
+    },
+    "gt0UlqE2x5ZG4CtO": {
+      "name": "Agent dissolvant",
+      "Description": "<p>Quand vous <strong>touchez une cible avec une attaque de corps à corps</strong> et que le <strong>résultat du test de précision est un nombre impair</strong>, elle perd @LOSS[1 ip].</p>"
+    },
+    "xciaraORMCahWgmB": {
+      "name": "Frappe désorientante",
+      "Description": "<p>Quand vous <strong>touchez une cible avec une attaque de corps à corps</strong> et que le <strong>résultat du test de précision est un nombre impair</strong>, vous pouvez <strong>traiter votre Valeur Haute (VH) comme 0</strong> pour infliger @EFFECT[dazed] sur elle.</p>"
+    },
+    "UR1neFyBrxmpcJD7": {
+      "name": "Frappe dissipante",
+      "Description": "<p>Quand vous <strong>touchez une cible</strong> avec une <strong>attaque</strong> et que le résultat du <strong>test de précision était un nombre impair</strong>, vous pouvez traiter votre <strong>Valeur Haute (VH) comme 0</strong> pour retirer <strong>un seul sort</strong> avec une <strong>durée de Scène</strong> de la cible.</p>"
+    },
+    "vna6FeIG7GxNPHpf": {
+      "name": "Souffle du dragon",
+      "Description": "<p>Vous soufflez une explosion de votre élément sur vos ennemis, infligeant de <strong>lourds dégâts élémentaires</strong> à moins qu'ils ne réussissent un test @CHECK[dex ins hard]<strong>.</strong> Une fois l'action terminée, son cadran est réinitialisé et ne peut plus être utilisé tant qu'il n'a pas été rempli à nouveau. Il <strong>avance :</strong></p><ul><li><p><strong>Une section</strong> au début de votre tour.</p></li><li><p><strong>Une section</strong> quand l'un de vos tests est un succès critique.</p></li></ul>"
+    },
+    "zKpvEeLb7IFAEfAo": {
+      "name": "Piocher une carte",
+      "Description": "<p>Vous piochez une carte de votre deck et l'ajoutez à votre main. @UUID[Compendium.fu-azure-compendia.macros.Macro.xbUmSEfMqTdWqOTl]{Piocher une carte}</p>"
+    },
+    "HTgOgZvPUu9EXset": {
+      "name": "Arc électrique",
+      "Description": "<p>Après avoir <strong>touché un ennemi avec une attaque ou un sort de foudre,</strong> vous pouvez infliger des dégâts de foudre à une <strong>cible supplémentaire</strong>.</p><ul><li><p><strong>Cible supplémentaire</strong>: @DMG[&amp;step(5,10,15) bolt]</p></li></ul>"
+    },
+    "gwsyTms7CcG6TUVo": {
+      "name": "Aura élémentaire",
+      "Description": "<p>Au <strong>début de chaque round,</strong> tous vos ennemis subissent des dégâts élémentaires.</p><ul><li><p><strong>Ennemis : </strong>@DMG[&amp;step(3,5,7) untyped]</p></li></ul>"
+    },
+    "IK001I9hEpPEGz5N": {
+      "name": "Corps élémentaire",
+      "Description": "<p>Votre corps émet des quantités dangereuses d'énergie élémentaire. Quand vous êtes <strong>touché par une attaque de corps à corps</strong>, l'attaquant subit des dégâts élémentaires.</p><ul><li><p><strong>Attaquant</strong>: @DMG[&amp;step(5,10,15) fire]</p></li></ul>"
+    },
+    "lvHoHpQY0llObGN4": {
+      "name": "Drain élémentaire",
+      "Description": "<p>Quand vous subissez des dégâts qui ne sont <strong>pas physiques ou de poison,</strong> vous récupérez une <strong>quantité mineure de points de magie</strong>.</p><ul><li><p><strong>Vous</strong>: @GAIN[$minor mp]</p></li></ul>"
+    },
+    "3oF1OjAFqMM3i6Q2": {
+      "name": "Zone élémentaire",
+      "Description": "<p>Toutes les créatures dans la <strong>scène</strong> reçoivent une <strong>vulnérabilité</strong> à un élément spécifique.</p><ul><li><p><strong>Scène :</strong> @UUID[Compendium.projectfu.actor-effects.dAFACJSQzCbcU9We]{Vulnérabilité au feu} @UUID[Compendium.projectfu.actor-effects.BVOW692emrw4yxR0]{Vulnérabilité à la glace} @UUID[Compendium.projectfu.actor-effects.aI4tsuVswH5gfGab]{Vulnérabilité à l'air} @UUID[Compendium.projectfu.actor-effects.MRNCMGIcZStGVV9J]{Vulnérabilité à la foudre} @UUID[Compendium.projectfu.actor-effects.YpXM5ClzMzIcwCgd]{Vulnérabilité à la terre}</p></li></ul>"
+    },
+    "GtpHfPd0ytAdgtKK": {
+      "name": "Elfe",
+      "Description": ""
+    },
+    "2JQ9rYFuKQvXpTkP": {
+      "name": "Soin d'urgence",
+      "Description": "<p>Après qu'un ennemi <strong>blesse un allié</strong> et qu'il se retrouve <strong>en Crise</strong>, vous pouvez effectuer un sort de soin d'urgence sur lui.</p><ul><li><p><strong>Vous</strong>: @LOSS[5 mp]</p></li><li><p><strong>Cible</strong>: @HEAL[$minor+5 hp]</p></li></ul><p><em>Après avoir utilisé cette compétence, vous ne pouvez plus l'utiliser jusqu'au début de votre prochain tour.</em></p>"
+    },
+    "W5NgxklOSSM8mkQi": {
+      "name": "Esprit vide",
+      "Description": "<p>Vous êtes immunisé contre @EFFECT[dazed] et @EFFECT[enraged] et @EFFECT[shaken].</p>"
+    },
+    "khLY6gLw4VOjYFUS": {
+      "name": "Enchanter une arme",
+      "Description": "<p>À la fin du round, vous enchantez l'arme d'un de vos alliés avec l'un des éléments suivants : <strong>air, foudre, terre, feu ou glace</strong>.</p><p><em>Après avoir utilisé cette compétence, vous ne pouvez plus l'utiliser jusqu'au début de votre prochain tour.</em></p>"
+    },
+    "DPJbh3y1C3GLLXr8": {
+      "name": "Engagement",
+      "Description": "<p>Vous vous rapprochez de la cible en effectuant une <strong>attaque de corps à corps VH0</strong>, concentrant votre attention sur elle jusqu'à ce que vous changiez de cible ou que le round se termine.</p><ul><li><p><strong>Cible :</strong> @UUID[Compendium.fu-azure-compendia.effects.Item.PkJXIizP4xIv9RfY]{Engagé}</p></li></ul>"
+    },
+    "hJ9pA5E4Wc2FUtsN": {
+      "name": "Enragé",
+      "Description": "<p>Tant que vous êtes en Crise, vos <strong>attaques</strong> et <strong>sorts</strong> infligent des dégâts supplémentaires.</p>"
+    },
+    "MfmNjR8II4F88YGS": {
+      "name": "Évasion",
+      "Description": "<p>Quand vous êtes <strong>réduit à 0 PV,</strong> vous pouvez <strong>dépenser 1 Point Ultima</strong> pour disparaître en sécurité de la scène.</p>"
+    },
+    "UWyMYBrbzdbrUuZ5": {
+      "name": "Esquive",
+      "Description": "<p>Vous <strong>esquivez automatiquement une attaque ou un sort</strong> qui vous cible. Cependant, si le résultat du <strong>test de précision</strong> était <strong>un succès critique</strong>, l'attaquant peut utiliser son <strong>aubaine</strong> pour ignorer cet effet.</p><p><em>Ceci ne peut se déclencher qu'une fois par round, sur la première attaque.</em></p>"
+    },
+    "wEEnut5Q90ukV91M": {
+      "name": "Bourreau",
+      "Description": "<p>Vous infligez des <strong>dégâts supplémentaires</strong> avec vos attaques contre les cibles qui <strong>sont en crise.</strong></p><ul><li><p><strong>Cible :</strong> @DMG[&amp;step(5,10,15) untyped]</p></li></ul>"
+    },
+    "QjZIsgnlMW9uqYKy": {
+      "name": "Expulser le poison",
+      "Description": "<p>Quand vous êtes <strong>touché par une attaque de corps à corps,</strong> l'attaquant subit des <strong>dégâts de poison</strong>.</p><ul><li><p><strong>Attaquant</strong>: @DMG[&amp;step(5,10,15) poison]</p></li></ul>"
+    },
+    "qqu9UwDBGf4Tg4Qq": {
+      "name": "Exposer la vulnérabilité",
+      "Description": "<p>Quand vous touchez une cible au corps à corps, elle devient <strong>vulnérable</strong> à votre élément principal jusqu'à la <strong>fin de votre prochain tour.</strong></p>"
+    },
+    "y1MmGM3E7X8sNFa0": {
+      "name": "Exposer la faiblesse",
+      "Description": "<p>Au <strong>début du round</strong>, un de vos ennemis souffre de @UUID[Compendium.projectfu.actor-effects.6JCfyn7Ewt0AJndC]{Vulnérabilité physique}</p>"
+    },
+    "2RBWZKmWq6o4nsUB": {
+      "name": "Feinte",
+      "Description": "<p>Quand un allié est sur le point de faire une <strong>attaque de corps à corps</strong>, vous tirez un coup pour attirer leur attention. L'allié déclencheur gagne @UUID[Compendium.fu-azure-compendia.effects.Uw1tWLyDpdw06ONL]{Aide} pour sa prochaine attaque.</p><p><em>Après avoir utilisé cette compétence, vous ne pouvez plus l'utiliser jusqu'au début de votre prochain tour.</em></p>"
+    },
+    "0hPccvz0ezOLFrBF": {
+      "name": "Style des feuilles tombantes",
+      "Description": "<p>À la <strong>fin du round</strong>, vous instruisez le <strong>groupe</strong> dans une formation contre-défensive.</p><ul><li><p><strong>Groupe</strong>: @UUID[Compendium.fu-azure-compendia.effects.x1tLaaRsBa4Ag1cZ]{Riposte}.</p></li></ul><p><em>Les personnages avec @UUID[Compendium.projectfu.skills.XhcTVGtGEk7L2Ddq]{Contre-attaque} ne gagnent pas cet effet.</em></p>"
+    },
+    "m5iwhBlsjXJdWnzY": {
+      "name": "Rocher qui tombe",
+      "Description": "<p><strong>Un personnage</strong> dans la scène où le piège a été déclenché doit faire un test @CHECK[dex ins easy] ou subir @DMG[&amp;step(20,25,30) physical] dégâts.</p>"
+    },
+    "QFZ7XwCHSF24h4YT": {
+      "name": "Faux trésor",
+      "Description": "<p>Le groupe trouve un trésor... sauf que c'est une illusion et l'objet lui-même est piégé !</p><p><strong>Un</strong> de vos personnages va tenter de le ramasser. Le <strong>même personnage ou un autre</strong> peut tenter un test @CHECK[ins ins normal] pour repérer le piège, sinon le personnage subira @DMG[minor poison] dégâts et @EFFECT[poisoned]</p>"
+    },
+    "d9ctw1yGurxUsY04": {
+      "name": "Chute fatale",
+      "Description": "<p>Pendant que vous êtes @EFFECT[flying] et que vous avez une créature agrippée, vous montez encore plus haut dans les airs avant de finalement lâcher la créature pour qu'elle tombe au sol et subisse de <strong>lourds dégâts physiques</strong>.</p><ul><li><p><strong>Cible</strong>: @DMG[&amp;step(20,30,40) physical]</p></li></ul>"
+    },
+    "ise2SOeIPCdk5eQX": {
+      "name": "Feinte",
+      "Description": "<p>Quand vous faites une <strong>attaque de corps à corps</strong> et qu'elle <strong>rate</strong> alors que le résultat du test de précision était un <strong>nombre impair</strong>, vous pouvez faire une attaque gratuite <strong>avec une arme différente</strong> contre la même cible en traitant votre <strong>Valeur Haute (VH)</strong> comme 0 lors du calcul des dégâts infligés par l'attaque.</p>"
+    },
+    "GBmHmanLKsOyiYC0": {
+      "name": "Férocité",
+      "Description": "<p>Quand vous êtes <strong>réduit</strong> <strong>à 0 PV</strong> pour la <strong>première fois</strong> dans un conflit, vous résistez à la défaite et restez à la place à <strong>1 PV.</strong></p>"
+    },
+    "VQI4W5NWBL3HmZEq": {
+      "name": "Art final",
+      "Description": "<p>Quand vous êtes réduit à 0 PV, vous pouvez immédiatement effectuer une de vos <strong>attaques</strong>, <strong>actions</strong> ou <strong>sorts</strong>.</p>"
+    },
+    "o0UZGHg5axRsPucR": {
+      "name": "Coup de grâce",
+      "Description": "<p>Vous portez un coup final à une cible. Vous effectuez immédiatement une <strong>attaque gratuite</strong> qui inflige des dégâts bonus si la cible est affectée par <strong>combo</strong>.</p><ul><li><p><strong>Combo</strong>: @DMG[&amp;step(10,15,20) physical]</p></li></ul>"
+    },
+    "dpkEBkwJXriAYbhm": {
+      "name": "Premiers soins",
+      "Description": "<p>Vous effectuez un traitement de champ de bataille sur un allié.</p><ul><li><p><strong>Allié : </strong>@HEAL[&amp;heavy+5 hp]</p></li><li><p><strong>Vous</strong>: -1 Charge</p></li></ul>"
+    },
+    "knpB0AIbXPMdS0tl": {
+      "name": "Flammes",
+      "Description": "<p>La <strong>scène</strong> est envahie de fumée et de feu brûlants.</p><ul><li><p><strong>Groupe :</strong> @DMG[&amp;step(3,5,7) fire] au <strong>début de chaque round</strong>.</p></li></ul>"
+    },
+    "kyQeNw53C3TFO7hE": {
+      "name": "Frappe éclair",
+      "Description": "<p>Vous augmentez grandement votre vitesse avec la foudre alors que vous vous déplacez rapidement sur le champ de bataille en frappant vos ennemis. Effectuez <strong>deux attaques gratuites</strong> contre des cibles différentes qui infligent des <strong>dégâts de foudre</strong> à la place.</p><ul><li><p><strong>Ennemis</strong>: @UUID[Compendium.fu-azure-compendia.effects.ypvTV9uyc7R6LPA4]{Électrifié}</p></li><li><p><strong>Vous</strong>: @LOSS[20 mp]</p></li></ul>"
+    },
+    "EXYfUpnnyaXwGVNa": {
+      "name": "Fuite",
+      "Description": "<p>Vous vous préparez à <strong>fuir la scène</strong>. À la <strong>fin du prochain round</strong>, vous vous échapperez de la scène.</p>"
+    },
+    "om9rejk6giu9J8Yw": {
+      "name": "Trappe au sol",
+      "Description": "<p>Une trappe secrète dans le sol s'ouvre sous l'un des personnages ! Il doit faire un test @CHECK[dex ins hard] ou être <strong>porté disparu</strong> jusqu'à la fin de la prochaine scène. À son retour, il doit <strong>narrer</strong> comment il a réussi à revenir et ce qu'il a vu.</p>"
+    },
+    "4rDjH2HTmgPNmigz": {
+      "name": "Piques au sol",
+      "Description": "<p><strong>Trois personnages</strong> dans la scène où le piège a été déclenché doivent faire un test @CHECK[dex ins easy] ou subir @DMG[&amp;step(15,20,25) physical] dégâts et @EFFECT[weak]</p>"
+    },
+    "6tuR4ZUTFJyY6qAM": {
+      "name": "Rafale",
+      "Description": "<p>Une de vos attaques gagne la propriété <strong>multi (2)</strong>.</p>"
+    },
+    "fQUtLJk5vnZ1kE8U": {
+      "name": "Vol",
+      "Description": "<p>Vous gagnez les avantages de @UUID[Compendium.fu-azure-compendia.effects.TaI0WVX1BfRa95iA]{Vol}</p>"
+    },
+    "FFJ4k0iZvhg3W6lN": {
+      "name": "Tir concentré",
+      "Description": "<p>Au <strong>début d'un conflit,</strong> vous ordonnez à tous vos alliés de <strong>concentrer leur attention sur une seule cible</strong> et lui infligez @UUID[Compendium.projectfu.actor-effects.6JCfyn7Ewt0AJndC]{Vulnérabilité physique}.</p>"
+    },
+    "7zF5YWHed6WfZ5l7": {
+      "name": "Concentré",
+      "Description": "<p>Tant que vous êtes en <strong>Crise</strong>, vous gagnez un bonus de +3 à tous les tests.</p>"
+    },
+    "21IPglmSFq2TtVdz": {
+      "name": "Enchaînement",
+      "Description": "<p>Votre <strong>deuxième coup consécutif</strong> sur une cible <strong>depuis le round précédent</strong> inflige des dégâts supplémentaires.</p><ul><li><p><strong>Cible :</strong> @DMG[&amp;step(5,10,15) physical]</p></li></ul>"
+    },
+    "ct8bwyp3VeqynXo9": {
+      "name": "Gel",
+      "Description": "<p>Après avoir <strong>touché un ennemi avec un sort ou une attaque de glace,</strong> vous le ralentissez alors que sa température corporelle chute. Il est affecté par @UUID[Compendium.fu-azure-compendia.effects.zqmBtaCGTo9DVmyR]{Engelure} jusqu'à la <strong>fin de son prochain tour</strong>.</p>"
+    },
+    "0XcjJjfyVVnf3J00": {
+      "name": "Frénésie",
+      "Description": "<p>Tant que vous êtes en <strong>Crise</strong>, une ou plusieurs de vos attaques gagnent <strong>multi (2).</strong></p>"
+    },
+    "7aPMb3RoF8i7DtTd": {
+      "name": "Rencontre sous contrôle total",
+      "Description": "<p>En soutenant le groupe dans un conflit, vous augmentez les capacités de chacun à leur maximum grâce à vos prévisions tactiques dans le futur. À la <strong>fin de chaque round</strong>, vous effectuez <strong>une</strong> des actions suivantes pour le groupe, en fonction de l'état actuel.</p><table><tbody><tr><td data-colwidth=\"306\"><p><strong>Condition</strong></p></td><td><p><strong>Action</strong></p></td></tr><tr><td data-colwidth=\"306\"><p>Un allié est en Crise</p></td><td><p>L'allié gagne @UUID[Compendium.fu-azure-compendia.effects.13ubm3WjQ8Xuc63Q]{Blocage}</p></td></tr><tr><td data-colwidth=\"306\"><p>Un ennemi entre en Crise pour la première fois</p></td><td><p>Tous les alliés gagnent @UUID[Compendium.fu-azure-compendia.effects.TpmhsH2JmpcsZspZ]{Continuation}</p></td></tr><tr><td data-colwidth=\"306\"><p>Le sort d'un allié a été résisté</p></td><td><p>L'allié gagne @UUID[Compendium.fu-azure-compendia.effects.NnHWJN7xdmMV09yU]{Incantation écrasante}</p></td></tr><tr><td data-colwidth=\"306\"><p></p></td><td><p>Un allié aléatoire gagne @UUID[Compendium.fu-azure-compendia.effects.TpmhsH2JmpcsZspZ]{Continuation}</p></td></tr></tbody></table>"
+    },
+    "JHq5TFU0M4QSEhLo": {
+      "name": "Se regrouper",
+      "Description": "<p>Quand vous <strong>touchez une cible avec une attaque de corps à corps,</strong> vous encouragez un autre allié et lui donnez @UUID[Compendium.fu-azure-compendia.effects.q8VBAZTtL8SdLUCs]{Force}.</p>"
+    },
+    "16fG18QR087xQw9l": {
+      "name": "Agripper",
+      "Description": "<p>Quand vous touchez une cible avec une <strong>attaque de corps à corps</strong> et que le <strong>résultat du test de précision était un nombre pair</strong>, vous pouvez traiter votre <strong>VH comme 0</strong> et <strong>l'agripper</strong>. Si elle souffre de <strong>@EFFECT[weak]</strong>, c'est automatique, sinon vous devez gagner un <strong>test opposé @CHECK[mig dex]</strong> contre la cible.</p><ul><li><p><strong>Cible : @UUID[Compendium.fu-azure-compendia.effects.Item.1Pxb0pniA44cr60T]{Agrippé}</strong></p></li></ul>"
+    },
+    "rQUgb0mk9GagM7mC": {
+      "name": "Puits gravitationnel",
+      "Description": "<p>Une profonde pulsation est ressentie dans la <strong>scène</strong> alors que la magie la remplit. Le <strong>groupe</strong> est projeté vers le plafond alors que la gravité s'inverse. Ils se retrouvent plaqués au plafond par une intense force ascendante.</p><p>Il y a un dispositif dans la <strong>scène</strong> qui peut désactiver le piège, mais le retourner ou l'atteindre sera difficile.</p><ul><li><p>Pour descendre le long d'une surface appropriée comme un mur, un personnage peut faire un test @CHECK[mig mig hard].</p></li><li><p>Pour tenter de le perturber à distance, un personnage peut faire un test @CHECK[ins wlp hard].</p></li></ul><p>À la <strong>fin de chaque round</strong>, chaque personnage doit faire un test @CHECK[mig wlp easy] ou être <strong>vaincu</strong> alors qu'il perd conscience à cause de la pression.</p>"
+    },
+    "kfwWaKyM3zktx4Bv": {
+      "name": "Barrière de groupe",
+      "Description": "<p>Tant que vous êtes présent dans la scène, vos alliés <strong>ne subissent aucun dégât</strong>.</p>"
+    },
+    "wxmBUwfZHjnVRddX": {
+      "name": "Double pistolet",
+      "Description": "<p>Vous déchaînez une pluie de balles sur votre cible. Vous effectuez <strong>deux attaques gratuites</strong> sur la même cible avec vos armes à feu équipées.</p><ul><li><p><strong>Cible</strong>: @UUID[Compendium.projectfu.conditions-effects.D9TiA8YXY75bIbNs]{Faible} si <strong>les deux</strong> attaques touchent.</p></li></ul>"
+    },
+    "trXn7HEzfCyTUV22": {
+      "name": "Combler l'écart",
+      "Description": "<p>Chaque coup consécutif contre le même adversaire inflige des dégâts supplémentaires basés sur le nombre de coups consécutifs précédents que vous avez portés contre <strong>cet adversaire</strong>.</p><p>Ce compteur est réinitialisé si vous ne touchez pas l'adversaire pendant un round.</p><ol><li><p>@DMG[5 physical]</p></li><li><p>@DMG[10 physical]</p></li><li><p>@DMG[15 physical]</p></li></ol>"
+    },
+    "DuGKllNr3fAnCIQv": {
+      "name": "Entraver",
+      "Description": "<p>Quand vous <strong>Gênez</strong> un ennemi, vous infligez aussi une <strong>quantité mineure de dégâts.</strong></p><ul><li><p><strong>Ennemi</strong>: @DMG[$minor physical]</p></li></ul>"
+    },
+    "weWHiRiTzSVx0w4r": {
+      "name": "Carapace dure",
+      "Description": "<p>Vous êtes <strong>résistant</strong> aux dégâts <strong>physiques</strong>. Quand vous entrez en <strong>Crise</strong> pour la première fois dans un conflit, vous devenez <strong>vulnérable</strong> à la place.</p>"
+    },
+    "AUFeJpPmVN19sAeF": {
+      "name": "Vague de soins",
+      "Description": "<p>À la <strong>fin du round</strong>, tous vos alliés récupèrent une quantité mineure de points de vie.</p><ul><li><p><strong>Groupe</strong>: @HEAL[$minor hp]</p></li></ul>"
+    },
+    "KFMvEIStAaGmTM7Z": {
+      "name": "Chant des héros",
+      "Description": "<p>À la <strong>fin du round</strong>, un de vos alliés gagne un des effets suivants. Cet allié <strong>ne peut pas gagner cet effet à nouveau jusqu'à ce que</strong> tous les autres alliés aient aussi gagné un effet lors des rounds suivants.</p><p>@EFFECT[wlp-up] @EFFECT[dex-up] @EFFECT[ins-up] @EFFECT[mig-up]</p><p></p>"
+    },
+    "9odfCxtQtwOjnwYq": {
+      "name": "Enflammer",
+      "Description": "<p>Après avoir <strong>touché un ennemi avec une attaque ou un sort de feu,</strong> il est @UUID[Compendium.fu-azure-compendia.effects.OYh5Swp0087I3f0k]{En feu} pendant 1 round.</p>"
+    },
+    "tCJEv6mdsl62mTsi": {
+      "name": "Mauvais caractère",
+      "Description": "<p>Tant que vous êtes en <strong>Crise</strong>, vous êtes immunisé à tous les effets d'état sauf @EFFECT[enraged].</p>"
+    },
+    "QkRmse4QB3u58ns8": {
+      "name": "Frappe entravante",
+      "Description": "<p>Quand vous <strong>touchez une cible avec une attaque de corps à corps</strong> et que le <strong>résultat du test de précision est un nombre impair</strong>, vous pouvez <strong>traiter votre Valeur Haute (VH)</strong> comme 0 pour infliger @EFFECT[slow] sur elle.</p>"
+    },
+    "4iT7No3ENLk94pbp": {
+      "name": "Interrompre",
+      "Description": "<p>Quand un ennemi utilise l'action <strong>Sort</strong> ou <strong>Objet</strong>, vous pouvez effectuer une <strong>attaque gratuite</strong> contre cet ennemi (<strong>avant</strong> que leur sort n'ait été entièrement résolu). Cette attaque doit être une attaque de <strong>corps à corps</strong> et ne doit avoir que cet ennemi pour cible ; traitez votre <strong>Valeur Haute (VH)</strong> comme 0 lors du calcul des dégâts infligés par cette attaque.</p><p>Si l'attaque <strong>touche</strong> et que le résultat du test de précision était un <strong>nombre pair,</strong> vous <strong>interrompez</strong> l'action déclenchée.</p><p><em>Après avoir utilisé cette compétence, vous ne pouvez plus l'utiliser jusqu'au début de votre prochain tour.</em></p>"
+    },
+    "fHLORFjSK2gpYd1P": {
+      "name": "Invoquer un trait",
+      "Description": "<p>Après avoir effectué un Test, vous pouvez <strong>dépenser 1 Point Ultima</strong> pour invoquer un de vos Traits et <strong>relancer un ou les deux dés</strong>.</p>"
+    },
+    "XgxSmplTu1qM0Nc0": {
+      "name": "Saut",
+      "Description": "<p>Vous sautez dans les airs tout en vous préparant à déchaîner une puissante attaque.</p><ul><li><p><strong>Vous</strong>: @UUID[Compendium.fu-azure-compendia.effects.TaI0WVX1BfRa95iA]{Vol} et @UUID[Compendium.fu-azure-compendia.effects.q8VBAZTtL8SdLUCs]{Force} jusqu'à la fin de votre prochain tour.</p></li></ul>"
+    },
+    "vEvNVgPVlwfYABk2": {
+      "name": "Lancer",
+      "Description": "<p>Quand vous <strong>touchez une cible avec une attaque de corps à corps</strong> et que le <strong>résultat du test de précision était un nombre pair,</strong> vous pouvez <strong>traiter votre Valeur Haute (VH) comme 0</strong> pour la projeter dans les airs.</p><ul><li><p><strong>Cible</strong>: @UUID[Compendium.fu-azure-compendia.effects.Firc8bjg6bcDR1e1]{Projeté}</p></li></ul>"
+    },
+    "mRJ87ZMLnDVG9Lp0": {
+      "name": "Vol de vie",
+      "Description": "<p>Votre <strong>attaque de corps à corps</strong> sur une cible vous revigore, vous permettant de <strong>récupérer</strong> <strong>des points de vie mineurs</strong>.</p><ul><li><p><strong>Vous</strong>: @GAIN[$minor hp]</p></li></ul><p><em>Notez que la fréquence de cette compétence dépend de votre rang.</em></p>"
+    },
+    "9XlQeX9VJ5OfGTWJ": {
+      "name": "Duelliste magique",
+      "Description": "<p>Vous êtes un duelliste magique, un praticien qui utilise des cartes magiquement inscrites pour lancer des sorts magiques au combat. À chacun de vos tours, vous pouvez faire ce qui suit dans l'ordre :</p><ol><li><p>Vous <strong>piochez une carte</strong> de votre deck.</p></li><li><p>Vous pouvez <strong>invoquer un monstre</strong> sur le terrain, jusqu'à un <em>maximum de deux</em> sur le terrain.</p></li><li><p>Vous pouvez <strong>poser une carte piège,</strong> qui peut être activée en dehors de votre tour.</p></li><li><p>Vous pouvez <strong>jouer une carte sort</strong>.</p></li></ol>"
+    },
+    "CtSVJRUuWMVpQNXX": {
+      "name": "Mine magique",
+      "Description": "<p><strong>Un</strong> des personnages doit faire un test @CHECK[ins wlp normal] ou marcher dans un piège magique inscrit sur le sol. S'il est pris dedans, le groupe peut prendre l'une des approches suivantes :</p><ul><li><p>Le personnage piégé tente de <strong>s'enfuir</strong> avec un test @CHECK[dex ins hard].</p></li><li><p>Un autre personnage tente de <strong>désarmer</strong> le piège par des moyens magiques avec un <strong>rituel mineur individuel.</strong></p></li></ul>"
+    },
+    "QCXmofmGGV8EdGcX": {
+      "name": "Dysfonctionnement",
+      "Description": "<p>Quand vous entrez en <strong>Crise</strong> pour la première fois dans un conflit, il y a une chance qu'un mécanisme que vous possédez se brise ou commence à dysfonctionner. <strong>Lancez un d8</strong> et consultez le tableau ci-dessous pour l'<strong>effet</strong>.</p><table><tbody><tr><td data-colwidth=\"134\"><p><strong>Dé</strong></p></td><td data-colwidth=\"136\"><p><strong>Effet</strong></p></td><td><p><strong>Description</strong></p></td></tr><tr><td data-colwidth=\"134\"><p>1-2</p></td><td data-colwidth=\"136\"><p>Retour de flamme</p></td><td><p>Vous subissez @DMG[$minor fire]. Si vous avez été frappé au corps à corps, l'attaquant subit aussi ces dégâts.</p></td></tr><tr><td data-colwidth=\"134\"><p>3-4</p></td><td data-colwidth=\"136\"><p>Propulsion endommagée</p></td><td><p>Vous êtes affecté par @EFFECT[dex-down]</p></td></tr><tr><td data-colwidth=\"134\"><p>5-6</p></td><td data-colwidth=\"136\"><p>Vis desserrées</p></td><td><p>Vous êtes affecté par @EFFECT[mig-down]</p></td></tr><tr><td data-colwidth=\"134\"><p>7-8</p></td><td data-colwidth=\"136\"><p>Redémarrage</p></td><td><p>Vous êtes @UUID[Compendium.fu-azure-compendia.effects.2CdYy1zLjc6uOIPC]{Étourdi}</p></td></tr></tbody></table>"
+    },
+    "ZYTttiA7FaEHri1F": {
+      "name": "Brûlure de mana",
+      "Description": "<p>Après avoir <strong>touché un ennemi avec une attaque ou un sort des ténèbres,</strong> il souffrira de @UUID[Compendium.fu-azure-compendia.effects.KMvq0kYOZnyHiSEr]{Miasme} pendant 1 tour.</p>"
+    },
+    "nfEgnUjswIexfIJP": {
+      "name": "Marquer",
+      "Description": "<p>Vous marquez une cible pour votre <strong>prochaine action</strong>. @UUID[Compendium.fu-azure-compendia.effects.MftLJFDNhnIRDsEN]{Marqué}</p>"
+    },
+    "5ecPnLCKXAJ1EMlV": {
+      "name": "Marquer la cible",
+      "Description": "<p>À la <strong>fin du round</strong>, vous marquez une cible spécifique pour que le groupe se concentre dessus.</p><ul><li><p><strong>Cible</strong>: @UUID[Compendium.fu-azure-compendia.effects.MftLJFDNhnIRDsEN]{Marqué}</p></li><li><p><strong>Groupe</strong>: @UUID[Compendium.fu-azure-compendia.effects.TpmhsH2JmpcsZspZ]{Continuation} mais seulement contre <strong>cette cible spécifique.</strong></p></li></ul>"
+    },
+    "YewIzCycLZnjAJId": {
+      "name": "Frappe du maître",
+      "Description": "<p>Après avoir chargé votre @UUID[Compendium.fu-azure-compendia.effects.1nffZ0gn6OMwKgH5]{Cadran Ultima}, vous marquez une cible qui est actuellement en <strong>Crise</strong> pour l'exécution. <strong>À la fin du prochain round</strong>, vous effectuerez <strong>une attaque gratuite</strong> contre elle qui la <strong>réduira</strong> <strong>à 0 Points de Vie</strong> si elle est toujours en <strong>Crise</strong>, <strong>ou à 1 Point de Vie</strong> sinon.</p><ul><li><p><strong>Cible</strong>: @UUID[Compendium.fu-azure-compendia.effects.MftLJFDNhnIRDsEN]{Marqué}</p></li></ul><p><em>Vous ne pouvez utiliser ceci contre une cible qu'une fois par conflit.</em></p>"
+    },
+    "qAQZdsMCdGTXLE2E": {
+      "name": "Vol d'esprit",
+      "Description": "<p>Votre <strong>attaque de corps à corps ou à distance</strong> sur une cible vous revigore, vous permettant de <strong>récupérer</strong> <strong>des points de magie mineurs.</strong></p><ul><li><p><strong>Vous :</strong> @GAIN[$minor mp]</p></li></ul><p><em>Notez que la fréquence de cette compétence dépend de votre rang.</em></p>"
+    },
+    "LpCwZNfop9hZHx9X": {
+      "name": "Sbire",
+      "Description": "<p>Vous êtes un suivant d'une créature plus puissante et ne pouvez <strong>agir qu'une fois par round pendant l'un de leurs tours</strong>.</p>"
+    },
+    "XdGriyEEgDkvk8vs": {
+      "name": "Monologue",
+      "Description": "<p><strong>Au début d'un Conflit</strong>, vous effectuez immédiatement un monologue maléfique sur vos ennemis alors que vous tentez de briser leur volonté. Vous faites un <strong>test opposé @CHECK[wlp wlp]</strong> contre une cible de leur choix. Selon le résultat, voici ce qui se passe :</p><ul><li><p><strong>Vous gagnez.</strong> Toutes les cibles sont @EFFECT[shaken] jusqu'à ce qu'elles surmontent vos arguments. Au <strong>début de chaque round</strong>, une de vos cibles peut tenter une réplique en utilisant le <strong>même test</strong> que ci-dessus.</p></li><li><p><strong>Vous perdez.</strong> Toutes les cibles gagnent @UUID[Compendium.fu-azure-compendia.effects.hnXVEabmOmtGQtNv]{Conviction brillante} pendant 1 round</p></li></ul>"
+    },
+    "3jlN4ZMgxWyY8dxP": {
+      "name": "Frappe mortelle",
+      "Description": "<p>Vous imprégnez des énergies sombres dans votre <strong>arme de corps à corps</strong> et effectuez immédiatement une <strong>attaque gratuite</strong>.</p><ul><li><p><strong>Cible</strong>: @UUID[Compendium.fu-azure-compendia.effects.BwWOMB7HkRYf42tT]{Soins réduits}</p></li><li><p><strong>Combo</strong>: @UUID[Compendium.fu-azure-compendia.effects.uTYKEOQSIGtStvlU]{Malédiction de mortalité}</p></li></ul>"
+    },
+    "CeQDkoeK4JXCG057": {
+      "name": "Tir multiple",
+      "Description": "<p>Vous effectuez une <strong>attaque à distance</strong> contre <strong>deux cibles</strong> de votre choix.</p>"
+    },
+    "wGpNOUEjeJbcnuW7": {
+      "name": "Menaces multiples",
+      "Description": "<p>Vous pouvez facilement submerger vos ennemis grâce à votre forme physique, que ce soit en ayant plusieurs têtes ou appendices. Vous gagnez les avantages suivants :</p><ul><li><p>Quand vous n'êtes <strong>pas en Crise</strong>, vos attaques ont <strong>multi (4)</strong>.</p></li><li><p>Quand vous êtes <strong>en Crise</strong>, vos attaques ont <strong>multi (2)</strong>.</p></li></ul>"
+    },
+    "rpHlJtXtvBeUFm5x": {
+      "name": "Puissance impaire",
+      "Description": "<p><strong>Toutes les 7 fois</strong> qu'une <strong>paire de nombres impairs</strong> est obtenue pendant un conflit, vous effectuez immédiatement une <strong>attaque gratuite VH0</strong> soit sur l'<strong>ennemi qui les a obtenus</strong> soit sur la <strong>dernière cible d'un allié qui l'a fait</strong>.</p>"
+    },
+    "NkdvqTJeGIRFPsEy": {
+      "name": "Submerger",
+      "Description": "<p>Vous vous lancez dans une série d'attaques écrasantes contre une cible que vous avez @UUID[Compendium.fu-azure-compendia.effects.MftLJFDNhnIRDsEN]{Marquée}. Vous effectuez 3 <strong>attaques gratuites</strong> contre votre cible, <strong>traitant votre Valeur Haute comme 0</strong> lors du calcul des dégâts infligés par <strong>chaque attaque</strong>.</p><ul><li><p><strong>Combo</strong>: @UUID[Compendium.fu-azure-compendia.effects.Item.Fm8mJMBKwf0CylMc]{À terre}</p></li></ul>"
+    },
+    "x02fb9ZiURYx3YDP": {
+      "name": "Attaque en meute",
+      "Description": "<p>Vous infligez des dégâts supplémentaires aux cibles égaux au nombre d'alliés de votre espèce :</p><ol><li><p>@DMG[3 physical]</p></li><li><p>@DMG[5 physical]</p></li><li><p>@DMG[7 physical]</p></li></ol>"
+    },
+    "ROPnStF4pBU2I4py": {
+      "name": "Baiser passionné",
+      "Description": "<p>Vous embrassez une cible que vous avez @UUID[Compendium.fu-azure-compendia.effects.1Pxb0pniA44cr60T]{Agrippée} et, volontairement ou non, vous lui drainez son essence vitale. Elle souffre de @EFFECT[weak] et perd une <strong>quantité mineure de points de vie et de points de magie</strong>, que vous drainez.</p><table><tbody><tr><td><p>Vous</p></td><td><p>Cible</p></td></tr><tr><td><p>@GAIN[$minor hp] @GAIN[$minor mp]</p></td><td><p>@LOSS[$minor hp] @LOSS[$minor mp]</p></td></tr></tbody></table><p></p>"
+    },
+    "NsmpOTGppjAGXzhgc": {
+      "name": "Jouer une carte",
+      "Description": "<p>Vous jouez une carte de votre main.</p><ul><li><p><strong>Monstre :</strong> Vous invoquez un monstre soit en <em>Position d'Attaque</em> où il effectue immédiatement une attaque, soit en <em>Position de Défense</em> où il utilise immédiatement @EFFECT[guard] et vous donne @EFFECT[cover]. Vous ne pouvez pas subir de dégâts tant qu'il vous couvre.</p></li><li><p><strong>Piège :</strong> Vous posez une carte piège face cachée.</p></li><li><p><strong>Sort :</strong> Vous activez une carte sort de votre main.</p><p></p></li></ul>"
+    },
+    "LcIxKSCBSBvPkLy8": {
+      "name": "Flèchettes empoisonnées",
+      "Description": "<p><strong>Deux personnages</strong> dans la zone où le piège a été déclenché doivent faire un test @CHECK[dex ins normal] ou subir @DMG[&amp;step(10,15,20) poison] dégâts et @EFFECT[poisoned]</p>"
+    },
+    "UeiXaZfJegKN3T55": {
+      "name": "Marais empoisonné",
+      "Description": "<p>Que ce soit dans un marécage, un marais ou un <em>bourbier</em>, le mouvement à travers cette eau putride dans la <strong>scène</strong> est <em>lent</em> et <em>dangereux</em><strong>.</strong></p><ul><li><p><strong>Groupe : @UUID[Compendium.projectfu.conditions-effects.C7QdRx0QrJcI2po5]{Empoisonné} @UUID[Compendium.projectfu.conditions-effects.E0TVnMZHPXdeop2v]{Lent} </strong>qui<strong> ne peuvent pas</strong> être retirés tant que le groupe n'a pas quitté la <strong>scène</strong>.</p></li><li><p>La première fois qu'un personnage entre en <strong>crise</strong> alors qu'il est affecté, il peut dépenser @LOSS[1 fp] pour gagner un <strong>lien</strong> de <strong>haine</strong> envers les <em>Marais Empoisonnés</em><strong>.</strong></p></li></ul>"
+    },
+    "ACU95t7R0ayHSAFv": {
+      "name": "Empoisonneur",
+      "Description": "<p>Quand vous <strong>touchez une cible avec une attaque de corps à corps</strong> et que le <strong>résultat du test de précision est un nombre impair</strong>, vous pouvez <strong>dépenser</strong> @LOSS[10 mp] et <strong>traiter votre Valeur Haute (VH) comme 0</strong> pour lui infliger @EFFECT[poisoned].</p>"
+    },
+    "fY8pSq2qR0uUVpB4": {
+      "name": "Potion salvatrice",
+      "Description": "<p>À la <strong>fin du round</strong>, vous lancez une potion de soin à l'allié qui a le <strong>moins</strong> de points de vie. Il récupère une quantité mineure de points de vie.</p><ul><li><p><strong>Allié</strong>: @HEAL[minor+5 hp]</p></li></ul>"
+    },
+    "be89bKTR7X5TDn7w": {
+      "name": "Corps puissant"
+    },
+    "HaX0ZzuFwDty9uOy": {
+      "name": "Flèche prismatique",
+      "Description": "<p>Après avoir chargé votre @UUID[Compendium.fu-azure-compendia.effects.1nffZ0gn6OMwKgH5]{Cadran Ultima}, vous tirez une flèche magique puissamment chargée dans les airs au-dessus de vos cibles, où elle se divise en <strong>flèches élémentaires</strong> qui volent vers vos ennemis. <strong>Chaque flèche</strong> peut toucher un ennemi de <strong>votre choix</strong>.</p><ul><li><p><strong>Vous :</strong> @LOSS[40 mp]</p></li><li><p><strong>Cibles</strong>: @DMG[10 air] + @DMG[10 bolt] + @DMG[10 dark] + @DMG[10 earth] + @DMG[10 ice] + @DMG[10 fire] + @DMG[10 light] + @DMG[10 poison]</p></li></ul>"
+    },
+    "dIa2ZBc9U52ndIQw": {
+      "name": "Protéger",
+      "Description": "<p>Quand une autre créature est menacée par une <strong>attaque</strong>, un <strong>sort</strong> ou un autre <strong>danger</strong>, vous pouvez prendre sa place (tous les Tests qui font partie du danger seront effectués contre vous ; vous pouvez déclarer l'utilisation de cette Compétence <strong>avant</strong> que les Tests n'aient été effectués). Si le danger vous affectait déjà, il vous affecte <strong>deux fois</strong> (résolvez les deux instances séparément) ; vous ne pouvez pas non plus protéger plusieurs créatures du même danger.</p><p><em>Après avoir utilisé cette compétence, vous ne pouvez plus l'utiliser jusqu'au début de votre prochain tour.</em></p>"
+    },
+    "hoUPgbJifxS0hz6R": {
+      "name": "Protégez-moi",
+      "Description": "<p>Quand vous êtes menacé par une <strong>attaque</strong>, un <strong>sort</strong> ou un autre <strong>danger</strong>, un autre peut prendre votre place (tous les Tests qui font partie du danger seront effectués contre lui ; vous devez déclarer l'utilisation de cette Compétence <strong>avant</strong> que les Tests n'aient été effectués).</p><p>Si le danger l'affectait déjà, il l'affecte <strong>deux fois</strong> (résolvez les deux instances séparément).</p><p><em>Après avoir utilisé cette compétence, vous ne pouvez plus l'utiliser jusqu'au début de votre prochain tour.</em></p>"
+    },
+    "0Pq4OosdqY3ElkxF": {
+      "name": "Protection",
+      "Description": "<p><strong>Une fois par round</strong>, vous pouvez utiliser @UUID[Compendium.fu-azure-compendia.skills.dIa2ZBc9U52ndIQw]{Protéger} sur un allié que le <strong>groupe a désigné</strong> au début du round.</p>"
+    },
+    "KnzS7X7Ew1AnvevI": {
+      "name": "Punir",
+      "Description": "<p>Après qu'un ennemi <strong>touche un allié avec une attaque de corps à corps</strong>, si le résultat de son test de précision était un <strong>nombre pair</strong>, vous pouvez effectuer une <strong>attaque gratuite</strong> contre cet ennemi (après que son attaque a été entièrement résolue). Cette attaque doit être une attaque de <strong>corps à corps</strong> et ne doit avoir que cet ennemi pour cible ; traitez votre <strong>Valeur Haute (VH)</strong> comme 0 lors du calcul des dégâts infligés par cette attaque.</p><p><em>Après avoir utilisé cette compétence, vous ne pouvez plus l'utiliser jusqu'au début de votre prochain tour.</em></p>"
+    },
+    "7yLlebhC3qjdMJA5": {
+      "name": "Poursuite",
+      "Description": "<p>Après qu'un <strong>allié touche un ennemi avec une attaque de corps à corps ou à distance,</strong> vous pouvez enchaîner avec une <strong>attaque VH0 sur la même cible</strong>.</p><p><em>Après avoir utilisé cette compétence, vous ne pouvez plus l'utiliser jusqu'au début de votre prochain tour.</em></p>"
+    },
+    "6PQhtfJZGP5nduvG": {
+      "name": "Incantation rapide",
+      "Description": "<p>Au début d'un Conflit, vous <strong>commencez immédiatement à @UUID[Compendium.fu-azure-compendia.effects.NhgTuHJUOKcnbY5t]{Incanter}.</strong></p>"
+    },
+    "uZDFAWtruoNy7Nj3": {
+      "name": "Dégainer rapidement",
+      "Description": "<p>Vous pouvez effectuer gratuitement l'action <strong>Équipement</strong> <strong>une fois par round</strong>.</p>"
+    },
+    "BENClXZilOT6HEsN": {
+      "name": "Pluie d'aiguilles",
+      "Description": "<p><strong>Tous les personnages</strong> dans la scène où le piège a été déclenché doivent faire un test @CHECK[dex ins easy] ou subir @DMG[&amp;step(10,15,20) physical] dégâts.</p>"
+    },
+    "d7haPyozBXr4FAsX": {
+      "name": "Rage",
+      "Description": "<p>Lorsque vous subissez des dégâts d'une attaque, vous pouvez utiliser cette compétence pour <strong>augmenter votre VH de 1</strong> jusqu'à la fin de votre prochain tour.</p><p><em>Après avoir utilisé cette compétence, vous ne pouvez plus l'utiliser jusqu'au début de votre prochain tour.</em></p>"
+    },
+    "Hs2Ue0Hs2Ue0Hs2U": {
+      "name": "Réflexes rapides",
+      "Description": "<p>Vous pouvez effectuer gratuitement l'action <strong>Déplacement</strong> <strong>une fois par round</strong>.</p>"
+    },
+    "Hs2Ue0Hs2Ue0Hs2V": {
+      "name": "Régénération",
+      "Description": "<p>Au début de votre tour, vous récupérez <strong>1 PV</strong>.</p>"
+    },
+    "Hs2Ue0Hs2Ue0Hs2W": {
+      "name": "Résistance",
+      "Description": "<p>Lorsque vous subissez des dégâts, vous pouvez utiliser cette compétence pour <strong>réduire les dégâts de 1</strong>.</p><p><em>Après avoir utilisé cette compétence, vous ne pouvez plus l'utiliser jusqu'au début de votre prochain tour.</em></p>"
+    },
+    "Hs2Ue0Hs2Ue0Hs2X": {
+      "name": "Riposte",
+      "Description": "<p>Après avoir été touché par une attaque de corps à corps, vous pouvez effectuer une <strong>attaque gratuite</strong> contre l'attaquant. Cette attaque doit être une attaque de <strong>corps à corps</strong>.</p><p><em>Après avoir utilisé cette compétence, vous ne pouvez plus l'utiliser jusqu'au début de votre prochain tour.</em></p>"
+    }
+  }
+}

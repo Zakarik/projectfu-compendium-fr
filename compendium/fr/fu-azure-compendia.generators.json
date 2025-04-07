@@ -1,0 +1,154 @@
+{
+  "label": "Générateurs",
+  "folders": {
+    "Cards": "Cartes"
+  },
+  "entries": {
+    "Conflict": {
+      "name": "Conflit",
+      "description": "<p>Quel type de <strong>conflit</strong> le groupe a-t-il rencontré ?</p>",
+      "results": {
+        "1-9": "Une bataille facile !",
+        "10-11": "Une bataille normale !",
+        "12-12": "Une bataille difficile ! Après cela, le groupe gagne une chance d'amélioration sur le terrain."
+      }
+    },
+    "Draw Card": {
+      "name": "Tirer une Carte",
+      "description": "<p>Tirez !</p>",
+      "results": {
+        "1-1": "Carte Piège",
+        "2-2": "Carte Sort",
+        "3-3": "Invocation de Monstre"
+      }
+    },
+    "Event": {
+      "name": "Événement",
+      "description": "<p>Que se passe-t-il ?</p>",
+      "results": {
+        "1-10": "Dialogue",
+        "11-12": "Découverte"
+      }
+    },
+    "Prompt": {
+      "name": "Dialogue",
+      "description": "<p><strong>Un</strong> des personnages a quelque chose à dire. Après cela, le <strong>personnage</strong> qui a parlé gagne @GAIN[1 fp] tandis que les autres <strong>participants</strong> récupèrent @GAIN[&amp;step(5,10,15) mp].</p>",
+      "results": {
+        "1-1": "Ils se souviennent d'un événement passé. \"Cela me rappelle quand...\"",
+        "2-2": "Ils sont inquiets à propos d'une menace actuelle. \"Pouvons-nous vraiment faire ça ?\"",
+        "3-3": "Ils sont curieux du passé de quelqu'un d'autre et lui posent des questions. \"Comment fais-tu ça ?\"",
+        "4-4": "Quelque chose ici leur semble familier. Qu'est-ce que c'est ?",
+        "5-5": "Quelque chose ici leur rappelle un mauvais souvenir. Qu'est-ce que c'est ?",
+        "6-6": "Quelque chose en lien avec leur identité leur vient à l'esprit.",
+        "7-7": "Quelque chose en lien avec leur thème est remis en question par un autre personnage.",
+        "8-8": "Ils ressentent le besoin de s'ouvrir à propos de leur origine.",
+        "9-9": "Ils ont une théorie qu'ils souhaitent partager avec les autres.",
+        "10-10": "Ils sont contrariés par quelque chose qu'un autre personnage a fait récemment.",
+        "11-11": "Ils spéculent sur les motivations d'un méchant.",
+        "12-12": "Ils parlent d'un ami ou d'un rival qu'ils n'ont pas vu depuis un moment.",
+        "13-13": "Ils parlent avec le compagnon en qui ils ont le plus confiance.",
+        "14-14": "Ils parlent avec le compagnon qui leur a donné le plus matière à réflexion récemment.",
+        "15-15": "Ils remarquent que quelqu'un d'autre est anormalement silencieux depuis un moment.",
+        "16-16": "Ils prennent un moment pour déguster une collation ou une boisson favorite et quelqu'un d'autre le remarque."
+      }
+    },
+    "Random Action": {
+      "name": "Action Aléatoire",
+      "description": "<p>Vous effectuez une action aléatoire</p>",
+      "results": {
+        "1-1": "Attaque",
+        "2-2": "Garde",
+        "3-3": "Gêne",
+        "4-4": "Sort",
+        "5-5": "Inventaire",
+        "6-6": "Analyse"
+      }
+    },
+    "Rest": {
+      "name": "Repos",
+      "description": "<p>Pendant le repos, <em>quelque chose</em> arrive à un <strong>personnage</strong> ou au <strong>groupe</strong>.</p>",
+      "results": {
+        "1-9": "Dialogue",
+        "10-10": "Le groupe est soudainement attaqué !"
+      }
+    },
+    "Spell Card": {
+      "name": "Carte Sort",
+      "description": "<p>Vous tirez une carte sort.</p>"
+    },
+    "Trap": {
+      "name": "Piège",
+      "description": "<p>Dans quel type de piège le groupe est-il tombé ?</p>",
+      "results": {
+        "1-1": "Murs qui se referment",
+        "2-2": "Rocher qui tombe",
+        "3-3": "Faux trésor",
+        "4-4": "Trappe au sol",
+        "5-5": "Piques au sol",
+        "6-6": "Pluie d'aiguilles",
+        "7-7": "Lame oscillante",
+        "8-8": "Slime soudain",
+        "9-9": "Fléchettes empoisonnées",
+        "10-10": "Piège à serpents",
+        "11-11": "Mine magique",
+        "12-12": "Surface glissante"
+      }
+    },
+    "Trap Card": {
+      "name": "Carte Piège",
+      "description": "<p>Vous avez activé ma carte piège !</p>",
+      "results": {
+        "3-3": "Quand votre adversaire lance un sort, vous pouvez dépenser son coût en PM en PV pour annuler le lancement.",
+        "4-4": "Quand votre adversaire lance un sort d'amélioration, vous annulez ses effets.",
+        "5-5": "Quand votre adversaire lance un sort d'amélioration, vous l'empêchez d'être lancé à nouveau.",
+        "6-6": "Ciblez une créature qui effectue une action. Vous choisissez sa cible avant qu'elle ne se résolve.",
+        "7-7": "Dissipez toutes les améliorations magiques sur la scène.",
+        "8-8": "Quand votre adversaire fait une attaque de mêlée contre vous, vous l'annulez avant de le projeter dans les airs.",
+        "9-9": "Quand votre adversaire contre une attaque, vous annulez le contre puis lui drainez une petite quantité de points d'esprit.",
+        "10-10": "Quand votre adversaire fait une attaque qui inflige des dégâts élémentaires, il devient Vulnérable à cet élément pendant un tour.",
+        "11-11": "Déclarez un type d'action. Il ne peut pas être utilisé jusqu'au début du prochain tour.",
+        "12-12": "Quand vous devriez être touché par une attaque, payez une grande quantité de points de vie pour annuler celle-ci et toute autre attaque faite contre vous ce tour.",
+        "13-13": "Quand votre adversaire déclare une attaque, annulez-la et faites-lui prendre l'action Garde à la place.",
+        "14-14": "Quand votre adversaire lance un sort, doublez son coût et celui de tous les autres sorts jusqu'à la fin du tour.",
+        "15-15": "La récupération de points d'esprit sur la scène est annulée jusqu'à la fin du tour.",
+        "16-16": "Tant que vous contrôlez un monstre, vous ne subissez aucun dégât.",
+        "17-17": "Vous terminez immédiatement le tour.",
+        "18-18": "Jusqu'à la fin de ce tour, personne ne peut utiliser de réactions.",
+        "19-19": "Jusqu'à la fin du tour, quand un adversaire déclare une attaque, il doit deviner le type d'une carte aléatoire dans votre main. S'il échoue, son action est annulée.",
+        "20-20": "",
+        "21-21": ""
+      }
+    },
+    "Travel Discovery": {
+      "name": "Découverte de Voyage",
+      "description": "<p>Que découvre le groupe ?</p>",
+      "results": {
+        "1-1": "Une source revigorante et une chance de se détendre.",
+        "2-2": "Des informations utiles concernant leur objectif actuel.",
+        "3-3": "Un marchand itinérant. C'est Olivia !",
+        "4-4": "Un monument inachevé au milieu de nulle part.",
+        "5-5": "Une statue solitaire usée dont les traits sont encore majoritairement intacts.",
+        "6-6": "Les restes d'un feu de camp. Un autre groupe était ici.",
+        "7-7": "Un ancien champ de bataille, jonché d'ossements de soldats et d'équipements rouillés.",
+        "8-8": "Un transport abandonné, depuis longtemps dépouillé de ses objets de valeur.",
+        "9-9": "Une petite ouverture dans le flanc d'une colline mène à une grotte oubliée. À l'intérieur, ils font une découverte surprenante.",
+        "10-10": "Un pont effondré traverse un ravin profond. Les restes d'une bataille suggèrent qu'il a été détruit.",
+        "11-11": "Dans un canyon rocheux, le vent joue une mystérieuse mélodie.",
+        "12-12": "Un arbre ancien et massif se dresse seul dans la plaine. Il est couvert de gravures d'une autre époque.",
+        "13-13": "Un météore brillant traverse le ciel, atterrissant quelque part au loin.",
+        "14-14": "Un animal blessé ou piégé se débat dans un collet.",
+        "15-15": "Un groupe de bandits bloque le chemin, mais plutôt que d'attaquer directement, ils défient le groupe dans un concours ou un test d'habileté.",
+        "16-16": "Un vieil ami ou rival d'un personnage du groupe voyage dans leur direction.",
+        "17-17": "Durant la nuit, l'un des personnages fait un rêve prémonitoire.",
+        "18-18": "L'un des personnages tombe malade et devient délirant ce jour-là.",
+        "19-19": "Un point de repère familier pour un membre du groupe. Est-ce un endroit qu'ils connaissaient autrefois ?",
+        "20-20": "Une caravane croise leur chemin et dedans se trouve un enfant qui supplie d'entendre leurs exploits.",
+        "21-21": "Un vieux devin prétend connaître le destin d'un personnage. Il propose de révéler une seule vérité - pour un prix.",
+        "22-22": "Quelqu'un - ou quelque chose - suit le groupe et a été aperçu au loin.",
+        "23-23": "La silhouette mourante d'un membre de la suite du méchant. Que leur est-il arrivé ?",
+        "24-24": "Quelque chose bloque le chemin et ils doivent choisir entre faire un détour, dégager la voie ou enquêter sur ce qui l'a causé.",
+        "25-25": "Un message a été laissé pour d'autres voyageurs. Que dit-il ?"
+      }
+    }
+  }
+}

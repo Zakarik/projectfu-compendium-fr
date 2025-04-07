@@ -1,0 +1,56 @@
+{
+  "label": "Macros",
+  "folders": {
+    "Field": "Terrain"
+  },
+  "entries": {
+    "AoE Marker": {
+      "name": "Marqueur de Zone",
+      "command": "let name = \"flare_marker.webm\";\nlet path = \"modules/fu-azure-compendia/assets/tiles/\" + name;\n\nlet token = canvas.tokens.controlled[0];\nlet position = token.position;\nlet offset = 25;\n\nlet tileData = {\n  x: position.x, \n  y: position.y + offset,\n  width: 100,\n  height: 100,\n  texture: {src: path}\n};\ncanvas.scene.createEmbeddedDocuments(\"Tile\",[tileData]);"
+    },
+    "Buster Marker": {
+      "name": "Marqueur de Tank Buster",
+      "command": "let name = \"tank_buster.webm\";\nlet path = \"modules/fu-azure-compendia/assets/tiles/\" + name;\n\nlet token = canvas.tokens.controlled[0];\nlet position = token.position;\n\nlet tileData = {\n  x: position.x - 50,\n  y: position.y - 175,\n  width: 200,\n  height: 300,\n  elevation: 1,\n  texture: {src: path}\n};\nlet marker = canvas.scene.createEmbeddedDocuments(\"Tile\",[tileData]);"
+    },
+    "Conflict Actions": {
+      "name": "Actions de Conflit",
+      "command": "(await fromUuid(\"Compendium.fu-azure-compendia.guides.JournalEntry.QyVTGBUeRh0FHUwS\")).sheet.render(true);"
+    },
+    "Gaze Marker": {
+      "name": "Marqueur de Regard",
+      "command": "let name = \"gaze_marker.webm\";\nlet path = \"modules/fu-azure-compendia/assets/tiles/\" + name;\n\nlet token = canvas.tokens.controlled[0];\nlet position = token.position;\nlet offset = 25;\n\nlet tileData = {\n  x: position.x, \n  y: position.y + offset,\n  width: 100,\n  height: 100,\n  texture: {src: path}\n};\ncanvas.scene.createEmbeddedDocuments(\"Tile\",[tileData]);"
+    },
+    "Roll Conflict": {
+      "name": "Jet de Conflit",
+      "command": "const table = await fromUuid(\"Compendium.fu-azure-compendia.generators.RollTable.bL5mCSHeyBs35vXq\");\nawait table.draw();"
+    },
+    "Roll Discovery": {
+      "name": "Jet de Découverte",
+      "command": "const table = await fromUuid(\"Compendium.fu-azure-compendia.generators.RollTable.4M1DYBRNndV2tCMo\");\nawait table.draw();"
+    },
+    "Roll Draw Card": {
+      "name": "Jet de Tirer une Carte",
+      "command": "const table = await fromUuid(\"Compendium.fu-azure-compendia.generators.RollTable.bJI5GMXVT7DoH9Hk\");\nawait table.draw();"
+    },
+    "Roll Prompt": {
+      "name": "Jet de Dialogue",
+      "command": "const table = await fromUuid(\"Compendium.fu-azure-compendia.generators.RollTable.qLmjwS7NhlvvsxZL\");\nawait table.draw();"
+    },
+    "Roll Random Action": {
+      "name": "Jet d'Action Aléatoire",
+      "command": "const table = await fromUuid(\"Compendium.fu-azure-compendia.generators.RollTable.dYnk6EvDHrLS0WPy\");\nawait table.draw();"
+    },
+    "Roll Rest": {
+      "name": "Jet de Repos",
+      "command": "const table = await fromUuid(\"Compendium.fu-azure-compendia.generators.RollTable.xZ5yD7AJteeZwEJQ\");\nawait table.draw();"
+    },
+    "Roll Trap": {
+      "name": "Jet de Piège",
+      "command": "const table = await fromUuid(\"Compendium.fu-azure-compendia.generators.RollTable.QtqAkRsB7HdkIGAN\");\nawait table.draw();"
+    },
+    "Stack Marker": {
+      "name": "Marqueur d'Empilement",
+      "command": "let name = \"stack_marker.webm\";\nlet path = \"modules/fu-azure-compendia/assets/tiles/\" + name;\n\nlet token = canvas.tokens.controlled[0];\nlet position = token.position;\nlet offset = 25;\n\nlet tileData = {\n  x: position.x, \n  y: position.y + offset,\n  width: 100,\n  height: 100,\n  texture: {src: path}\n};\ncanvas.scene.createEmbeddedDocuments(\"Tile\",[tileData]);"
+    }
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "label": "Attaques",
+  "mapping": {
+    "Description": "system.description",
+    "Resume": "system.summary.value"
+  },
+  "folders": {
+    "Firearm": "Arme à feu",
+    "Unique": "Unique",
+    "Natural": "Naturelle",
+    "Cantrip": "Tour de magie",
+    "Weapon": "Arme"
+  },
+  "entries": {
+    "Acid Spit": {
+      "name": "Crachat acide",
+      "Description": "",
+      "Resume": ""
+    },
+    "Air Cutter": {
+      "name": "Lame d'air",
+      "Description": "",
+      "Resume": ""
+    },
+    "Axe": {
+      "name": "Hache",
+      "Description": "",
+      "Resume": "Vous balancez votre hache sur la cible"
+    },
+    "Azure Bolter": {
+      "name": "Fusil azur",
+      "Description": "",
+      "Resume": ""
+    },
+    "Beak": {
+      "name": "Bec",
+      "Description": "",
+      "Resume": "Vous picorez la cible avec votre bec"
+    },
+    "Bite": {
+      "name": "Morsure",
+      "Description": "",
+      "Resume": "Vous mordez la cible avec vos mâchoires."
+    },
+    "Blunderbuss": {
+      "name": "Tromblon",
+      "Description": "",
+      "Resume": ""
+    },
+    "Bow": {
+      "name": "Arc",
+      "Description": "",
+      "Resume": "Vous attaquez la cible avec un tir de votre arc"
+    },
+    "Cannonball": {
+      "name": "Boulet de canon",
+      "Description": "<p>Après avoir <strong>précédemment @UUID[Compendium.fu-azure-compendia.effects.Item.MftLJFDNhnIRDsEN]{Marqué}</strong> une cible, vous ouvrez le feu.</p>",
+      "Resume": ""
+    },
+    "Chaos Glare": {
+      "name": "Regard du chaos",
+      "Description": "",
+      "Resume": ""
+    },
+    "Claw": {
+      "name": "Griffe",
+      "Description": "",
+      "Resume": "Vous attaquez la cible avec vos griffes"
+    },
+    "Crimson Bolter": {
+      "name": "Fusil cramoisi",
+      "Description": "",
+      "Resume": ""
+    },
+    "Crossbow": {
+      "name": "Arbalète",
+      "Description": "",
+      "Resume": "Vous attaquez la cible avec un tir de votre arbalète"
+    },
+    "Custom-Made Shotgun": {
+      "name": "Fusil à pompe personnalisé",
+      "Description": "<p>Nécessite @UUID[Compendium.fu-azure-compendia.skills.DGbp75Iox5y7YEZC]{Recharger} après deux attaques.</p>",
+      "Resume": ""
+    },
+    "Dagger": {
+      "name": "Dague",
+      "Description": "",
+      "Resume": "Vous attaquez la cible avec un coup de votre dague"
+    },
+    "Dark Touch": {
+      "name": "Toucher des ténèbres",
+      "Description": "",
+      "Resume": ""
+    },
+    "Daze": {
+      "name": "Étourdir",
+      "Description": "<p>La cible est @EFFECT[dazed] jusqu'à la fin de son prochain tour.</p>",
+      "Resume": ""
+    },
+    "Fan of Knives": {
+      "name": "Éventail de couteaux",
+      "Description": "",
+      "Resume": ""
+    },
+    "Finger Beam": {
+      "name": "Rayon de doigt",
+      "Description": "<p>Inflige @UUID[Compendium.fu-azure-compendia.effects.Item.Fm8mJMBKwf0CylMc]{À terre} si le résultat du test de précision était un nombre <strong>impair</strong> et que la cible <strong>ne se protège pas.</strong></p>",
+      "Resume": ""
+    },
+    "Fire Bolt": {
+      "name": "Projectile de feu",
+      "Description": "",
+      "Resume": ""
+    },
+    "Fist": {
+      "name": "Poing",
+      "Description": "",
+      "Resume": ""
+    },
+    "Flamethrower": {
+      "name": "Lance-flammes",
+      "Description": "",
+      "Resume": ""
+    },
+    "Frost Breath": {
+      "name": "Souffle de givre",
+      "Description": "",
+      "Resume": ""
+    },
+    "Gauntlet": {
+      "name": "Gantelet",
+      "Description": "",
+      "Resume": "Vous attaquez la cible avec vos gantelets"
+    },
+    "Glaive": {
+      "name": "Glaive",
+      "Description": "",
+      "Resume": ""
+    },
+    "Gore": {
+      "name": "Éventrer",
+      "Description": "",
+      "Resume": ""
+    },
+    "Greataxe": {
+      "name": "Grande hache",
+      "Description": "",
+      "Resume": "Vous balancez votre grande hache sur la cible"
+    },
+    "Greatsword": {
+      "name": "Épée à deux mains",
+      "Description": "",
+      "Resume": "Vous attaquez la cible avec un lourd coup de votre épée à deux mains"
+    },
+    "Grenade Launcher": {
+      "name": "Lance-grenades",
+      "Description": "<p>Nécessite @UUID[Compendium.fu-azure-compendia.skills.DGbp75Iox5y7YEZC]{Recharger} après utilisation</p>",
+      "Resume": ""
+    },
+    "Ground Shaker": {
+      "name": "Ébranleur de sol",
+      "Description": "",
+      "Resume": ""
+    },
+    "Heart Piercer": {
+      "name": "Perce-cœur",
+      "Description": "",
+      "Resume": ""
+    },
+    "Heavy Beam": {
+      "name": "Rayon puissant",
+      "Description": "<p><strong>Prérequis</strong> : @UUID[Compendium.fu-azure-compendia.effects.5qFbZynjbNXDkWrq]{Viser}</p>",
+      "Resume": ""
+    },
+    "Heavy Spear": {
+      "name": "Lance lourde",
+      "Description": "",
+      "Resume": ""
+    },
+    "Knuckle Dagger": {
+      "name": "Dague de poing",
+      "Description": "",
+      "Resume": ""
+    },
+    "Laser": {
+      "name": "Laser",
+      "Description": "",
+      "Resume": ""
+    },
+    "Light Spear": {
+      "name": "Lance légère",
+      "Description": "",
+      "Resume": ""
+    },
+    "Machine Gun": {
+      "name": "Mitrailleuse",
+      "Description": "",
+      "Resume": ""
+    },
+    "Magic Counter": {
+      "name": "Contre-sort",
+      "Description": "<p>Après qu'un ennemi lance un sort, vous effectuez automatiquement une attaque contre ce personnage (cette attaque se produit après que les effets du sort ont été entièrement résolus). Si cette attaque touche, elle inflige exactement @DMG[10 physical].</p>",
+      "Resume": ""
+    },
+    "Mandibles": {
+      "name": "Mandibules",
+      "Description": "",
+      "Resume": ""
+    },
+    "Mark 98 Rotary Cannons": {
+      "name": "Canons rotatifs Mark 98",
+      "Description": "",
+      "Resume": ""
+    },
+    "Maul": {
+      "name": "Masse",
+      "Description": "",
+      "Resume": "Vous balancez votre masse sur la cible"
+    },
+    "Metal Skewer": {
+      "name": "Brochette métallique",
+      "Description": "",
+      "Resume": ""
+    },
+    "Pincer": {
+      "name": "Pince",
+      "Description": "",
+      "Resume": ""
+    },
+    "Pistol": {
+      "name": "Pistolet",
+      "Description": "",
+      "Resume": ""
+    },
+    "Pollen": {
+      "name": "Pollen",
+      "Description": "",
+      "Resume": ""
+    },
+    "Pseudopod": {
+      "name": "Pseudopode",
+      "Description": "",
+      "Resume": ""
+    },
+    "Rapier": {
+      "name": "Rapière",
+      "Description": "",
+      "Resume": ""
+    },
+    "Ray of Frost": {
+      "name": "Rayon de givre",
+      "Description": "",
+      "Resume": ""
+    },
+    "Rifle": {
+      "name": "Fusil",
+      "Description": "<p>Nécessite @UUID[Compendium.fu-azure-compendia.effects.5qFbZynjbNXDkWrq]{Viser}</p>",
+      "Resume": ""
+    },
+    "Scythe": {
+      "name": "Faux",
+      "Description": "",
+      "Resume": "Vous balancez votre faux sur la cible"
+    },
+    "Seedpod": {
+      "name": "Gousse",
+      "Description": "",
+      "Resume": ""
+    },
+    "Shadow Bolt": {
+      "name": "Projectile d'ombre",
+      "Description": "",
+      "Resume": ""
+    },
+    "Shotgun": {
+      "name": "Fusil à pompe",
+      "Description": "",
+      "Resume": ""
+    },
+    "Slam": {
+      "name": "Écraser",
+      "Description": "",
+      "Resume": "Vous écrasez la cible avec une force puissante"
+    },
+    "Snap Kick": {
+      "name": "Coup de pied rapide",
+      "Description": "",
+      "Resume": ""
+    },
+    "Sniper Rifle": {
+      "name": "Fusil de précision",
+      "Description": "<p>Nécessite @UUID[Compendium.fu-azure-compendia.effects.5qFbZynjbNXDkWrq]{Viser}</p>",
+      "Resume": ""
+    },
+    "Spear": {
+      "name": "Lance",
+      "Description": "",
+      "Resume": "Vous attaquez la cible avec un coup de votre lance"
+    },
+    "Spirit Piercer": {
+      "name": "Perce-esprit",
+      "Description": "<p>La cible de cette attaque perd @LOSS[5 mp] pendant que vous récupérez @GAIN[5 mp].</p>",
+      "Resume": ""
+    },
+    "Splinter": {
+      "name": "Éclat",
+      "Description": "",
+      "Resume": ""
+    },
+    "Staff": {
+      "name": "Bâton",
+      "Description": "",
+      "Resume": ""
+    },
+    "Sting": {
+      "name": "Dard",
+      "Description": "",
+      "Resume": "Vous piquez la cible avec votre queue"
+    },
+    "Stone": {
+      "name": "Pierre",
+      "Description": "",
+      "Resume": ""
+    },
+    "Stun Baton": {
+      "name": "Matraque étourdissante",
+      "Description": "<p>Inflige @UUID[Compendium.projectfu.conditions-effects.dl04MUhnkGS7KY5x]{Étourdi} sur un coup réussi</p>",
+      "Resume": ""
+    },
+    "Summoned Weapon": {
+      "name": "Arme invoquée",
+      "Description": "",
+      "Resume": ""
+    },
+    "Sword": {
+      "name": "Épée",
+      "Description": "",
+      "Resume": "Vous tranchez la cible avec votre épée"
+    },
+    "Syringe": {
+      "name": "Seringue",
+      "Description": "<p>Applique @UUID[Compendium.fu-azure-compendia.effects.Y3marN7OOXMzNmCC]{Affaibli} sur un coup réussi.</p>",
+      "Resume": ""
+    },
+    "Tail": {
+      "name": "Queue",
+      "Description": "",
+      "Resume": "Vous frappez la cible avec votre queue"
+    },
+    "Tentacle": {
+      "name": "Tentacule",
+      "Description": "",
+      "Resume": "Vous giflez la cible avec votre tentacule"
+    },
+    "Thunder Lance": {
+      "name": "Lance de tonnerre",
+      "Description": "",
+      "Resume": ""
+    },
+    "Tongue": {
+      "name": "Langue",
+      "Description": "",
+      "Resume": ""
+    },
+    "Trident": {
+      "name": "Trident",
+      "Description": "",
+      "Resume": ""
+    },
+    "Tusk": {
+      "name": "Défense",
+      "Description": "",
+      "Resume": "Vous embrochez la cible avec vos défenses"
+    },
+    "Water Spout": {
+      "name": "Jet d'eau",
+      "Description": "",
+      "Resume": ""
+    },
+    "Whip": {
+      "name": "Fouet",
+      "Description": "",
+      "Resume": "Vous cinglez la cible avec un fouet"
+    }
+  }
+}

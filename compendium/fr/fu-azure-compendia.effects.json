@@ -1,0 +1,267 @@
+{
+  "label": "Effets",
+  "folders": {
+    "Card": "Carte",
+    "Stress": "Stress",
+    "Checks": "Tests",
+    "Trap": "Piège",
+    "Spell": "Sort",
+    "Setup": "Configuration",
+    "Spellshape": "Forme de sort",
+    "Control": "Contrôle",
+    "Defensive": "Défensif",
+    "Offensive": "Offensif",
+    "Targeting": "Ciblage",
+    "Seals": "Sceaux",
+    "Attributes": "Attributs",
+    "Curses": "Malédictions",
+    "Elemental": "Élémentaire",
+    "Recovery": "Récupération",
+    "Unique": "Unique"
+  },
+  "entries": {
+    "Aid": {
+      "name": "Aide"
+    },
+    "Aiming": {
+      "name": "Viser"
+    },
+    "Ammunition": {
+      "name": "Munitions"
+    },
+    "Berserk": {
+      "name": "Berserk"
+    },
+    "Bleeding": {
+      "name": "Saignement"
+    },
+    "Blinded": {
+      "name": "Aveuglé"
+    },
+    "Block": {
+      "name": "Blocage"
+    },
+    "Brilliant Conviction": {
+      "name": "Conviction Brillante"
+    },
+    "Burning": {
+      "name": "Brûlure"
+    },
+    "Casting": {
+      "name": "Incantation"
+    },
+    "Chalice Of Greed": {
+      "name": "Calice de Cupidité"
+    },
+    "Channeling": {
+      "name": "Canalisation"
+    },
+    "Charging": {
+      "name": "Charge"
+    },
+    "Combo": {
+      "name": "Combo"
+    },
+    "Concealed": {
+      "name": "Dissimulé"
+    },
+    "Concentration": {
+      "name": "Concentration"
+    },
+    "Confused": {
+      "name": "Confus"
+    },
+    "Contact Poison": {
+      "name": "Poison de Contact"
+    },
+    "Contingency": {
+      "name": "Contingence"
+    },
+    "Continuation": {
+      "name": "Continuation"
+    },
+    "Cover Fire": {
+      "name": "Tir de Couverture"
+    },
+    "Curse of Agony": {
+      "name": "Malédiction d'Agonie"
+    },
+    "Curse of Gluttony": {
+      "name": "Malédiction de Gloutonnerie"
+    },
+    "Curse of Mortality": {
+      "name": "Malédiction de Mortalité"
+    },
+    "Dazzled": {
+      "name": "Ébloui"
+    },
+    "Decoy": {
+      "name": "Leurre"
+    },
+    "Delay": {
+      "name": "Retard"
+    },
+    "Dominated": {
+      "name": "Dominé"
+    },
+    "Double Cast": {
+      "name": "Double Incantation"
+    },
+    "Elemental Orb": {
+      "name": "Orbe Élémentaire"
+    },
+    "Engaged": {
+      "name": "Engagé"
+    },
+    "Evade": {
+      "name": "Éviter"
+    },
+    "Flying": {
+      "name": "Volant"
+    },
+    "Focused": {
+      "name": "Concentré"
+    },
+    "Frostbite": {
+      "name": "Gelure"
+    },
+    "Frozen": {
+      "name": "Gelé"
+    },
+    "Grabbed": {
+      "name": "Saisi"
+    },
+    "Hangover": {
+      "name": "Gueule de Bois"
+    },
+    "Horror": {
+      "name": "Horreur"
+    },
+    "Immobilized": {
+      "name": "Immobilisé"
+    },
+    "Impulsive": {
+      "name": "Impulsif"
+    },
+    "Invisible": {
+      "name": "Invisible"
+    },
+    "Karma Drive": {
+      "name": "Entraînement Karmique"
+    },
+    "Keen Edge": {
+      "name": "Tranchant Acéré"
+    },
+    "Launched": {
+      "name": "Projeté"
+    },
+    "Level Scaling": {
+      "name": "Échelle de Niveau"
+    },
+    "Magical Cylinder": {
+      "name": "Cylindre Magique"
+    },
+    "Marked": {
+      "name": "Marqué"
+    },
+    "Meltdown": {
+      "name": "Fusion"
+    },
+    "Mental Ward": {
+      "name": "Protection Mentale"
+    },
+    "Miasma": {
+      "name": "Miasme"
+    },
+    "Multi Cast": {
+      "name": "Multi-Incantation"
+    },
+    "Overwhelming Cast": {
+      "name": "Incantation Accablante"
+    },
+    "Parry": {
+      "name": "Parade"
+    },
+    "Physical Ward": {
+      "name": "Protection Physique"
+    },
+    "Prone": {
+      "name": "À Terre"
+    },
+    "Reduced Healing": {
+      "name": "Soins Réduits"
+    },
+    "Regeneration": {
+      "name": "Régénération"
+    },
+    "Repeat": {
+      "name": "Répétition"
+    },
+    "Restrained": {
+      "name": "Entravé"
+    },
+    "Riposte": {
+      "name": "Riposte"
+    },
+    "Rooted": {
+      "name": "Enraciné"
+    },
+    "Seal of Judgement": {
+      "name": "Sceau de Jugement"
+    },
+    "Seal of Wisdom": {
+      "name": "Sceau de Sagesse"
+    },
+    "Shocked": {
+      "name": "Choqué"
+    },
+    "Silenced": {
+      "name": "Silencieux"
+    },
+    "Sleep": {
+      "name": "Sommeil"
+    },
+    "Split": {
+      "name": "Division"
+    },
+    "Strength": {
+      "name": "Force"
+    },
+    "Stunned": {
+      "name": "Étourdi"
+    },
+    "Summon Monster": {
+      "name": "Invocation de Monstre"
+    },
+    "Swallowed Whole": {
+      "name": "Avalé Entier"
+    },
+    "Taunt": {
+      "name": "Provoquer"
+    },
+    "Taunted": {
+      "name": "Provoqué"
+    },
+    "Thorn Bind Hostage": {
+      "name": "Otage des Épines"
+    },
+    "Time Bomb": {
+      "name": "Bombe à Retardement"
+    },
+    "Time Dilation": {
+      "name": "Dilatation Temporelle"
+    },
+    "Ultima Clock": {
+      "name": "Horloge Ultima"
+    },
+    "Unsteady": {
+      "name": "Instable"
+    },
+    "Untargetable": {
+      "name": "Intouchable"
+    },
+    "Weakened": {
+      "name": "Affaibli"
+    }
+  }
+}
