@@ -1,0 +1,512 @@
+{
+  "label": "Inventaire des Personnages",
+  "mapping": {
+    "Qualité": "system.quality.value",
+    "Description": "system.description"
+  },
+  "folders": {
+    "Guardian": "Gardien",
+    "Tinkerer": "Bricoleur",
+    "Utility": "Utilitaire",
+    "Weapons": "Armes",
+    "Staves": "Bâtons",
+    "Rest": "Repos",
+    "Darkblade": "Lame Sombre",
+    "Class": "Classe",
+    "Major": "Majeur",
+    "Thrown": "Jet",
+    "Brawling": "Lutte",
+    "Swords": "Épées",
+    "Symbolist": "Symboliste",
+    "Commander": "Commandant",
+    "Minor": "Mineur",
+    "Wayfarer": "Vagabond",
+    "Spears": "Lances",
+    "Arcanist": "Arcaniste",
+    "Pilot": "Pilote",
+    "Elementalist": "Élémentaliste",
+    "Firearms": "Armes à feu",
+    "Exploration": "Exploration",
+    "Recovery": "Récupération",
+    "Consumables": "Consommables",
+    "Fury": "Fureur",
+    "Rogue": "Voleur",
+    "Entropist": "Entropiste",
+    "Bow": "Arc",
+    "Sharpshooter": "Tireur d'élite",
+    "Armor": "Armure",
+    "Fundamental": "Fondamental",
+    "Qualities": "Qualités",
+    "Accessories": "Accessoires",
+    "Daggers": "Dagues",
+    "Chimerist": "Chimériste",
+    "Spiritist": "Spiritiste",
+    "Heavy": "Lourd",
+    "Weaponmaster": "Maître d'armes",
+    "Loremaster": "Maître du savoir",
+    "Orator": "Orateur",
+    "Offensive": "Offensif",
+    "Defensive": "Défensif"
+  },
+  "entries": {
+    "Abyssal Stone": {
+      "name": "Pierre Abyssale",
+      "Qualité": "",
+      "Description": "<h2>Qualités</h2><ul><li><p><strong>Une fois</strong> par round lorsque vous êtes sur le point de recevoir des <strong>dégâts des ténèbres</strong>, vous pouvez dépenser @LOSS[5 pm] pour gagner @UUID[Compendium.projectfu.actor-effects.fBbLvII5LUEqInQQ]{Résistance aux Ténèbres} jusqu'au <strong>début de votre prochain tour</strong>.</p></li><li><p><strong>Toutes les deux fois</strong> que vous effectuez l'action ci-dessus, vous récupérez @GAIN[&amp;step(5,10,15) pm]</p></li></ul>"
+    },
+    "Adamantite Reaper": {
+      "name": "Faucheur en Adamantite",
+      "Qualité": "",
+      "Description": ""
+    },
+    "Advancing": {
+      "name": "Avancée"
+    },
+    "Adventurer's Journal": {
+      "name": "Journal de l'Aventurier",
+      "Qualité": "",
+      "Description": "<p>Classe : @UUID[Compendium.projectfu.classes.EWKUOGOMmyHfgOJm]{Vagabond}</p><hr /><p><em>Quelles histoires avez-vous consignées dans ces pages usées ?</em></p><h2>Qualités</h2><ol><li><p>Les avantages de @UUID[Compendium.projectfu.skills.0n8T7U81oNP7yU5X]{Débrouillard} se déclenchent aussi quand vous vous <strong>reposez</strong> <strong>sans jet de voyage</strong>.</p></li><li><p>Quand vous faites une découverte grâce à @UUID[Compendium.projectfu.skills.rsGhkElIiEBgN5zA]{Chasseur de Trésors}, vous pouvez effectuer un test @CHECK[ins ins veryHard] avec un bonus égal à votre niveau de compétence pour trouver un <strong>objet supplémentaire</strong>.</p></li><li><p>Les avantages de @UUID[Compendium.projectfu.skills.CHMsojkTh3fU8HXg]{Discussion de Taverne} se déclenchent aussi quand vous vous <strong>reposez dans la nature</strong> mais vous devez utiliser @UUID[Compendium.fu-azure-compendia.character-inventory.VA3XpOnjvxvNQY3e]{Rafraîchissements} (dont vous gagnez l'utilisation).</p></li><li><p>Quand vous faites un jet de voyage impliquant des navires, vous devez effectuer un test @CHECK[ins wlp 3]. En cas d'échec, votre groupe fera <em>naufrage</em>.</p></li></ol>"
+    },
+    "Archmage's Pendant": {
+      "name": "Pendentif de l'Archimage",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.vSE3PMoHTGLC1yzG]{Élémentaliste}</p><hr /><h2>Qualités</h2><ol><li><p>Lorsque vous devez <strong>recevoir des dégâts élémentaires</strong> du même type qu'un <strong>sort de dégâts</strong> que vous avez déjà <strong>appris</strong>, vous pouvez gagner une <strong>résistance</strong> à celui-ci en dépensant @LOSS[10 pm]</p></li><li><p>Lorsque vous lancez @UUID[Compendium.projectfu.spells.AIqyQ1m2hpX27rsd]{Arme Élémentaire}, vous pouvez inclure un allié <strong>supplémentaire</strong> pour recevoir l'effet jusqu'à la <strong>fin de son prochain tour</strong> en dépensant @LOSS[5 pm]</p></li></ol>"
+    },
+    "Armored Cloak": {
+      "name": "Cape Renforcée",
+      "Qualité": "",
+      "Description": "<p><em>Entrelacée de plaques légères pour réduire l'impact des coups physiques.</em></p><p>@UUID[Compendium.fu-azure-compendia.guides.prZlqZpAy69UrhEt]{Chef-d'œuvre}</p><hr /><h2>Qualités</h2><ol><li><p>@UUID[Compendium.fu-azure-compendia.character-inventory.WS6gdl1CPz3zADqB]{Résistance Physique}</p></li></ol>"
+    },
+    "Artisan Brush": {
+      "name": "Pinceau d'Artisan",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.m2nmisQnnkVKowT7]{Symboliste}</p><hr /><h2>Qualités</h2><ol><li><p>Une fois par conflit, vous pouvez <strong>dépenser</strong> des <strong>points de magie</strong> pour effectuer <strong>Symbolisme</strong> comme une <strong>action gratuite</strong> pendant votre tour en dépensant @LOSS[20 pm]</p></li><li><p>Une fois par conflit, si un allié <strong>portant</strong> l'un de vos symboles devait <strong>recevoir des dégâts</strong>, vous pouvez <strong>dépenser des points de magie égaux</strong> à ces dégâts pour <strong>détruire</strong> ce symbole et <strong>annuler</strong> les dégâts. Nécessite @UUID[Compendium.projectfu.skills.h6ynrwX1sUsBQYAE]{Connexion Symbolique}</p></li></ol>"
+    },
+    "Black SteelWidow": {
+      "name": "Veuve d'Acier Noir",
+      "Qualité": "",
+      "Description": "<p><em>Forgée dans l'ombre et trempée avec précision.</em></p><p>@UUID[Compendium.fu-azure-compendia.guides.prZlqZpAy69UrhEt]{Chef-d'œuvre}</p><h2>Qualités</h2><ol><li><p>@UUID[Compendium.fu-azure-compendia.character-inventory.7x9ibwOvZ2JjaRYz]{Puissance Stockée}</p></li><li><p></p></li></ol>"
+    },
+    "Blue Cape": {
+      "name": "Cape Bleue",
+      "Qualité": "",
+      "Description": "<p><strong>Classe :</strong> @UUID[Compendium.projectfu.classes.ARBTZXtCwUzlyIyy]{Gardien}</p><hr /><h2>Qualités</h2><ol><li><p>Après avoir effectué l'action @EFFECT[guard], vous pouvez dépenser @LOSS[5 pm] pour gagner @UUID[Compendium.fu-azure-compendia.effects.TpmhsH2JmpcsZspZ]{Continuation}</p></li><li><p>Vous pouvez effectuer @UUID[Compendium.projectfu.skills.Z4WIA15aR4uLL5ES]{Protection} <strong>une fois de plus</strong> après l'avoir utilisé en abandonnant votre <strong>Garde</strong> et en subissant @UUID[Compendium.projectfu.actor-effects.ax706lkF7lv1c2nn]{Vulnérabilité Physique} jusqu'au début de votre prochain tour.</p></li></ol>"
+    },
+    "Bolting Staff": {
+      "name": "Bâton Foudroyant",
+      "Qualité": "",
+      "Description": "<p>@UUID[Compendium.fu-azure-compendia.guides.prZlqZpAy69UrhEt]{Chef-d'œuvre}</p><h2>Qualités</h2><ol><li><p>Chaque fois que vous <strong>lancez un sort</strong>, le bâton rassemble ses énergies résiduelles pour se recharger, vous permettant de tirer un petit éclair de foudre sur la cible.</p></li><li><p><strong>Une fois</strong> par conflit, lorsque votre attaque avec cette arme touche, vous pouvez infliger @UUID[Compendium.projectfu.actor-effects.MRNCMGIcZStGVV9J]{Faiblesse à la Foudre} à la cible</p></li></ol>"
+    },
+    "Book of Grudges": {
+      "name": "Livre des Rancunes",
+      "Qualité": "",
+      "Description": "<p><strong>Classe :</strong> @UUID[Compendium.projectfu.classes.JqjAUSTgQyZdfAML]{Fureur}</p><hr /><p></p>"
+    },
+    "Bulwark": {
+      "name": "Rempart"
+    },
+    "Calming Incense": {
+      "name": "Encens Apaisant",
+      "Description": "<p><strong>Durant une scène de repos</strong>, un mélange apaisant d'herbes rares et d'essences mystiques qui remplit l'air d'un doux parfum tranquille. Lorsqu'il est brûlé, il apaise l'esprit, dissipe l'agitation et favorise la paix intérieure, le rendant idéal pour la méditation, la concentration ou la résistance aux troubles mentaux.</p><p><strong>Tous les membres du groupe</strong> gagnent @UUID[Compendium.fu-azure-compendia.effects.Oo3f41XjiLRl8u5y]{Protection Mentale} jusqu'à ce qu'il expire ou jusqu'à leur prochain repos.</p>"
+    },
+    "Centrifugal Mixer": {
+      "name": "Mélangeur Centrifuge",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.Zmqvu8QKmgyIci7C]{Bricoleur}</p><hr /><p>L'<strong>utilisation</strong> de @UUID[Compendium.projectfu.skills.xzyAHegWwSaysYqV]{Pluie de Potions} a été étendue à des objets <strong>supplémentaires</strong>. @UUID[Compendium.fu-azure-compendia.guides.prZlqZpAy69UrhEt]{Chef-d'œuvre}</p><h2>Qualités</h2><ol><li><p>@UUID[Compendium.projectfu.consumables.00h8sKH3ktIFF5ei]{Éclat Élémentaire} peut être utilisé.</p></li></ol><p></p>"
+    },
+    "Cinder": {
+      "name": "Braise",
+      "Qualité": "",
+      "Description": ""
+    },
+    "Commander's Cape": {
+      "name": "Cape du Commandant",
+      "Qualité": "",
+      "Description": "<h2>Qualités</h2><ol><li><p>Lorsque vous <strong>touchez une cible avec une attaque de mêlée</strong> et que le résultat du <strong>test de précision était un nombre pair</strong>, vous pouvez traiter votre Valeur Haute (VH) comme 0 pour donner à un allié @UUID[Compendium.fu-azure-compendia.effects.TpmhsH2JmpcsZspZ]{Continuation}.</p></li></ol>"
+    },
+    "Cornucopia": {
+      "name": "Corne d'Abondance",
+      "Qualité": "",
+      "Description": "<h2>Qualités</h2><ol><li><p>Lorsque vous <strong>récupérez des Points d'Inventaire,</strong> tout point excédentaire peut être récupéré par un allié de votre choix.</p></li><li><p>Lorsque vous <strong>dépensez des Points d'Inventaire</strong>, vous avez une @CHECK[ins wlp veryHard] <strong>chance</strong> de récupérer @GAIN[1 pi]</p></li></ol>"
+    },
+    "Crusader's Banner": {
+      "name": "Bannière du Croisé",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.ARBTZXtCwUzlyIyy]{Gardien}</p><hr /><p>Au <strong>début d'un Conflit</strong>, vous pouvez planter cette bannière et rallier vos alliés à l'action. <strong>Choisissez un</strong> des effets suivants :</p><ul><li><p><strong>Tenir Bon</strong> : Deux cibles gagnent @UUID[Compendium.fu-azure-compendia.effects.13ubm3WjQ8Xuc63Q]{Blocage}</p></li><li><p><strong>Charge :</strong> Deux cibles gagnent @UUID[Compendium.fu-azure-compendia.effects.TpmhsH2JmpcsZspZ]{Continuation}</p></li></ul><p><strong>Vous</strong> : @LOSS[20 pm]</p>"
+    },
+    "Curia": {
+      "name": "Curie",
+      "Description": "<p>Un remède qui peut être administré à une cible pour récupérer de <strong>tous les états</strong> lorsqu'elle n'est <strong>pas en conflit.</strong></p>"
+    },
+    "Dark Angel's Diary": {
+      "name": "Journal de l'Ange Noir",
+      "Qualité": "",
+      "Description": "<p>Classe : @UUID[Compendium.projectfu.classes.AgYLSVuJduaQBja0]{Lame Sombre}</p><hr /><h2>Qualités</h2><ol><li><p>Lorsque vous déclenchez @UUID[Compendium.projectfu.skills.e6ids95gOPher40d]{Cœur des Ténèbres}, vous gagnez aussi @UUID[Compendium.fu-azure-compendia.effects.Item.q8VBAZTtL8SdLUCs]{Force}</p></li><li><p>Lorsque vous déclenchez @UUID[Compendium.projectfu.skills.YkMaFGnNoWMo6k1U]{Leçons Douloureuses}, vous gagnez @UUID[Compendium.fu-azure-compendia.effects.x1tLaaRsBa4Ag1cZ]{Riposte}</p></li></ol>"
+    },
+    "Dark Apostle's Gauntlets": {
+      "name": "Gantelets de l'Apôtre des Ténèbres",
+      "Qualité": "",
+      "Description": "<p><strong>Classe :</strong> @UUID[Compendium.projectfu.classes.AgYLSVuJduaQBja0]{Lame Sombre}</p><hr /><h2>Qualités</h2><ol><li><p>Lorsque vous effectuez @UUID[Compendium.projectfu.skills.W5hE9L8x7AsJI7a1]{Frappe des Ombres}, vous pouvez <strong>dépenser</strong> @LOSS[10 pm] pour <strong>récupérer</strong> @GAIN[$step(5,10,15) pv]</p></li></ol>"
+    },
+    "Dark Comet": {
+      "name": "Comète Sombre",
+      "Qualité": "",
+      "Description": "<h2>Qualités</h2><ul><li><p>Après avoir lancé un <strong>sort des ténèbres,</strong> vous pouvez imprégner l'énergie magique restante dans la prochaine balle tirée par cette arme. Elle infligera @DMG[&amp;step(5,10,15) dark] supplémentaires lors de sa prochaine attaque.</p></li></ul>"
+    },
+    "Deliverance": {
+      "name": "Délivrance",
+      "Qualité": "",
+      "Description": "<p><em>Une épée dont la lame brille intensément lorsqu'elle est imprégnée de mana.</em></p><p>@UUID[Compendium.fu-azure-compendia.guides.prZlqZpAy69UrhEt]{Chef-d'œuvre}</p><h2>Qualités</h2><ol><li><p>Une fois par round, lorsque vous devriez subir des dégâts des ténèbres, vous pouvez dépenser @LOSS[5 pm] pour gagner @UUID[Compendium.projectfu.actor-effects.fBbLvII5LUEqInQQ]{Résistance aux Ténèbres} jusqu'au <strong>début de votre prochain tour</strong>.</p></li><li><p><strong>Purification</strong> : Vous pouvez dépenser @LOSS[10 pm] avant de faire une attaque pour la charger d'énergie lumineuse. Si elle touche, vous pouvez retirer un sort affectant la cible.</p></li></ol>"
+    },
+    "Desperate Recovery": {
+      "name": "Récupération Désespérée"
+    },
+    "Dread Crusher": {
+      "name": "Broyeur d'Effroi",
+      "Qualité": "",
+      "Description": ""
+    },
+    "Elixir+": {
+      "name": "Élixir+",
+      "Description": "<p><strong>Une</strong> <strong>créature</strong> récupère @HEAL[&amp;step(50,60,70) pm].</p>"
+    },
+    "Emergency Manual": {
+      "name": "Manuel d'Urgence",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.Zmqvu8QKmgyIci7C]{Bricoleur}</p><hr /><p>Lorsque vous gagnez les avantages de @UUID[Compendium.projectfu.skills.2MoV74xWJnF5Ru8u]{Objet d'Urgence}, vous pouvez <strong>dépenser un point d'inventaire supplémentaire</strong> pour que les potions résultantes <strong>restaurent leur montant normal.</strong></p><p>@LOSS[1 pi]</p>"
+    },
+    "Enchanted Quiver": {
+      "name": "Carquois Enchanté",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.eO37Jm8x3VaGmE7c]{Tireur d'élite}</p><hr /><h2>Qualités</h2><ol><li><p>Lorsque vous effectuez une <strong>Attaque</strong>, vous pouvez dépenser @LOSS[10 pm] pour changer son <strong>type élémentaire</strong> en l'un des suivants : @WEAPON[fire] @WEAPON[ice] @WEAPON[bolt]</p></li><li><p>Vous pouvez utiliser une <strong>action</strong> pour gagner @UUID[Compendium.fu-azure-compendia.effects.5qFbZynjbNXDkWrq]{Visée}</p></li><li><p>Lorsque vous effectuez @UUID[Compendium.projectfu.skills.lCFQMCY4AmDsv6sv]{Barrage} et qu'il <strong>touche</strong> toutes les cibles, vous gagnez @UUID[Compendium.fu-azure-compendia.effects.h4GrXhLMBi5NRYNJ]{Tir de Couverture}</p></li></ol>"
+    },
+    "Engraved Needle": {
+      "name": "Aiguille Gravée",
+      "Qualité": "",
+      "Description": "<h2>Qualités</h2><ol><li><p></p></li></ol>"
+    },
+    "Epaulets of Valor": {
+      "name": "Épaulettes de Vaillance",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.kVSzbabb2AUviwnH]{Maître d'armes}</p><hr /><h2>Qualités</h2><ol><li><p>Lorsque vous effectuez @UUID[Compendium.projectfu.skills.7jWycVYFgZ1BMxch]{Brise-Os}, vous gagnez @UUID[Compendium.fu-azure-compendia.effects.q8VBAZTtL8SdLUCs]{Force}.</p></li><li><p>Lorsque vous effectuez @UUID[Compendium.projectfu.skills.IhBCZsilt0bj5RJK]{Tempête de Lames} et qu'elle <strong>rate</strong> ses cibles, vous gagnez @UUID[Compendium.fu-azure-compendia.effects.Item.RTJquNkzJGTWtqGZ]{Esquive}.</p></li></ol>"
+    },
+    "Eye of Fury": {
+      "name": "Œil de la Fureur",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.JqjAUSTgQyZdfAML]{Fureur}</p><hr /><p><em>Une puissance sauvage et primitive imprègne ce pendentif.</em></p><h2>Qualités</h2><ol><li><p><strong>Une fois par scène</strong> de conflit lorsque vous gagnez @UUID[Compendium.projectfu.skills.DniA4VMTBNhk5a1v]{Adrénaline}, vous pouvez dépenser @LOSS[&amp;step(10,15,20) pv] pour effectuer une <strong>attaque gratuite</strong>.</p></li><li><p>Lorsque vous bénéficiez de @UUID[Compendium.projectfu.skills.oi2LgAoLN5IyuBG3]{Frénésie}, vous récupérez @GAIN[&amp;step(5,10,15) pv]</p></li></ol>"
+    },
+    "Eye of the Tempest": {
+      "name": "Œil de la Tempête",
+      "Qualité": "",
+      "Description": "<h2>Qualités</h2><ul><li><p><strong>Une fois</strong> par round lorsque vous êtes sur le point de recevoir des <strong>dégâts d'air</strong>, vous pouvez dépenser @LOSS[5 pm] pour gagner @UUID[Compendium.projectfu.actor-effects.3tMyw1mCjd7SfGTD]{Résistance à l'Air} jusqu'au <strong>début de votre prochain tour</strong>.</p></li><li><p><strong>Toutes les deux fois</strong> que vous effectuez l'action ci-dessus, vous gagnez @UUID[Compendium.fu-azure-compendia.effects.TpmhsH2JmpcsZspZ]{Continuation}</p></li></ul>"
+    },
+    "Fell Raiment": {
+      "name": "Vêtements Déchus",
+      "Qualité": "",
+      "Description": "<p>@UUID[Compendium.fu-azure-compendia.guides.prZlqZpAy69UrhEt]{Chef-d'œuvre}</p><hr /><h2>Qualités</h2><ol><li><p>La quantité de <strong>points de vie</strong> ou de <strong>points de magie</strong> que vous gagnez des sorts qui les drainent est augmentée de @GAIN[5 pv] ou @GAIN[5 pm]</p></li></ol>"
+    },
+    "Fencer's Gloves": {
+      "name": "Gants d'Escrimeur",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.kVSzbabb2AUviwnH]{Maître d'armes}</p><hr /><p>Une vie d'entraînement et d'aptitude menant à un seul moment d'épreuve.</p><h2>Qualités</h2><ol><li><p>Lorsque vous effectuez une @UUID[Compendium.projectfu.skills.XhcTVGtGEk7L2Ddq]{Contre-attaque}, si le résultat du test de précision était un <strong>échec critique</strong>, vous faites votre <strong>attaque gratuite</strong> à <strong>pleine</strong> <strong>puissance</strong>.</p></li><li><p>Lorsque vous prenez l'action @EFFECT[guard], vous <strong>pouvez</strong> <strong>effectuer</strong> une @UUID[Compendium.projectfu.skills.XhcTVGtGEk7L2Ddq]{Contre-attaque} même si le résultat du test de précision <strong>raté</strong> n'était <strong>pas un nombre pair</strong>.</p></li></ol>"
+    },
+    "Fire Eater": {
+      "name": "Mangeur de Feu",
+      "Qualité": "",
+      "Description": "<h2>Qualités</h2><ul><li><p><strong>Une fois</strong> par round lorsque vous êtes sur le point de recevoir des <strong>dégâts de feu</strong>, vous pouvez dépenser @LOSS[5 pm] pour gagner @UUID[Compendium.projectfu.actor-effects.FAfKTXxluiqIVP5t]{Résistance au Feu} jusqu'au <strong>début de votre prochain tour</strong>.</p></li><li><p><strong>Toutes les deux fois</strong> que vous effectuez l'action ci-dessus, vous gagnez @UUID[Compendium.fu-azure-compendia.effects.q8VBAZTtL8SdLUCs]{Force}</p></li></ul>"
+    },
+    "Forgotten Hourglass": {
+      "name": "Sablier Oublié",
+      "Qualité": "",
+      "Description": "<p><strong>Classe :</strong> @UUID[Compendium.projectfu.classes.A24rkaeNHdKThN4N]{Entropiste}</p><hr /><p><em>Regardez dans les sables du temps.</em> </p><h2>Qualités</h2><ol><li><p><strong>Une fois par conflit</strong>, lorsqu'un allié est sur le point d'être la <strong>cible d'une action offensive</strong>, vous pouvez l'avertir du danger en dépensant @LOSS[10 pm] pour lui donner @UUID[Compendium.fu-azure-compendia.effects.13ubm3WjQ8Xuc63Q]{Blocage}</p></li><li><p>Lorsque vous lancez @UUID[Compendium.projectfu.spells.odCKj31VovzmcEUw]{Accélération}, vous donnez aussi à la cible @UUID[Compendium.fu-azure-compendia.effects.Uw1tWLyDpdw06ONL]{Aide}</p></li><li><p>Lorsque vous lancez @UUID[Compendium.projectfu.spells.AAsEhxIBxlig3hRk]{Divination} et <strong>forcez</strong> une cible à <strong>relancer</strong>, vous pouvez <strong>prédire</strong> si le nouveau résultat du test sera un <strong>échec</strong> ou une <strong>réussite</strong>. Si vous avez <strong>raison</strong>, vous gagnez @UUID[Compendium.fu-azure-compendia.effects.TpmhsH2JmpcsZspZ]{Continuation}</p></li></ol>"
+    },
+    "Frostwind Guard": {
+      "name": "Protection du Vent Glacé"
+    },
+    "Gale": {
+      "name": "Bourrasque",
+      "Qualité": "",
+      "Description": "<p><em>Une épée enchantée qui déchaîne des vents tranchants à distance.</em></p>"
+    },
+    "Glacial Orb": {
+      "name": "Orbe Glacial",
+      "Qualité": "",
+      "Description": "<h2>Qualités</h2><ul><li><p><strong>Une fois</strong> par round lorsque vous êtes sur le point de recevoir des <strong>dégâts de glace</strong>, vous pouvez dépenser @LOSS[5 pm] pour gagner @UUID[Compendium.projectfu.actor-effects.SWdZeuJTEq1ig6S8]{Résistance à la Glace} jusqu'au <strong>début de votre prochain tour</strong>.</p></li><li><p><strong>Toutes les trois fois</strong> que vous effectuez l'action ci-dessus, vous pouvez <strong>retirer un état négatif.</strong></p></li></ul>"
+    },
+    "Golden Bolter": {
+      "name": "Arbalète Dorée",
+      "Qualité": "",
+      "Description": ""
+    },
+    "Heartseeker": {
+      "name": "Cherche-Cœur",
+      "Qualité": "",
+      "Description": ""
+    },
+    "Heavy Burden": {
+      "name": "Lourd Fardeau",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.2ZBMQzwMLEGVJkz2]{Commandant}</p><hr /><h2>Qualités</h2><ol><li><p>Lorsque vous effectuez @UUID[Compendium.projectfu.skills.HC27DMHBE4M54y6Y]{Gambit de la Reine} et que l'allié récupère des points de vie, il gagne aussi @UUID[Compendium.fu-azure-compendia.effects.q8VBAZTtL8SdLUCs]{Force}</p></li><li><p>Lorsque vous entrez en <strong>Crise</strong> pour la première fois dans un conflit, un allié de votre choix effectue immédiatement @EFFECT[guard] sur vous jusqu'au <strong>début de son prochain tour</strong></p></li></ol>"
+    },
+    "Hoarfrost": {
+      "name": "Givre",
+      "Qualité": "",
+      "Description": ""
+    },
+    "Ice Barbed Spear": {
+      "name": "Lance aux Barbelures de Glace",
+      "Qualité": "",
+      "Description": ""
+    },
+    "Insight Coffee": {
+      "name": "Café de l'Intuition",
+      "Description": "<p>Vous effectuez l'action <strong>Analyse</strong> avec un <strong>bonus de +4</strong> au test. Si vous réussissez, vous apprenez une <strong>affinité supplémentaire.</strong></p>"
+    },
+    "Kaiser Claws": {
+      "name": "Griffes du Kaiser",
+      "Qualité": "",
+      "Description": ""
+    },
+    "Lucky Dice": {
+      "name": "Dés Chanceux",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.A24rkaeNHdKThN4N]{Entropiste}</p><hr /><h2>Qualités</h2><ol><li><p>Chaque fois que vous <strong>relancez</strong> un test et qu'il échoue, vous pouvez donner à un autre allié @UUID[Compendium.fu-azure-compendia.effects.Uw1tWLyDpdw06ONL]{Aide}</p></li><li><p>Chaque fois que vous déclenchez @UUID[Compendium.projectfu.skills.HgxY0x6jUjS6ppBc]{Sept Chanceux}, vous récupérez @GAIN[7 pv] @GAIN[7 pm]</p></li></ol>"
+    },
+    "Magister's Regalia": {
+      "name": "Tenue du Magistère",
+      "Qualité": "",
+      "Description": "<p>@UUID[Compendium.fu-azure-compendia.guides.prZlqZpAy69UrhEt]{Chef-d'œuvre}</p><hr /><h2>Qualités</h2><ol><li><p>Vous pouvez dépenser une <strong>aubaine</strong> pour infliger @UUID[Compendium.projectfu.actor-effects.dAFACJSQzCbcU9We]{Faiblesse au Feu} ou @UUID[Compendium.projectfu.actor-effects.BVOW692emrw4yxR0]{Faiblesse à la Glace} jusqu'à la <strong>fin de votre prochain tour.</strong></p></li></ol>"
+    },
+    "Medicine": {
+      "name": "Médicament",
+      "Description": "<p>Un remède qui peut être administré à une cible pour récupérer @GAIN[$minor+5 pv] lorsqu'elle n'est <strong>pas en conflit.</strong></p>"
+    },
+    "Monster Journal": {
+      "name": "Journal des Monstres",
+      "Qualité": "",
+      "Description": "<h2>Qualités</h2><ol><li><p>Lorsque vous effectuez l'action <strong>Analyse</strong> contre une cible, vous gagnez @UUID[Compendium.fu-azure-compendia.effects.TpmhsH2JmpcsZspZ]{Continuation} mais <strong>uniquement contre elle</strong>.</p></li><li><p>Lorsque votre groupe gagne une aubaine contre une créature que <strong>vous avez analysée</strong>, ils peuvent la dépenser pour appliquer @UUID[Compendium.projectfu.actor-effects.6JCfyn7Ewt0AJndC]{Faiblesse Physique} pour les <strong>3 prochaines attaques.</strong></p></li></ol>"
+    },
+    "Oaken Wraps": {
+      "name": "Bandages de Chêne",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.I3qOytLtqR9OAawS]{Chimériste}</p><hr /><h2>Qualités</h2><ol><li><p>Au <strong>début d'un conflit</strong>, vous pouvez dépenser @LOSS[10 pm] pour <strong>Analyser</strong> une créature appartenant aux espèces <strong>bête</strong>, <strong>monstre</strong> ou <strong>plante</strong>.</p></li><li><p>@UUID[Compendium.fu-azure-compendia.character-inventory.xvTpvOlIc2rHaJ9M]{Récupération Désespérée}</p></li></ol>"
+    },
+    "Oath of Necessary Violence": {
+      "name": "Serment de Violence Nécessaire",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.s7AtJlv04lTsbKg4]{Spiritiste}</p><hr /><p><em>Je suis un guérisseur mais...</em></p><h2>Qualités</h2><ol><li><p>Après avoir lancé un <strong>Sort</strong> qui fait récupérer des points de vie à une cible ou qui dissipe un état, vous gagnez @UUID[Compendium.fu-azure-compendia.effects.TpmhsH2JmpcsZspZ]{Continuation}</p></li><li><p>Chaque fois que vous vainquez une créature, vous gagnez @UUID[Compendium.fu-azure-compendia.effects.q8VBAZTtL8SdLUCs]{Force}</p></li></ol>"
+    },
+    "Ogre Armbands": {
+      "name": "Brassards d'Ogre",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.JqjAUSTgQyZdfAML]{Fureur}</p><hr /><h2>Qualités</h2><ol><li><p>Lorsque vous utilisez l'action <strong>Gêne</strong> et qu'elle réussit, vous infligez aussi @DMG[&amp;step(5,10,15) physical] à la cible.</p></li><li><p>Lorsque vous gagnez une <strong>aubaine</strong>, vous pouvez la dépenser pour infliger @UUID[Compendium.fu-azure-compendia.effects.Fm8mJMBKwf0CylMc]{À Terre}</p></li></ol>"
+    },
+    "Oil Flask": {
+      "name": "Flasque d'Huile",
+      "Description": "<p>La cible subit @UUID[Compendium.projectfu.actor-effects.k2lBFehmZtleydxx]{Vulnérabilité au Feu} jusqu'à ce qu'elle subisse des <strong>dégâts de feu</strong>.</p><p></p>"
+    },
+    "Ophidian Eye": {
+      "name": "Œil Ophidien",
+      "Qualité": "",
+      "Description": "<h2>Qualités</h2><ul><li><p><strong>Une fois</strong> par round lorsque vous êtes sur le point de recevoir des <strong>dégâts de poison</strong>, vous pouvez dépenser @LOSS[5 pm] pour gagner @UUID[Compendium.projectfu.actor-effects.3xPA7x9S3fggYHkX]{Résistance au Poison} jusqu'au <strong>début de votre prochain tour</strong>.</p></li><li><p><strong>Toutes les deux fois</strong> que vous effectuez l'action ci-dessus, vous récupérez @GAIN[$step(5,10,15) pv]</p></li></ul>"
+    },
+    "Pendant of Mercy": {
+      "name": "Pendentif de la Miséricorde",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.s7AtJlv04lTsbKg4]{Spiritiste}</p><hr /><p><em>Un symbole sacré qui a été béni par une déesse de la miséricorde et de la rédemption.</em></p><h2>Qualités</h2><ol><li><p>Chaque fois qu'un ennemi est vaincu dans un conflit et qu'il est <strong>épargné</strong>, vous pouvez récupérer @GAIN[&amp;step(2,4,6) pm]</p></li><li><p>Chaque fois que vous vous reposez dans une <strong>scène de camp</strong>, vous pouvez choisir l'un de vos alliés pour avoir une <strong>discussion à cœur ouvert</strong> à propos de l'un de ses <strong>traits</strong>. Par la suite, lorsque l'<strong>un</strong> d'entre vous entre en <strong>Crise</strong> durant votre prochain conflit avec un Méchant, l'<strong>autre</strong> peut <strong>agir immédiatement</strong> en dehors de son tour.</p></li></ol><p></p>"
+    },
+    "Personal Improvement Literature": {
+      "name": "Littérature de Développement Personnel",
+      "Qualité": "",
+      "Description": "<h2>Qualités</h2><ol><li><p>Lorsque <strong>vous</strong> <strong>ratez</strong> un test et le <strong>relancez</strong>, vous récupérez @GAIN[&amp;step(5,10,15) pm]</p></li><li><p>Lorsqu'un <strong>allié</strong> <strong>rate</strong> un test, vous pouvez l'encourager avec des conseils introspectifs tirés du contenu de ce livre. Vous <strong>dépensez</strong> @LOSS[5 pm] et il peut récupérer d'un <strong>seul état</strong>.</p></li></ol>"
+    },
+    "Physical Resilience": {
+      "name": "Résistance Physique"
+    },
+    "Pilferer's Gloves": {
+      "name": "Gants du Chapardeur",
+      "Qualité": "",
+      "Description": "<p>Classe : @UUID[Compendium.projectfu.classes.q7ak4N89Makw4jiJ]{Voleur}</p><hr /><p><em>Qui a parlé de mains inactives ?</em></p><h2>Qualités</h2><ol><li><p>Lorsque vous bénéficiez de @UUID[Compendium.projectfu.skills.ksgKc90MZSpDTka7]{Esquive} et que vous êtes <strong>raté</strong> par une attaque de <strong>mêlée</strong> de <strong>4 ou plus</strong>, vous récupérez @GAIN[1 pi]. Cela ne peut se produire qu'<strong>une fois par conflit</strong>.</p></li><li><p>Lorsque vous effectuez @UUID[Compendium.projectfu.skills.c2XRt5pvOab25Tbe]{Coup Bas}, vous récupérez @GAIN[&amp;step(2,3,4) pm]</p></li></ol>"
+    },
+    "Playing Cards": {
+      "name": "Cartes à Jouer",
+      "Description": "<p><strong>Durant une scène de repos</strong>, vous sortez un jeu de cartes pour jouer avec les membres de votre groupe. Tous les participants peuvent faire l'un des tests suivants :</p><p>Le <strong>meilleur</strong> <strong>jet</strong> <strong>gagne</strong> la partie et obtient @GAIN[&amp;step(100,200,300) zenit] et <strong>commence le prochain conflit</strong> avec @UUID[Compendium.fu-azure-compendia.effects.AcW14zmUzQkID1tQ]{Provocation}.</p>"
+    },
+    "Pocket Sand": {
+      "name": "Sable de Poche",
+      "Description": "<p>Comme <strong>action gratuite</strong>, vous lancez une poignée de sable que vous gardez dans votre poche sur la cible, la laissant @UUID[Compendium.fu-azure-compendia.effects.rBZmlS8sebFLLg91]{Aveuglée}.</p><p><em>Cela ne peut être utilisé qu'<strong>une fois</strong> <strong>par conflit.</strong></em></p>"
+    },
+    "Poison Coating": {
+      "name": "Enduit Empoisonné",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.EWKUOGOMmyHfgOJm]{Vagabond} @UUID[Compendium.projectfu.classes.q7ak4N89Makw4jiJ]{Voleur}</p><hr /><p>Vous effectuez une <strong>attaque gratuite</strong> avec une arme que vous avez équipée. Si elle touche, vous appliquez @UUID[Compendium.fu-azure-compendia.effects.rYQkHKEB7M1LJqNc]{Poison de Contact} à la cible.</p>"
+    },
+    "Potency": {
+      "name": "Puissance"
+    },
+    "Prayer Beads": {
+      "name": "Perles de Prière",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.s7AtJlv04lTsbKg4]{Spiritiste}</p><hr /><h2>Qualités</h2><ol><li><p>Lorsque vous faites récupérer des points de vie à une cible avec un <strong>Sort</strong>, vous pouvez <strong>retirer un seul état</strong> qui l'affecte en canalisant de l'énergie supplémentaire dans le sort. @LOSS[10 pm]</p></li><li><p>Chaque fois que vous soignez une cible avec un sort de soin, vous pouvez dépenser <strong>@LOSS[10 pm]</strong> supplémentaires pour lui donner @UUID[Compendium.fu-azure-compendia.effects.wmld4YK2TtfzQbzj]{Régénération} pendant 2 tours.</p></li></ol>"
+    },
+    "Quick Draw": {
+      "name": "Dégaine Rapide"
+    },
+    "Rebel's Eyepatch": {
+      "name": "Cache-œil du Rebelle",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.q7ak4N89Makw4jiJ]{Voleur}</p><hr /><p>Un cache-œil que vous avez pris l'habitude de porter. @UUID[Compendium.fu-azure-compendia.guides.prZlqZpAy69UrhEt]{Chef-d'œuvre}</p><h2>Qualités</h2><ol><li><p><strong>Panache</strong> : Lorsque vous réapparaissez dans une scène après avoir utilisé @UUID[Compendium.projectfu.skills.cHKzZJBYjwLuRfDL]{À Plus Tard}, vous le faites avec un sens du spectacle. Le <strong>premier test</strong> que vous effectuez gagne un <strong>bonus de +4</strong>. Si vous faites cela dans un conflit et que vous avez @UUID[Compendium.projectfu.skills.tiu0D74YNxirN6Tr]{Grande Vitesse}, cela ne <strong>coûte pas de points de magie.</strong></p></li><li><p>@UUID[Compendium.fu-azure-compendia.character-inventory.ef9OjgazzQT7U4cL]{Disparition}</p></li></ol>"
+    },
+    "Refreshments": {
+      "name": "Rafraîchissements",
+      "Description": "<p><strong>Durant une scène de camp,</strong> vous pouvez partager une bouteille ou deux avec vos alliés. Choisissez <strong>un</strong> des effets suivants :</p><table><tbody><tr><td><p><strong>Type</strong></p></td><td><p><strong>Effet</strong></p></td><td><p><strong>Test</strong></p></td></tr><tr><td><p>Vin Fruité</p></td><td><p>@EFFECT[ins-up]</p></td><td><p>@CHECK[mig wlp easy]</p></td></tr><tr><td><p>Bière Régionale</p></td><td><p>@EFFECT[wlp-up]</p></td><td><p>@CHECK[mig wlp normal]</p></td></tr><tr><td><p>Spiritueux</p></td><td><p>@EFFECT[dex-up]</p></td><td><p>@CHECK[mig wlp hard]</p></td></tr></tbody></table><p>Chaque personnage qui prend un verre doit faire un <strong>Test de Tolérance à l'Alcool</strong> pour en supporter les effets. Tout personnage qui échoue est contraint d'essayer à nouveau. S'ils échouent au test 3 fois, ils souffriront de @UUID[Compendium.fu-azure-compendia.effects.Rrx394UCBCyTljSj]{Gueule de Bois} à la <strong>fin de la scène de camp</strong>.</p><p>Tous les effets gagnés durent jusqu'à la fin de la <strong>prochaine scène de conflit</strong>.</p>"
+    },
+    "Remedy+": {
+      "name": "Remède+",
+      "Description": "<p><strong>Une créature</strong> récupère @HEAL[&amp;step(50,60,70) pv].</p>"
+    },
+    "Ring Of Mana": {
+      "name": "Anneau de Mana",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.vSE3PMoHTGLC1yzG]{Élémentaliste}</p><hr /><p>Lorsque vous lancez @UUID[Compendium.projectfu.skills.zlmL0suZwTCQYzE5]{Magie Élémentaire}, vous pouvez renforcer davantage votre sort et lui faire appliquer un effet supplémentaire basé sur son élément pendant <strong>un tour</strong>.</p><ul><li><p><strong>Vous</strong> : @LOSS[5 pm]</p></li></ul><table><tbody><tr><td><p><strong>Élément</strong></p></td><td><p><strong>Effet</strong></p></td></tr><tr><td><p>Feu</p></td><td><p>@UUID[Compendium.fu-azure-compendia.effects.OYh5Swp0087I3f0k]{Brûlure}</p></td></tr><tr><td><p>Glace</p></td><td><p>@UUID[Compendium.fu-azure-compendia.effects.zqmBtaCGTo9DVmyR]{Engelure}</p></td></tr><tr><td><p>Foudre</p></td><td><p>@UUID[Compendium.fu-azure-compendia.effects.ypvTV9uyc7R6LPA4]{Choc}</p></td></tr><tr><td><p>Terre</p></td><td><p>@UUID[Compendium.fu-azure-compendia.effects.tFTJ4dYIRNyMdlCK]{Enraciné}</p></td></tr><tr><td><p>Air</p></td><td><p>@UUID[Compendium.fu-azure-compendia.effects.Fm8mJMBKwf0CylMc]{À Terre}</p></td></tr></tbody></table>"
+    },
+    "Ring of the Faithful Companion": {
+      "name": "Anneau du Fidèle Compagnon",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.EWKUOGOMmyHfgOJm]{Vagabond}</p><hr /><p><em>Toi et moi, nous écrirons l'histoire.</em></p><h2>Qualités</h2><ol><li><p><strong>Une fois par round</strong>, lorsque vous devriez subir des dégâts d'une attaque, votre compagnon peut <strong>subir les dégâts à votre place.</strong></p></li></ol>"
+    },
+    "Roasted Dinner": {
+      "name": "Dîner Rôti",
+      "Description": "<p><strong>Durant une scène de camp</strong>, vous préparez un festin copieux et savoureux, avec une viande tendre rôtie lentement à l'extérieur <strong>croustillant</strong> et doré, accompagnée de légumes assaisonnés <strong>caramélisés</strong> <strong>à</strong> <strong>la perfection</strong>. Servi avec une riche sauce savoureuse et un accompagnement de pain chaud et beurré, c'est un repas réconfortant qui apporte de la chaleur à n'importe quelle table.</p><p><strong>Tous les membres du groupe</strong> gagnent @UUID[Compendium.fu-azure-compendia.effects.Iygu6CiKl9ZLpVi9]{Protection Physique} jusqu'à ce qu'il expire ou jusqu'à leur prochain repos.</p>"
+    },
+    "Rocket Boots": {
+      "name": "Bottes Fusées",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.Zmqvu8QKmgyIci7C]{Bricoleur}</p><hr /><h2>Qualités</h2><ol><li><p><strong>Une fois par conflit</strong>, vous pouvez dépenser @LOSS[1 pi] <strong>à la fin de votre tour</strong> pour gagner @UUID[Compendium.fu-azure-compendia.effects.TaI0WVX1BfRa95iA]{Vol} jusqu'à la <strong>fin de votre prochain tour.</strong></p></li></ol>"
+    },
+    "Scales of Justice": {
+      "name": "Balances de la Justice",
+      "Qualité": "",
+      "Description": "<p><strong>Classe :</strong> @UUID[Compendium.projectfu.classes.8HxmAoTTwLlmQ8Fc]{Orateur}</p><hr /><p><em>Jamais aveugle.</em></p><h2>Qualités</h2><ol><li><p>Au <strong>début de votre tour</strong>, vous pouvez dépenser @LOSS[5 pm] pour infliger à un ennemi @UUID[Compendium.fu-azure-compendia.effects.Gb2QyfiaVKD1RuiR]{Sceau du Jugement}</p></li><li><p>Au <strong>début de votre tour</strong>, vous pouvez <strong>à la place</strong> dépenser @LOSS[5 pm] pour affecter un allié avec @UUID[Compendium.fu-azure-compendia.effects.TI8kVyfULJbFh3WU]{Sceau de Sagesse}</p></li></ol>"
+    },
+    "Shadowcraft Cloak": {
+      "name": "Cape d'Ombretisse",
+      "Qualité": "",
+      "Description": "<p>@UUID[Compendium.fu-azure-compendia.guides.prZlqZpAy69UrhEt]{Chef-d'œuvre}</p><hr /><h2>Qualités</h2><ul><li><p>Lorsque vous devriez être la <strong>cible</strong> d'une action qui a <strong>plusieurs cibles,</strong> vous pouvez <strong>dépenser</strong> @LOSS[1 pf] pour quelle cible <strong>un autre de vos alliés</strong> à la place.</p></li><li><p>Au <strong>début d'un conflit</strong>, vous gagnez @UUID[Compendium.fu-azure-compendia.effects.coaSCstLAwMnXkdf]{Invisible}</p></li></ul>"
+    },
+    "Sharpening Stone": {
+      "name": "Pierre à Aiguiser",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.kVSzbabb2AUviwnH]{Maître d'armes}</p><hr /><p>Vous effectuez une <strong>attaque gratuite</strong> avec une arme équipée, ignorant toute @UUID[Compendium.projectfu.actor-effects.6yf1uUJP4vxmU3eW]{Résistance Physique} et lui infligeant une faiblesse physique jusqu'au <strong>début de votre prochain tour</strong>.</p><ul><li><p><strong>Cible</strong> : @UUID[Compendium.projectfu.actor-effects.6JCfyn7Ewt0AJndC]{Faiblesse Physique}</p></li></ul>"
+    },
+    "Spellblade's Plate": {
+      "name": "Armure de Lame-Sort",
+      "Qualité": "",
+      "Description": "<p>@UUID[Compendium.fu-azure-compendia.guides.prZlqZpAy69UrhEt]{Chef-d'œuvre}</p><hr /><h2>Qualités</h2><ol><li><p>Lorsque vous <strong>lancez un sort</strong>, vous pouvez dépenser @LOSS[5 pm] pour gagner @UUID[Compendium.fu-azure-compendia.effects.q8VBAZTtL8SdLUCs]{Force}</p></li><li><p>Lorsque vous <strong>attaquez</strong> avec une arme de corps à corps équipée, vous pouvez dépenser @LOSS[5 pm] pour gagner @UUID[Compendium.fu-azure-compendia.effects.RTJquNkzJGTWtqGZ]{Esquive} jusqu'au début de votre prochain tour.</p></li></ol>"
+    },
+    "Spyglass": {
+      "name": "Longue-Vue",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.eO37Jm8x3VaGmE7c]{Tireur d'élite}</p><hr /><h2>Qualités</h2><ol><li><p>Si vous avez @UUID[Compendium.projectfu.skills.sIkQa2NzkqsvczBr]{Tir Croisé}, il peut <strong>aussi</strong> s'appliquer aux <strong>attaques de mêlée</strong> contre un <strong>allié de votre choix</strong> que vous déclarez au <strong>début de chacun de vos tours.</strong></p></li><li><p>Lorsque vous effectuez @UUID[Compendium.projectfu.skills.Ovmw7cMrN6qvagG4]{Tir d'Avertissement}, vous gagnez @UUID[Compendium.fu-azure-compendia.effects.Item.q8VBAZTtL8SdLUCs]{Force}</p></li></ol>"
+    },
+    "Staff": {
+      "name": "Bâton",
+      "Qualité": "",
+      "Description": ""
+    },
+    "Staff of the Guardian": {
+      "name": "Bâton du Gardien",
+      "Qualité": "",
+      "Description": ""
+    },
+    "Sting": {
+      "name": "Dard",
+      "Qualité": "",
+      "Description": ""
+    },
+    "Stoneflame Guard": {
+      "name": "Protection de la Flamme de Pierre"
+    },
+    "Stored Power": {
+      "name": "Puissance Stockée"
+    },
+    "Storm": {
+      "name": "Tempête",
+      "Qualité": "",
+      "Description": "<h2>Qualités</h2><ol><li><p>Lorsque vous <strong>touchez une cible</strong> avec cette arme, vous pouvez dépenser @LOSS[5 pm] pour déchaîner un arc <strong>secondaire</strong> sur un autre ennemi à portée, infligeant @DMG[&amp;step(5,10,15) bolt]</p></li></ol>"
+    },
+    "Stormlight Guard": {
+      "name": "Protection de la Lumière d'Orage"
+    },
+    "Striking": {
+      "name": "Frappant"
+    },
+    "Summoner's Necklace": {
+      "name": "Collier de l'Invocateur",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.dqvpb3dkA3cDCChq]{Arcaniste}</p><hr /><h2>Qualités</h2><ol><li><p>Lorsque vous <strong>invoquez un Arcanum</strong>, vous gagnez @UUID[Compendium.fu-azure-compendia.effects.dR4XuoY2nuHa9N7f]{Leurre}.</p></li><li><p>Lorsque vous devriez être <strong>réduit à 0 point de vie</strong>, vous pouvez à la place renvoyer votre Arcanum (sans son effet habituel) et être laissé avec 1 point de vie. Après cela, vous ne pourrez plus <strong>invoquer d'Arcana</strong> jusqu'à la <strong>fin du conflit.</strong></p></li></ol>"
+    },
+    "Sword Revolver": {
+      "name": "Révolver à Épées",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.kVSzbabb2AUviwnH]{Maître d'armes}</p><hr /><p>Un fourreau qui peut contenir jusqu'à <strong>3 épées.</strong> @UUID[Compendium.fu-azure-compendia.guides.prZlqZpAy69UrhEt]{Chef-d'œuvre}</p><h3>Qualités</h3><ol><li><p><strong>@UUID[Compendium.fu-azure-compendia.skills.uZDFAWtruoNy7Nj3]{Dégaine Rapide}</strong></p></li><li><p>@UUID[Compendium.fu-azure-compendia.character-inventory.Di328inPBnEIBNWU]{Dégainer}</p></li></ol>"
+    },
+    "Sylspear": {
+      "name": "Lance Sylvestre",
+      "Qualité": "",
+      "Description": ""
+    },
+    "Ten-Unit Pole": {
+      "name": "Perche de Dix Unités",
+      "Description": "<p>Lorsque vous devriez déclencher un <strong>piège</strong> suite à un <strong>test raté,</strong> vous ne subissez à la place aucun dégât.</p>"
+    },
+    "Tome of Secrets": {
+      "name": "Tome des Secrets",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.CCSYiJBV0Ce69JOp]{Maître du Savoir}</p><hr /><p><em>Quels secrets cachent-ils ?</em></p><h2>Qualités</h2><ul><li><p>Lorsque vous utilisez @UUID[Compendium.projectfu.skills.YiBD86tGOvFSlaZ6]{Évaluation Rapide}, vous pouvez demander <strong>deux</strong> types de dégâts ou traits à la fois.</p></li></ul><ul><li><p>Lorsqu'un <strong>allié</strong> effectue l'action <strong>Analyse</strong>, vous pouvez déclencher les avantages de @UUID[Compendium.projectfu.skills.J5KbrSiczxizbdM3]{Éclair de Génie} si les conditions sont remplies.</p></li></ul>"
+    },
+    "Tonic+": {
+      "name": "Tonique+",
+      "Description": "<p>Une créature <strong>récupère</strong> de <strong>tous les états</strong>.</p>"
+    },
+    "Twilight Hammer": {
+      "name": "Marteau du Crépuscule",
+      "Qualité": "",
+      "Description": ""
+    },
+    "Unsheathe": {
+      "name": "Dégainer"
+    },
+    "Valorous Plate": {
+      "name": "Armure de Vaillance",
+      "Qualité": "",
+      "Description": "<p><em>Une centaine d'éraflures et de cicatrices ne sont qu'un récital des nombreux porteurs de cette merveilleuse armure.</em></p><p>@UUID[Compendium.fu-azure-compendia.guides.prZlqZpAy69UrhEt]{Chef-d'œuvre}</p><hr /><h2>Qualités</h2><ol><li><p><strong>@UUID[Compendium.fu-azure-compendia.character-inventory.17CNw0Sd9gZIjnaI]{Avancée}</strong></p></li><li><p>Lorsque vous touchez un ennemi avec une arme de mêlée et que le résultat du test de précision était un <strong>nombre pair</strong>, vous pouvez récupérer @GAIN[&amp;step(1,2,3) pv]</p></li></ol>"
+    },
+    "Vanishing": {
+      "name": "Disparition"
+    },
+    "Venomshroud Guard": {
+      "name": "Protection du Voile de Venin"
+    },
+    "Vestments of Faith": {
+      "name": "Habits de la Foi",
+      "Qualité": "",
+      "Description": "<p>@UUID[Compendium.fu-azure-compendia.guides.prZlqZpAy69UrhEt]{Chef-d'œuvre}</p><hr /><h2>Qualités</h2><ol><li><p>Lorsque vous subissez des dégâts et que le résultat du test de précision était <strong>divisible par 4</strong>, vous récupérez @GAIN[2 pm]</p></li></ol>"
+    },
+    "Warding": {
+      "name": "Protection"
+    },
+    "Way of Kings": {
+      "name": "Voie des Rois",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.8HxmAoTTwLlmQ8Fc]{Orateur}</p><hr /><p><em>Une collection de paraboles d'un ancien roi d'une autre époque.</em></p><h2>Qualités</h2><ul><li><p>Lorsque vous @UUID[Compendium.projectfu.skills.04DiGVKhF3DtmJ4n]{Encouragez}, vous pouvez <strong>dépenser son coût à nouveau</strong> pour cibler un allié supplémentaire.</p></li><li><p><strong>Une fois par conflit</strong>, si la cible est en <strong>Crise</strong> lorsqu'elle est la cible de la compétence, vous pouvez faire un test @CHECK[ins wlp veryHard], qui en cas de succès lui donne @UUID[Compendium.fu-azure-compendia.effects.hnXVEabmOmtGQtNv]{Conviction Brillante} à la place.</p></li><li><p><strong>Une fois par conflit</strong>, si un membre du groupe devait être <strong>vaincu</strong>, vous pouvez faire un test @CHECK[ins wlp veryHard]. En cas de <strong>succès</strong>, vous pouvez demander \"<em>Quel est le pas le plus important qu'une personne puisse faire ?</em>\". Selon la réponse du membre du groupe, il peut gagner <strong>l'un</strong> des effets suivants : @UUID[Compendium.fu-azure-compendia.effects.wmld4YK2TtfzQbzj]{Régénération} @UUID[Compendium.fu-azure-compendia.effects.ixyGsIPrzCrmNnhR]{Concentration}</p></li></ul>"
+    },
+    "Windbreakers": {
+      "name": "Coupe-Vent",
+      "Qualité": "",
+      "Description": "<p><strong>Classe</strong> : @UUID[Compendium.projectfu.classes.BpzqLw0tPg39wrUF]{Pilote}</p><hr /><p><em>Prêt ? Partez !</em></p><h2>Qualités</h2><ol><li><p>Chaque fois que vous devriez <strong>monter</strong> dans votre véhicule personnel, vous pouvez <strong>équiper</strong> cet accessoire comme <strong>action gratuite</strong></p></li><li><p>Lorsque vous conduisez votre véhicule personnel <strong>sans</strong> modules d'armes, vous gagnez @UUID[Compendium.fu-azure-compendia.character-inventory.adOwiuGCpZMhnZ6z]{Dégaine Rapide}</p></li><li><p>Lorsque vous gagnez les avantages de @UUID[Compendium.projectfu.skills.HCzLtYgEWScIeJNq]{Cœur dans le Moteur} et que <strong>cela</strong> <strong>inflige</strong> des <strong>dégâts</strong> <strong>supplémentaires</strong> avec le résultat du test de précision étant un <strong>nombre pair</strong>, votre <strong>passager</strong> peut faire une <strong>attaque gratuite VH0</strong> contre lui.</p></li><li><p>Lorsque le <strong>passager</strong> de votre véhicule <strong>devrait être ciblé</strong>, vous pouvez choisir d'être ciblé à sa place</p></li></ol>"
+    },
+    "Wine Bottle": {
+      "name": "Bouteille de Vin",
+      "Description": "<p><strong>Durant une scène de repos</strong>, vous partagez un verre avec un membre du groupe de votre choix. Selon le choix de l'histoire que vous racontez, vous gagnez tous les deux l'un des avantages suivants :</p><ul><li><p>Une histoire <strong>heureuse</strong> : @UUID[Compendium.fu-azure-compendia.effects.Item.q8VBAZTtL8SdLUCs]{Force}</p></li><li><p>Une histoire <strong>triste</strong> : @UUID[Compendium.fu-azure-compendia.effects.Item.13ubm3WjQ8Xuc63Q]{Blocage}</p></li></ul>"
+    }
+  }
+}
