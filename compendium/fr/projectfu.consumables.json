@@ -1,0 +1,117 @@
+{
+  "label": "Consommables",
+  "mapping": {
+    "Summary {string}": "system.summary.value",
+    "Description {string}": "system.description"
+  },
+  "folders": {
+    "Magisphere": "Magisphère",
+    "Alchemy": "Alchimie",
+    "Items": "Objets",
+    "Tinkerer Only": "Bricoleur Seulement",
+    "Magicannon": "Magicanon",
+    "Infusion": "Inoculation"
+  },
+  "entries": {
+    "Advanced Alchemy": {
+      "name": "Alchimie Avancé",
+      "Summary {string}": "",
+      "Description {string}": "<h5>Requis: Atouts Avancé dans @UUID[Compendium.projectfu.skills.Item.SsR6UJXT65Q1qNO2]{Gadget - Alchemy}</h5><p>pour 4 Points d'Invetaire, lance <strong>trois d20s</strong> et appliquer un à la <strong>cible </strong>et un à l' <strong>effet</strong>.</p>"
+    },
+    "Basic Alchemy": {
+      "name": "Alchimie Basique",
+      "Summary {string}": "",
+      "Description {string}": "<h5>Required: Atout Basique dans @UUID[Compendium.projectfu.skills.Item.SsR6UJXT65Q1qNO2]{Gadget - Alchemy}</h5><p>pour 3 Points d'Inventaires, lance <strong>deux d20s</strong> et appliquer un à la <strong>cible </strong>et un à l' <strong>effet</strong>.</p>"
+    },
+    "Elemental Shard": {
+      "name": "Eclat Elementaire",
+      "Summary {string}": "Une créature subits 10 points de dégats du type de votre choix (10 Air, 10 Foudre, 10 Terre, 10 Feu, ou 10 Glace).",
+      "Description {string}": "<p>pour 2 Points d'Inventaires, Une créature subits 10 points de dégats du type de votre choix (<strong>air</strong>, <strong>foudre</strong>, <strong>terre</strong>, <strong>feu</strong>, ou <strong>glace</strong>).</p><hr /><ul><li><p><strong>La cible subit:</strong> @DMG[10 air], @DMG[10 bolt], @DMG[10 earth], @DMG[10 fire], ou @DMG[10 ice]</p></li></ul>"
+    },
+    "Elixir": {
+      "name": "Elixir",
+      "Summary {string}": "Une créature régénère 50 PM.",
+      "Description {string}": "<p>Pour 3 Points d'Inventaires, Une créature régénère @HEAL[50 mp].</p>"
+    },
+    "Infusion: Advanced": {
+      "name": "Inoculation: Avancée",
+      "Summary {string}": "pour 2 IP l'attaque inflige 5 dégats supplémentaires, et les dégats deviennents : air, lumière, terre, ou ténèbre.",
+      "Description {string}": "<h5>Requis: Atouts avancé dans @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Gadget - Infusion}</h5><p>pour 2 Points d'Inventaires, l'attaque inflige 5 dégats supplémentaires, et les dégats deviennents : <strong>air</strong>, <strong>lumière</strong>, <strong>terre</strong>, ou <strong>ténèbre</strong>.</p>"
+    },
+    "Infusion: Basic": {
+      "name": "Inoculation: Basique",
+      "Summary {string}": "pour 2 IP, l'attaque inflige 5 dégats supplémentaires, et les dégats deviennents : ice, fire, ou bolt.",
+      "Description {string}": "<h5>Requis: Atouts Basique dans @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Gadget - Infusion}</h5><p>pour 2 Points d'Inventaires, l'attaque inflige 5 dégats supplémentaires, et les dégats deviennents : <strong>glace</strong>, <strong>feu</strong>, ou <strong>foudre</strong>.</p>"
+    },
+    "Infusion: Vampire (Superior)": {
+      "name": "Inoculation: Vampire (Supérieur)",
+      "Summary {string}": "",
+      "Description {string}": "<h5>Requis: Atouts Supérieur dans @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Gadget - Infusion}</h5><p>pour 2 Points d'Inventaires, Choisissez une option: Vous récupérez un montant égal à la moitié des dégâts subit par la cible de l'attaque; <strong>ou</strong> Vous récupérez un montant de PM égal à la moitié des dégâts subis par la cible de l'attaque.</p><p>Cette inoculation ne peut être utilisé que si l'attaque cible une seule créature.</p>"
+    },
+    "Infusion: Venom (Superior)": {
+      "name": "Inoculation: Venin (Supérieur)",
+      "Summary {string}": "",
+      "Description {string}": "<h5>Requis: Atouts Supérieur dans @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Gadget - Infusion}</h5><p>pour 2 Points d'Inventaires, l'attaque inflige 5 dégats supplémentaires, les dégâts deviennents de types <strong>poison</strong>, et chaque créature touché subit l'état <strong>empoisonné</strong>.</p>"
+    },
+    "Magic Tent": {
+      "name": "Tente Magique",
+      "Summary {string}": "Cette objet permet à l'entièrté du groupe de se reposer dans les régions sauvages ou en mer.",
+      "Description {string}": "<p>pour 4 Points d'Inventaires, Cette objet permet à l'entièrté du groupe de se <strong>reposer</strong> dans les régions sauvages ou en mer.</p>"
+    },
+    "Magicannon (Air)": {
+      "name": "Magicannon (Air)",
+      "Summary {string}": "Une arme à feu de technomagie qui infliges des dégâts d'air.",
+      "Description {string}": "<p>Une arme à feu de technomagie qui infliges des dégâts d'<strong>air </strong>@ICON[air].</p>"
+    },
+    "Magicannon (Bolt)": {
+      "name": "Magicannon (Foudre)",
+      "Summary {string}": "Une arme à feu de technomagie qui infliges des dégâts de foudre.",
+      "Description {string}": "<p>Une arme à feu de technomagie qui infliges des dégâts de <strong>foudre</strong> @ICON[bolt].</p>"
+    },
+    "Magicannon (Earth)": {
+      "name": "Magicannon (Terre)",
+      "Summary {string}": "Une arme à feu de technomagie qui infliges des dégâts de terre.",
+      "Description {string}": "<p>Une arme à feu de technomagie qui infliges des dégâts de<strong>terre </strong>@ICON[earth].</p>"
+    },
+    "Magicannon (Fire)": {
+      "name": "Magicannon (Feu)",
+      "Summary {string}": "Une arme à feu de technomagie qui infliges des dégâts de feu.",
+      "Description {string}": "<p>Une arme à feu de technomagie qui infliges des dégâts de <strong>feu</strong> @ICON[fire].</p>"
+    },
+    "Magicannon (Ice)": {
+      "name": "Magicannon (Glace)",
+      "Summary {string}": "Une arme à feu de technomagie qui infliges des dégâts de glace.",
+      "Description {string}": "<p>Une arme à feu de technomagie qui infliges des dégâts de <strong>glace</strong> @ICON[ice].</p>"
+    },
+    "Magicannon (Item)": {
+      "name": "Magicannon (Objet)",
+      "Summary {string}": "Crée une arme à feu qui inflige des dégâts d'air, foudre, terre, feu, glace, ou physique.",
+      "Description {string}": "<h5>Requis: Atouts avancé dans @UUID[Compendium.projectfu.skills.Item.EmwWSYlFjlUSGPLL]{Gadget- Magitech}</h5><p>pour <strong>@LOSS[3 ip]</strong> créez une arme à feu qui inflige des dégâts d' <strong>air</strong>, <strong>foudre</strong>, <strong>terre</strong>, <strong>feu</strong>, <strong>glace</strong>, ou <strong>physique </strong>. Glisser-Déposer celui que vous voulez créer dans votre fiche de personnage.</p><p><strong>@UUID[Compendium.projectfu.consumables.Item.EGvZsEWEhaTqoCgG]{Magicannon (Air)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.uuKKqm81klCOiDjO]{Magicannon (Bolt)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.sREYRTy6TfK8fe53]{Magicannon (Earth)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.jHbcjw8RW9Ywesyu]{Magicannon (Fire)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.eVOnHgRLTnL695cP]{Magicannon (Ice)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.MJoIwfTvo0FHcDqL]{Magicannon (Physical)}</strong></p>"
+    },
+    "Magicannon (Physical)": {
+      "name": "Magicannon (Physique)",
+      "Summary {string}": "Une arme à feu de technomagie qui infliges des dégâts physique.",
+      "Description {string}": "<p>Une arme à feu de technomagie qui infliges des dégâts <strong>physique</strong> @ICON[physical].</p>"
+    },
+    "Magisphere (Superior)": {
+      "name": "Magisphère (Supérieur)",
+      "Summary {string}": "",
+      "Description {string}": "<h5>Requis: Atouts Supérieur dans @UUID[Compendium.projectfu.skills.Item.EmwWSYlFjlUSGPLL]{Gadget- Magitech}</h5><p>pour 2 Points d'Inventaires, créez et utilisez une de vos prototypes de magisphère pour reproduire les effets d'un sort.</p>"
+    },
+    "Remedy": {
+      "name": "Remède",
+      "Summary {string}": "Une créature régénère 50 PV.",
+      "Description {string}": "<p>pour 3 Points d'Inventaires, Une créature régénères @HEAL[50 hp].</p>"
+    },
+    "Superior Alchemy": {
+      "name": "Alchimie Supérieur",
+      "Summary {string}": "",
+      "Description {string}": "<h5>Requis: Atouts Supérieur dans @UUID[Compendium.projectfu.skills.Item.SsR6UJXT65Q1qNO2]{Gadget - Alchemy}</h5><p>pour 5 Points d'Inventaires, lance <strong>quatre d20s</strong> et appliquer un à la <strong>cible</strong> et un à l' <strong>effet</strong>.</p>"
+    },
+    "Tonic": {
+      "name": "Tonique",
+      "Summary {string}": "Une créature se rétablit d'un effet de statut.",
+      "Description {string}": "<p>pour 2 Points d'Inventaires, Une créature se rétablit d'un effet de statut.</p>"
+    }
+  }
+}
